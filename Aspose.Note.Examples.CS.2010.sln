@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{D916A505-093F-4FFC-BA4E-B9141506FFB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadingSavingConverting", "LoadingSavingConverting", "{FD7696AB-7742-48D4-9A5B-4913FAE1807F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertingOneNoteToPDF", "ConvertingOneNoteToPDF", "{B1CB2D41-B25D-47DE-BF74-4A04F8C85FB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveWithDefaultSettings", "ProgrammersGuide\LoadingSavingConverting\ConvertingOneNoteToPDF\SaveWithDefaultSettings\CSharp\SaveWithDefaultSettings.csproj", "{58A8256E-3F00-4DAB-9E7C-8C13DC311AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveRangeOfPagesAsPDF", "ProgrammersGuide\LoadingSavingConverting\ConvertingOneNoteToPDF\SaveRangeOfPagesAsPDF\CSharp\SaveRangeOfPagesAsPDF.csproj", "{786B912B-1175-4C24-9F60-8FC04FBB5959}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertingOneNoteToImage", "ConvertingOneNoteToImage", "{EF90F7FE-7546-4984-BC17-B27786BC5DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveToImageDefaultOptions", "ProgrammersGuide\LoadingSavingConverting\ConvertingOneNoteToImage\SaveToImageDefaultOptions\CSharp\SaveToImageDefaultOptions.csproj", "{E97B50D8-E847-4A3C-8329-68196326CD8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertSpecificPageToImage", "ProgrammersGuide\LoadingSavingConverting\ConvertingOneNoteToImage\ConvertSpecificPageToImage\CSharp\ConvertSpecificPageToImage.csproj", "{EBB712C4-862B-4C22-B1BF-91F6F57C3A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58A8256E-3F00-4DAB-9E7C-8C13DC311AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A8256E-3F00-4DAB-9E7C-8C13DC311AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A8256E-3F00-4DAB-9E7C-8C13DC311AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786B912B-1175-4C24-9F60-8FC04FBB5959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786B912B-1175-4C24-9F60-8FC04FBB5959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786B912B-1175-4C24-9F60-8FC04FBB5959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97B50D8-E847-4A3C-8329-68196326CD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97B50D8-E847-4A3C-8329-68196326CD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97B50D8-E847-4A3C-8329-68196326CD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB712C4-862B-4C22-B1BF-91F6F57C3A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB712C4-862B-4C22-B1BF-91F6F57C3A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB712C4-862B-4C22-B1BF-91F6F57C3A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD7696AB-7742-48D4-9A5B-4913FAE1807F} = {D916A505-093F-4FFC-BA4E-B9141506FFB4}
+		{B1CB2D41-B25D-47DE-BF74-4A04F8C85FB9} = {FD7696AB-7742-48D4-9A5B-4913FAE1807F}
+		{58A8256E-3F00-4DAB-9E7C-8C13DC311AC8} = {B1CB2D41-B25D-47DE-BF74-4A04F8C85FB9}
+		{786B912B-1175-4C24-9F60-8FC04FBB5959} = {B1CB2D41-B25D-47DE-BF74-4A04F8C85FB9}
+		{EF90F7FE-7546-4984-BC17-B27786BC5DC5} = {FD7696AB-7742-48D4-9A5B-4913FAE1807F}
+		{E97B50D8-E847-4A3C-8329-68196326CD8F} = {EF90F7FE-7546-4984-BC17-B27786BC5DC5}
+		{EBB712C4-862B-4C22-B1BF-91F6F57C3A04} = {EF90F7FE-7546-4984-BC17-B27786BC5DC5}
+	EndGlobalSection
+EndGlobal

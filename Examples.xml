@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>This section includes the following examples:
+
+    - Introduction
+    - Loading, Saving and Converting
+    - Working with Images
+    - Working with Pages
+    - Working with Text</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Loading, Saving and Converting</Title>
+          <Description>This section includes the following examples:
+
+    - Converting OneNote Document to PDF
+    - Converting OneNote to Image</Description>
+          <FolderName>LoadingSavingConverting</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Converting OneNote to PDF</Title>
+              <Description>Aspose.Note for .NET offers the Document class that represents a OneNote file. The Document class exposes the Save method that can be called to convert a OneNote document into a PDF document. The PdfSaveOptions class provides options for creating the PDF such as PageIndex, PageCount and others.
+
+This section contain the following examples:
+
+    - Save with the default settings.
+    - Save the range of pages as PDF.</Description>
+              <FolderName>ConvertingOneNoteToPDF</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Save with the default settings</Title>
+                  <Description>The following example shows how to convert a OneNote into a PDF document using the default options. The default options create a PDF document of maximum quality.</Description>
+                  <FolderName>SaveWithDefaultSettings</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Converting OneNote Document to PDF</DisplayName>
+                    <Url>Converting+OneNote+Document+to+PDF</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Save the range of pages as PDF</Title>
+                  <Description>The following example shows how to convert a OneNote into a PDF document with a specified page range as provided by the PdfSaveOptions class. It sets the PageIndex and PageCount properties.</Description>
+                  <FolderName>SaveRangeOfPagesAsPDF</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Converting OneNote Document to PDF</DisplayName>
+                    <Url>Converting+OneNote+Document+to+PDF#ConvertingOneNoteDocumenttoPDF-pageRange</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Converting OneNote to Image</Title>
+              <Description>This section includes how to:
+
+    - Save OneNote as image with the default settings.
+    - Save a particular page of OneNote as image.</Description>
+              <FolderName>ConvertingOneNoteToImage</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Converting OneNote to Image using the Default Options</Title>
+                  <Description>The following example shows how to convert a OneNote into an image using the default options using Aspose.Note for .NET.</Description>
+                  <FolderName>SaveToImageDefaultOptions</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Converting OneNote to Image</DisplayName>
+                    <Url>Converting+OneNote+to+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Output.gif</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Converting a Specific Page in a OneNote Document to Image</Title>
+                  <Description>The following example shows how to convert a specific page in a OneNote file into an image using the ImageSaveOptions class in Aspose.Note for .NET. It sets the PageIndex properties.</Description>
+                  <FolderName>ConvertSpecificPageToImage</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Converting OneNote to Image</DisplayName>
+                    <Url>Converting+OneNote+to+Image</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
