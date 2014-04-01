@@ -132,6 +132,188 @@ This section contain the following examples:
             </Folder>
           </Folders>
         </Folder>
+        <Folder>
+          <Title>Working With Images</Title>
+          <Description>This section includes the following topics:
+
+- Extract Images from a OneNote Document
+- Get Information of Each Image from the OneNote Document</Description>
+          <FolderName>WorkingWithImages</FolderName>
+          <Order>2</Order>
+          <Examples>
+            <Example>
+              <Title>Extract Images From A OneNote Document</Title>
+              <Description>In this example, we will see how we can extract images from a OneNote document using Aspose.Note for .NET.</Description>
+              <FolderName>ExtractImages</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Extract Images from a OneNote Document</DisplayName>
+                <Url>Extract+Images+from+a+OneNote+Document</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.one</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Desert.jpg</Path>
+                </DataFile>
+                <DataFile>
+                  <Path>..\Data\Tulips.jpg</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Get Information Of Each Image From The OneNote Document</Title>
+              <Description>In this example, we will see how we can get information of each image from a OneNote document using Aspose.Note for .NET.</Description>
+              <FolderName>GetInformationOfImages</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Get Information of Each Image from the OneNote Document</DisplayName>
+                <Url>Get+Information+of+Each+Image+from+the+OneNote+Document</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.one</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Working With Pages</Title>
+          <Description>This section includes the following topics:
+
+ - Get Number of Pages from the OneNote Document
+ - Get Information of Each Page from the OneNote Document</Description>
+          <FolderName>WorkingWithPages</FolderName>
+          <Order>3</Order>
+          <Examples>
+            <Example>
+              <Title>Get Number Of Pages From The OneNote Document</Title>
+              <Description>In this example, we will see how we can get the number of pages from a OneNote file using Aspose.Note for .NET.</Description>
+              <FolderName>GetNumberOfPages</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Get Number of Pages from the OneNote Document</DisplayName>
+                <Url>Get+Number+of+Pages+from+the+OneNote+Document</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Aspose.one</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Working With Text</Title>
+          <Description>This section includes the following topics:
+
+ - Extract Text from OneNote Document
+ - Replace Text in Pages of a OneNote Document</Description>
+          <FolderName>WorkingWithText</FolderName>
+          <Order>4</Order>
+          <Folders>
+            <Folder>
+              <Title>Extract Text From OneNote Document</Title>
+              <Description>One of the tasks that developers need to perform is extracting text from a OneNote document. Aspose.Note for .NET allows developers to extract text from a OneNote document in various ways.</Description>
+              <FolderName>ExtractTextFromOneNoteDocument</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Extracting All Text From OneNote Document</Title>
+                  <Description>In this example, we will see how we can extract all the text from OneNote document using Aspose.Note for .NET.</Description>
+                  <FolderName>ExtractingAllText</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from OneNote Document</DisplayName>
+                    <Url>Extract+Text+from+OneNote+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Extracting Text From A Specified Page Of A OneNote Document</Title>
+                  <Description>In this example, we will see how we can extract text from a specified page in a OneNote document using Aspose.Note for .NET.</Description>
+                  <FolderName>ExtractingTextFromAPage</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Extract Text from OneNote Document</DisplayName>
+                    <Url>Extract+Text+from+OneNote+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Replace Text In Pages of a OneNote Document</Title>
+              <Description>This section includes the following topics:
+
+ - Replace text on all pages.
+ - Replace text on a particular page.</Description>
+              <FolderName>ReplaceTextInPagesOfOneNoteDocument</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Replace Text On All Pages</Title>
+                  <Description>In this example, we will see how we can replace text on all pages of OneNote document using Aspose.Note for .NET.</Description>
+                  <FolderName>ReplaceTextOnAllPages</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in Pages of a OneNote Document</DisplayName>
+                    <Url>Replace+Text+in+Pages+of+a+OneNote+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Replace Text On A Particular Page</Title>
+                  <Description>In this example, we will see how we can replace text on a particular page of a OneNote document using Aspose.Note for .NET.</Description>
+                  <FolderName>ReplaceTextOnParticularPage</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Replace Text in Pages of a OneNote Document</DisplayName>
+                    <Url>Replace+Text+in+Pages+of+a+OneNote+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Aspose.one</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
       </Folders>
     </Folder>
   </Folders>
