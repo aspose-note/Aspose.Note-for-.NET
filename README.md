@@ -105,7 +105,7 @@ This package contains C# and VB.NET Example Projects for [Aspose.Note for .NET](
 ##Contact Us
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Note for .NET](http://www.aspose.com/categories/.net-components/aspose.onenote-for-.net/default.aspx)
++ **Product Home:** [Aspose.Note for .NET](http://www.aspose.com/.net/onenote-component.aspxx)
 + **Download:** [Downlolad Aspose.Note for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.note-for-.net/default.aspx)
 + **Documentation:** [Aspose.Note for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.note-for-.net/index.html)
 + **Forum:** [Aspose.Note for .NET Forum](http://www.aspose.com/community/forums/aspose.note-product-family/499/showforum.aspx)
