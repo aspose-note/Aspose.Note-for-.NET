@@ -44,62 +44,27 @@ The Aspose.Note for .NET examples published here at GitHub is a part of the abov
 
 ###Code
 
-This package contains C# and VB.NET Example Projects for [Aspose.Note for .NET](http://www.aspose.com/categories/.net-components/aspose.note-for-.net/default.aspx).
+Each example is provided in both C# and Visual Basic.
 
 <table>
-  <tr><th>Exchange Server (WebDev)<th>Description</th></tr>
-  <tr><td>Connect to Exchange Server</td><td>This example demonstrates the ability of Aspose.Email for .NET to connect with Microsoft Exchange Server.</td></tr>
-  <tr><td>List Messages from Exchange Server</td><td>This example list messages from Microsoft Exchange Server's Inbox folder.</td></tr>
-  <tr><td>Retrieve Messages from Exchange Server</td><td>This example retrieve messages from Microsoft Exchange Server.</td></tr>
-  <tr><td>Save Message on Disk</td><td>This example retrieve and save messages from Microsoft Exchange Server in Eml or Msg formats.</td></tr>
-  <tr><td>Send Email</td><td>This example send email from Microsoft Exchange Server.</td></tr>
-  <tr><td>Get Mailbox folder Information</td><td>This example demonstrates the ability of Aspose.Email for .NET to get Mailbox Information from Microsoft Exchange Server.</td></tr>
+  <tr><th>Loading, Saving and Converting</th><th>Description</th></tr>
+  <tr><td>Convert OneNote Document to PDF using Default Settings</td><td>This example demonstrates the ability of Aspose.Note for .NET to export Microsoft OneNote document to PDF file format using the default settings.</td></tr>
+  <tr><td>Convert Selective Pages of OneNote Document to PDF</td><td>This example shows, how to select a page range and export it to PDF file format.</td></tr>
+  <tr><td>Convert OneNote Document to thumbnail using Default Settings</td><td>This example demonstrates the ability of Aspose.Note for .NET to export Microsoft OneNote document to image file format using the default settings.</td></tr>
+  <tr><td>Convert Selective Pages of OneNote Document to Image</td><td>This example shows, how to select a page range and export it to image file format.</td></tr>
+
+  <tr><th>Working with Images</th><th>Description</th></tr>
+  <tr><td>Extract Images</td><td>It demonstrates, how to extract all images from the OneNote document.</td></tr>
+  <tr><td>Get Information of each Image</td><td>It demonstrates, how to get information or propertis of each image from the OneNote document.</td></tr>
+
+  <tr><th>Working with Pages</th><th>Description</th></tr>
+  <tr><td>Get Page Count of OneNote Document</td><td>This example demonstrates the ability of Aspose.Note for .NET to get page count of the OneNote document.</td></tr>
   
-  <tr><th>Exchange Server (EWS)<th>Description</th></tr>
-  <tr><td>Connect to Exchange Server</td><td>This example connects to Microsoft Exchange Server using Exchange Web Services.</td></tr>
-  <tr><td>List Messages from Exchange Server</td><td>This example list messages from Microsoft Exchange Server's Inbox folder using Exchange Web Services.</td></tr>
-  <tr><td>Retrieve Messages from Exchange Server</td><td>This example retrieve messages from Microsoft Exchange Server using Exchange Web Services.</td></tr>
-  <tr><td>Save Message on Disk</td><td>This example retrieve and save messages from Microsoft Exchange Server in Eml or Msg formats using Exchange Web Services.</td></tr>
-  <tr><td>Send Email</td><td>This example send email from Microsoft Exchange Server using Exchange Web Services.</td></tr>
-  <tr><td>Get Mailbox folder Information</td><td>This example demonstrates the ability of Aspose.Email for .NET to get Mailbox Information from Microsoft Exchange Server Using Exchange Web Services.</td></tr>
-  
-  <tr><th>SMPT Examples<th>Description</th></tr>
-  <tr><td>Send Email</td><td>This example demonstrates the ability of Aspose.Email for .NET to send email using Smtp Mail Server.</td></tr>
-  <tr><td>Send Email with SSL enabled SMTP Server</td><td>This example sends email using SSL enabled Smtp server.</td></tr>
-  <tr><td>Send Email with Attachments</td><td>This example demonstrates the ability of Aspose.Email for .NET to send email with attachments using Smtp mail server.</td></tr>
-  <tr><td>Send Email from Disk File</td><td>This example demonstrates the ability of Aspose.Email for .NET to load Eml, Msg or Mht files from Disk and send email</td></tr>
-  <tr><td>Send Email with HTML Body</td><td>This example uses Smtp mail server to send Html formatted email to any recipient.</td></tr>
-  <tr><td>Send Email with Meeting Request</td><td>This example demonstrates the ability of Aspose.Email for .NET to send Meeting Request in email using Smtp mail server.</td></tr>
-  <tr><td>Send Email to Multiple Recipients</td><td>This example sends email to multiple Recipients in To, Cc and Bcc.</td></tr>
-  <tr><td>Send Bulk Emails with Mail Merge</td><td>This example demonstrates the ability of Aspose.Email for .NET to perform mail merge and send emails in bulk.</td></tr>
-  
-  <tr><th>IMAP Examples<th>Description</th></tr>
-  <tr><td>Connect to IMAP Server</td><td>This example shows how to connect to an Imap mail server.</td></tr>
-  <tr><td>Connect to SSL enabled IMAP Server</td><td>This example shows how to connect to a SSL enabled Imap mail server.</td></tr>
-  <tr><td>List Messages</td><td>This example connects to an Imap Server and list messages from Inbox folder.</td></tr>
-  <tr><td>Retrieve Messages</td><td>This example connects to an Imap Server and retrieve messages from Inbox folder.</td></tr>
-  <tr><td>Save Message on Disk</td><td>This examples demonstrates the ability of Aspose.Email for .NET to reterive messages from Imap mail server and save them to disk in Eml and Msg formats.</td></tr>
-  <tr><td>Get MailBox folder Information</td><td>This example connects to an Imap Server and displays the folders information.</td></tr>
-  <tr><td>Change Message Status</td><td>This example list messages from Imap server mailbox and allows you to mark any message as read/un-read.</td></tr>
-  
-  <tr><th>POP3 Examples<th>Description</th></tr>
-  <tr><td>Connect to POP3 Server</td><td>This example shows how to connect to a Pop3 mail server.</td></tr>
-  <tr><td>Connect to SSL enabled POP3 Server</td><td>This example shows how to connect to a SSL enabled Pop3 mail server.</td></tr>
-  <tr><td>List Messages</td><td>This example connects to a Pop3 Server and list messages from Inbox folder.</td></tr>
-  <tr><td>Retrieve Messages</td><td>This example connects to a Pop3 Server and retrieve messages from Inbox folder.</td></tr>
-  <tr><td>Save Message on Disk</td><td>This example connects to a POP3 mail server, fetch the message in eml or msg format and download the file to browser.</td></tr>
-  <tr><td>Get Mailbox folder Information</td><td>This example connects to a POP3 Mail Server and get Mailbox information e.g. size of mailbox and number of messages.</td></tr>
-  
-  <tr><th>Email Format Examples<th>Description</th></tr>
-  <tr><td>Create an Email and Save as Draft</td><td>This example creates a new message file and save it in draft status.</td></tr>
-  <tr><td>Create an Email Message in Eml, Msg or Mht Formats</td><td>This example creates a new message file with common properties like from, to, subject and text body. The file can be saved in Eml, Msg or Mht formats.</td></tr>
-  <tr><td>Create an Email with HTML Body and Attachmenst</td><td>This example creates a message file in Eml, Msg or Mht format including Html body and by adding/removing attachments from the message file.</td></tr>
-  <tr><td>Load and View Eml, Msg or Mht File</td><td>This example allows to upload a message file in Eml, Msg or Mht format and show the contents of the uploaded message file.</td></tr>
-  <tr><td>Email Message File Format Converter</td><td>This example allows to upload a message file in Eml, Msg or Mht format and convert it in any desired message format.</td></tr>
-  
-  <tr><th>Miscellaneous Examples<th>Description</th></tr>
-  <tr><td>Verify Email Address</td><td>This example shows how to validate an email address using Aspose.Email component.</td></tr>
-  <tr><td>Create or Update Tasks with iCalender</td><td>This example demonstrates the ability of Aspose.Email for .NET to create and update tasks using iCalander</td></tr>
+  <tr><th>Working with Text</th><th>Description</th></tr>
+  <tr><td>Extract Text from the OneNote Document</td><td>It demonstrates, how to extract text from the OneNote document.</td></tr>
+  <tr><td>Extract Text from Selective Page of the OneNote Document</td><td>It demonstrates, how to extract text from the selective page of the OneNote document.</td></tr>
+  <tr><td>Search and Replace Text in the OneNote Document</td><td>It demonstrates, how to search and replace text from the whole OneNote document.</td></tr>
+  <tr><td>Search and Replace Text from a Particular Page of the OneNote Document</td><td>It demonstrates, how to search and replace text from a particular page of the OneNote document.</td></tr>
 </table>
 
 ##Contact Us
@@ -109,8 +74,4 @@ This package contains C# and VB.NET Example Projects for [Aspose.Note for .NET](
 + **Download:** [Downlolad Aspose.Note for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.note-for-.net/default.aspx)
 + **Documentation:** [Aspose.Note for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.note-for-.net/index.html)
 + **Forum:** [Aspose.Note for .NET Forum](http://www.aspose.com/community/forums/aspose.note-product-family/499/showforum.aspx)
-+ **Blog:** [Aspose.Note for .NET Blog](http://www.aspose.com/community/forums/aspose.note-product-family/522/showforum.aspx)
-
-
-
-
++ **Blog:** [Aspose.Note for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-note-product-family.html)
