@@ -105,11 +105,11 @@ This package contains C# and VB.NET Example Projects for [Aspose.Note for .NET](
 ##Contact Us
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Email for .NET](http://www.aspose.com/categories/.net-components/aspose.email-for-.net/default.aspx)
-+ **Download:** [Downlolad Aspose.Email for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.email-for-.net/default.aspx)
-+ **Documentation:** [Aspose.Email for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.email-for-.net/index.html)
-+ **Forum:** [Aspose.Email for .NET Forum](http://www.aspose.com/community/forums/aspose.email-product-family/499/showforum.aspx)
-+ **Blog:** [Aspose.Email for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-email-product-family.html)
++ **Product Home:** [Aspose.Note for .NET](http://www.aspose.com/categories/.net-components/aspose.note-for-.net/default.aspx)
++ **Download:** [Downlolad Aspose.Note for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.note-for-.net/default.aspx)
++ **Documentation:** [Aspose.Note for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.note-for-.net/index.html)
++ **Forum:** [Aspose.Note for .NET Forum](http://www.aspose.com/community/forums/aspose.note-product-family/499/showforum.aspx)
++ **Blog:** [Aspose.Note for .NET Blog](http://www.aspose.com/community/forums/aspose.note-product-family/522/showforum.aspx)
 
 
 
