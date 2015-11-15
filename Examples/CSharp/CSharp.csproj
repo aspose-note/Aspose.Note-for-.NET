@@ -35,8 +35,8 @@
     <StartupObject>Aspose.Note.Examples.Utils</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.1.8.0\lib\net4.0\Aspose.Note.dll</HintPath>
+    <Reference Include="Aspose.Note, Version=2.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Note.2.0.0\lib\net4.0\Aspose.Note.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
