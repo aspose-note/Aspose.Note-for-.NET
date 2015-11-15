@@ -93,6 +93,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Pages\GetNumberOfPages.vb" />
+    <Compile Include="Text\CreateTitleMsStyle.vb" />
     <Compile Include="Text\ExtractingAllText.vb" />
     <Compile Include="Text\ExtractingTextFromAPage.vb" />
     <Compile Include="Text\ReplaceTextOnAllPages.vb" />

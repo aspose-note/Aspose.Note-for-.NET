@@ -57,6 +57,7 @@
     <Compile Include="LoadSaveConvert\SaveWithDefaultSettings.cs" />
     <Compile Include="Pages\GetNumberOfPages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text\CreateTitleMsStyle.cs" />
     <Compile Include="Text\ExtractingAllText.cs" />
     <Compile Include="Text\ExtractingTextFromAPage.cs" />
     <Compile Include="Text\ReplaceTextOnAllPages.cs" />
