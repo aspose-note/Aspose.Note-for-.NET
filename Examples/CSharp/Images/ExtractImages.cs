@@ -1,43 +1,44 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Note. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Note;
 using System.Collections.Generic;
 using System.Drawing;
 using System;
-
-namespace Aspose.Note.Examples.Images
+namespace CSharp.Images
 {
     public class ExtractImages
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = Aspose.Note.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Load the document into Aspose.Note.
-            Document oneFile = new Document(dataDir + "Aspose.one");
-            // Get all Image nodes
-            IList<Node> nodes = oneFile.GetChildNodes(NodeType.Image);
-
-            foreach (Aspose.Note.Image image in nodes)
+            try
             {
-                using (MemoryStream stream = new MemoryStream(image.Bytes))
+                // ExStart:ExtractImages
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_Images();
+
+                // Load the document into Aspose.Note.
+                Document oneFile = new Document(dataDir + "Aspose.one");
+
+                // Get all Image nodes
+                IList<Aspose.Note.Image> nodes = oneFile.GetChildNodes<Aspose.Note.Image>();
+
+                foreach (Aspose.Note.Image image in nodes)
                 {
-                    using (Bitmap bitMap = new Bitmap(stream))
+                    using (MemoryStream stream = new MemoryStream(image.Bytes))
                     {
-                        // Save image bytes to a file
-                        bitMap.Save(String.Format(dataDir + "{0}", Path.GetFileName(image.FileName)));
+                        using (Bitmap bitMap = new Bitmap(stream))
+                        {
+                            // Save image bytes to a file
+                            bitMap.Save(String.Format(dataDir + "{0}", Path.GetFileName(image.FileName)));
+                        }
                     }
                 }
+                // ExEnd:ExtractImages 
             }
- 
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
+            }
         }
     }
 }

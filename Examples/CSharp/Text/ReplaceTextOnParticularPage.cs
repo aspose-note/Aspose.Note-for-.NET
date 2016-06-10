@@ -1,41 +1,33 @@
-//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Note. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
 using System.IO;
-
 using Aspose.Note;
 using System.Collections.Generic;
-
-namespace Aspose.Note.Examples.Text
+using System;
+namespace CSharp.Text
 {
     public class ReplaceTextOnParticularPage
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
+            // ExStart:ReplaceTextOnParticularPage
             // The path to the documents directory.
-            string dataDir = Aspose.Note.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir_Text();
 
             Dictionary<string, string> replacements = new Dictionary<string, string>();
-            replacements.Add("Some task here", "New Text Here");
+            replacements.Add("voice over", "voice over new text");
 
             // Load the document into Aspose.Note.
             Document oneFile = new Document(dataDir + "Aspose.one");
 
-            IList<Node> pageNodes = oneFile.GetChildNodes(NodeType.Page);
-            CompositeNode<Page> compositeNode = (CompositeNode<Page>)pageNodes[0];
+            IList<Page> pageNodes = oneFile.GetChildNodes<Page>();
+
 
             // Get all RichText nodes
-            IList<Node> textNodes = compositeNode.GetChildNodes(NodeType.RichText);
+            IList<RichText> textNodes = pageNodes[0].GetChildNodes<RichText>();
 
-            foreach (Node node in textNodes)
+            foreach (RichText richText in textNodes)
             {
                 foreach (KeyValuePair<string, string> kvp in replacements)
                 {
-                    RichText richText = (RichText)node;
                     if (richText != null && richText.Text.Contains(kvp.Key))
                     {
                         // Replace text of a shape
@@ -43,11 +35,11 @@ namespace Aspose.Note.Examples.Text
                     }
                 }
             }
-
+            dataDir = dataDir + "ReplaceTextOnParticularPage_out_.pdf";
             // Save to any supported file format
-            oneFile.Save(dataDir + "Output.pdf", SaveFormat.Pdf);
- 
-            
+            oneFile.Save(dataDir, SaveFormat.Pdf);
+            // ExEnd:ReplaceTextOnParticularPage
+            Console.WriteLine("\nText replaced successfully on a particular page.\nFile saved at " + dataDir);
         }
     }
 }

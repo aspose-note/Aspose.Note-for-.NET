@@ -1,41 +1,36 @@
-﻿'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Note. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports System
-Imports System.Globalization
+﻿Imports System.Globalization
 Imports Aspose.Note
 
-Namespace Aspose.Note.Examples.Text
+Namespace Text
     Public Class CreateTitleMsStyle
-        Public Shared Sub Main(ByVal args() As String)
-            Dim dataDir As String = Aspose.Note.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
-            Dim outputPath As String = dataDir & "Output.one"
+        Public Shared Sub Run()
+            ' ExStart:CreateTitleMsStyle
+            Dim dataDir As String = RunExamples.GetDataDir_Text()
+            Dim outputPath As String = dataDir & Convert.ToString("CreateTitleMsStyle_out_.one")
 
             Dim doc = New Document()
             Dim page = New Page(doc)
-            page.Title = New Title(doc) With { _
-                .TitleText = New RichText(doc) With { _
-                    .Text = "Title text.", _
-                    .DefaultStyle = TextStyle.DefaultMsOneNoteTitleTextStyle _
-                }, _
-                .TitleDate = New RichText(doc) With { _
-                    .Text = New DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), _
-                    .DefaultStyle = TextStyle.DefaultMsOneNoteTitleDateStyle _
-                }, _
-                .TitleTime = New RichText(doc) With { _
-                    .Text = "12:34", _
-                    .DefaultStyle = TextStyle.DefaultMsOneNoteTitleTimeStyle _
-                } _
+
+            page.Title = New Title(doc) With {
+                 .TitleText = New RichText(doc) With {
+                     .Text = "Title text.",
+                     .DefaultStyle = TextStyle.DefaultMsOneNoteTitleTextStyle
+                },
+                 .TitleDate = New RichText(doc) With {
+                     .Text = New DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture),
+                     .DefaultStyle = TextStyle.DefaultMsOneNoteTitleDateStyle
+                },
+                 .TitleTime = New RichText(doc) With {
+                     .Text = "12:34",
+                     .DefaultStyle = TextStyle.DefaultMsOneNoteTitleTimeStyle
+                }
             }
 
-            doc.AppendChild(Page)
+            doc.AppendChild(page)
 
             doc.Save(outputPath)
+            ' ExEnd:CreateTitleMsStyle
+            Console.WriteLine(Convert.ToString(vbLf & "Page title setup successfully in microsoft OneNote style ." & vbLf & "File saved at ") & outputPath)
         End Sub
     End Class
 End Namespace

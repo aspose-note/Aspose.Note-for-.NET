@@ -33,12 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Note.Examples.Utils</StartupObject>
+    <StartupObject>CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.2.0.0\lib\net4.0\Aspose.Note.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Note, Version=2.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Note.2.3.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,20 +50,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
+    <Compile Include="Attachments\AttachFileByPath.cs" />
+    <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
+    <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
+    <Compile Include="Images\BuildDocAndInsertImage.cs" />
+    <Compile Include="Images\ImageAlternativeText.cs" />
+    <Compile Include="Images\InsertImage.cs" />
     <Compile Include="Images\ExtractImages.cs" />
     <Compile Include="Images\GetInformationOfImages.cs" />
-    <Compile Include="LoadSaveConvert\ConvertSpecificPageToImage.cs" />
-    <Compile Include="LoadSaveConvert\SaveRangeOfPagesAsPDF.cs" />
-    <Compile Include="LoadSaveConvert\SaveToImageDefaultOptions.cs" />
-    <Compile Include="LoadSaveConvert\SaveWithDefaultSettings.cs" />
+    <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.cs" />
+    <Compile Include="Loading-and-Saving\CreateDocWithPageTitle.cs" />
+    <Compile Include="Loading-and-Saving\CreateDocWithSimpleRichText.cs" />
+    <Compile Include="Loading-and-Saving\LoadOneNoteDoc.cs" />
+    <Compile Include="Loading-and-Saving\ConvertSpecificPageToImage.cs" />
+    <Compile Include="Loading-and-Saving\CreateOneNoteDocAndSaveToHTML.cs" />
+    <Compile Include="Loading-and-Saving\ConsequentExportOperations.cs" />
+    <Compile Include="Loading-and-Saving\PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
+    <Compile Include="Loading-and-Saving\PasswordProtectedDoc.cs" />
+    <Compile Include="Loading-and-Saving\PageSplittUsingKeepSOlidObjectsAlgoirthm.cs" />
+    <Compile Include="Loading-and-Saving\CheckVersionNumber.cs" />
+    <Compile Include="Loading-and-Saving\ExtractContent.cs" />
+    <Compile Include="Loading-and-Saving\NodeTypeEnumeration.cs" />
+    <Compile Include="Loading-and-Saving\RetreivingFileFormat.cs" />
+    <Compile Include="Loading-and-Saving\SpecifySaveOptions.cs" />
+    <Compile Include="Loading-and-Saving\SaveRangeOfPagesAsPDF.cs" />
+    <Compile Include="Loading-and-Saving\SaveToStream.cs" />
+    <Compile Include="Loading-and-Saving\SaveToImageDefaultOptions.cs" />
+    <Compile Include="Loading-and-Saving\SaveWithDefaultSettings.cs" />
+    <Compile Include="Pages\CreateDocWithRootAndSubPages.cs" />
+    <Compile Include="Pages\GetPageRevisions.cs" />
+    <Compile Include="Pages\GetPageInformation.cs" />
     <Compile Include="Pages\GetNumberOfPages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\CreateTableWithLockedColumns.cs" />
+    <Compile Include="Tables\InsertTable.cs" />
+    <Compile Include="Tables\ExtractCellText.cs" />
+    <Compile Include="Tables\ExtractRowText.cs" />
+    <Compile Include="Tables\ExtractTableText.cs" />
+    <Compile Include="Hyperlinks\AddHyperlink.cs" />
+    <Compile Include="Tasks\GetOutlookTaskDetails.cs" />
+    <Compile Include="Tags\AddImageNodeWithTag.cs" />
+    <Compile Include="Tags\AddTableNodeWithTag.cs" />
+    <Compile Include="Tags\AddTextNodeWithTag.cs" />
+    <Compile Include="Tags\GetTagDetails.cs" />
+    <Compile Include="Text\ChangeStyle.cs" />
+    <Compile Include="Text\InsertChineseNumberList.cs" />
+    <Compile Include="Text\ApplyBulletsOnText.cs" />
+    <Compile Include="Text\ApplyNumberingOnText.cs" />
+    <Compile Include="Text\RetrieveBulletOrNumberList.cs" />
     <Compile Include="Text\CreateTitleMsStyle.cs" />
     <Compile Include="Text\ExtractingAllText.cs" />
     <Compile Include="Text\ExtractingTextFromAPage.cs" />
     <Compile Include="Text\ReplaceTextOnAllPages.cs" />
     <Compile Include="Text\ReplaceTextOnParticularPage.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="RunExamples.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

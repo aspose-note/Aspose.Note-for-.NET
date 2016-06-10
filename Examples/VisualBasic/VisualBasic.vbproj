@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BF9073CF-1216-429C-8FF2-51B4B545DA42}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.Aspose.Note.Examples.Utils</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>VisualBasic</RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -47,9 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.2.0.0\lib\net4.0\Aspose.Note.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Note, Version=2.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Note.2.3.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -72,12 +72,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attachments\AttachFileAndSetIcon.vb" />
+    <Compile Include="Attachments\AttachFileByPath.vb" />
+    <Compile Include="Attachments\RetrieveAttachedFiles.vb" />
+    <Compile Include="Hyperlinks\AddHyperlink.vb" />
+    <Compile Include="Images\BuildDocAndInsertImage.vb" />
+    <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.vb" />
     <Compile Include="Images\ExtractImages.vb" />
     <Compile Include="Images\GetInformationOfImages.vb" />
-    <Compile Include="LoadSaveConvert\ConvertSpecificPageToImage.vb" />
-    <Compile Include="LoadSaveConvert\SaveRangeOfPagesAsPDF.vb" />
-    <Compile Include="LoadSaveConvert\SaveToImageDefaultOptions.vb" />
-    <Compile Include="LoadSaveConvert\SaveWithDefaultSettings.vb" />
+    <Compile Include="Images\ImageAlternativeText.vb" />
+    <Compile Include="Images\InsertImage.vb" />
+    <Compile Include="Loading-and-Saving\CheckVersionNumber.vb" />
+    <Compile Include="Loading-and-Saving\ConsequentExportOperations.vb" />
+    <Compile Include="Loading-and-Saving\ConvertSpecificPageToImage.vb" />
+    <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.vb" />
+    <Compile Include="Loading-and-Saving\CreateDocWithPageTitle.vb" />
+    <Compile Include="Loading-and-Saving\CreateOneNoteDocAndSaveToHTML.vb" />
+    <Compile Include="Loading-and-Saving\ExtractContent.vb" />
+    <Compile Include="Loading-and-Saving\LoadOneNoteDoc.vb" />
+    <Compile Include="Loading-and-Saving\NodeTypeEnumeration.vb" />
+    <Compile Include="Loading-and-Saving\PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.vb" />
+    <Compile Include="Loading-and-Saving\PageSplittUsingKeepSOlidObjectsAlgoirthm.vb" />
+    <Compile Include="Loading-and-Saving\PasswordProtectedDoc.vb" />
+    <Compile Include="Loading-and-Saving\RetreivingFileFormat.vb" />
+    <Compile Include="Loading-and-Saving\SaveRangeOfPagesAsPDF.vb" />
+    <Compile Include="Loading-and-Saving\SaveToImageDefaultOptions.vb" />
+    <Compile Include="Loading-and-Saving\CreateDocWithSimpleRichText.vb" />
+    <Compile Include="Loading-and-Saving\SaveToStream.vb" />
+    <Compile Include="Loading-and-Saving\SaveWithDefaultSettings.vb" />
+    <Compile Include="Loading-and-Saving\SpecifySaveOptions.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -93,13 +116,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pages\CreateDocWithRootAndSubPages.vb" />
     <Compile Include="Pages\GetNumberOfPages.vb" />
+    <Compile Include="Pages\GetPageInformation.vb" />
+    <Compile Include="Pages\GetPageRevisions.vb" />
+    <Compile Include="RunExamples.vb" />
+    <Compile Include="Tables\CreateTableWithLockedColumns.vb" />
+    <Compile Include="Tables\ExtractCellText.vb" />
+    <Compile Include="Tables\ExtractRowText.vb" />
+    <Compile Include="Tables\ExtractTableText.vb" />
+    <Compile Include="Tables\InsertTable.vb" />
+    <Compile Include="Tags\AddImageNodeWithTag.vb" />
+    <Compile Include="Tags\AddTableNodeWithTag.vb" />
+    <Compile Include="Tags\AddTextNodeWithTag.vb" />
+    <Compile Include="Tags\GetTagDetails.vb" />
+    <Compile Include="Tasks\GetOutlookTaskDetails.vb" />
+    <Compile Include="Text\ApplyBulletsOnText.vb" />
+    <Compile Include="Text\ApplyNumberingOnText.vb" />
+    <Compile Include="Text\ChangeStyle.vb" />
     <Compile Include="Text\CreateTitleMsStyle.vb" />
     <Compile Include="Text\ExtractingAllText.vb" />
     <Compile Include="Text\ExtractingTextFromAPage.vb" />
+    <Compile Include="Text\InsertChineseNumberList.vb" />
     <Compile Include="Text\ReplaceTextOnAllPages.vb" />
     <Compile Include="Text\ReplaceTextOnParticularPage.vb" />
-    <Compile Include="Utils.vb" />
+    <Compile Include="Text\RetrieveBulletOrNumberList.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -122,6 +163,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,22 +1,16 @@
-﻿//////////////////////////////////////////////////////////////////////////
-// Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-//
-// This file is part of Aspose.Note. The source code in this file
-// is only intended as a supplement to the documentation, and is provided
-// "as is", without warranty of any kind, either expressed or implied.
-//////////////////////////////////////////////////////////////////////////
-using System;
+﻿using System;
 using System.Globalization;
 using Aspose.Note;
 
-namespace Aspose.Note.Examples.Text
+namespace CSharp.Text
 {
-    class CreateTitleMsStyle
+    public class CreateTitleMsStyle
     {
-        static void Main()
+        public static void Run()
         {
-            string dataDir = Aspose.Note.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string outputPath = dataDir + "Output.one";
+            // ExStart:CreateTitleMsStyle
+            string dataDir = RunExamples.GetDataDir_Text();
+            string outputPath = dataDir + "CreateTitleMsStyle_out_.one";
 
             var doc = new Document();
             var page = new Page(doc);
@@ -43,6 +37,8 @@ namespace Aspose.Note.Examples.Text
             doc.AppendChild(page);
 
             doc.Save(outputPath);
+            // ExEnd:CreateTitleMsStyle
+            Console.WriteLine("\nPage title setup successfully in microsoft OneNote style .\nFile saved at " + outputPath);
         }
     }
 }
