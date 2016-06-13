@@ -12,7 +12,7 @@ Namespace Pages
             Dim oneFile As New Document(dataDir & Convert.ToString("Aspose.one"))
 
             ' Get number of pages
-            Dim count As Integer = oneFile.GetChildNodes(NodeType.Page).Count
+            Dim count As Integer = oneFile.GetChildNodes(Of Page)().Count
 
             ' Print count on the output screen
             Console.WriteLine(count)

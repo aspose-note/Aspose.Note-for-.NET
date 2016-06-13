@@ -16,10 +16,7 @@ namespace CSharp.Tables
             Document document = new Document(dataDir + "Sample1.one");
 
             // Get a list of table nodes
-            IList<Table> nodes = document.GetChildNodes<Table>();
-
-            // Set cell count
-            int cellCount = 0;
+            IList<Table> nodes = document.GetChildNodes<Table>();        
 
             foreach (Table table in nodes)
             {

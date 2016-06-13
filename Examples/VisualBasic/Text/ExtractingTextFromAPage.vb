@@ -13,7 +13,7 @@ Namespace Text
             Dim oneFile As New Document(dataDir & Convert.ToString("Aspose.one"))
 
             ' Get list of page nodes
-            Dim nodes As IList(Of Node) = oneFile.GetChildNodes(NodeType.Page)
+            Dim nodes As IList(Of Node) = oneFile.GetChildNodes(Of Node)()
 
             If nodes.Count > 0 AndAlso nodes(0).NodeType = NodeType.Page Then
                 Dim page As Page = DirectCast(nodes(0), Page)

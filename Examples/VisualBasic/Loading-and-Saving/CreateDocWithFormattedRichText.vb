@@ -24,8 +24,7 @@ Namespace Loading_Saving
 
             Dim titleText As New RichText(doc) With {
                  .Text = "Title!",
-                 .DefaultStyle = defaultTextStyle,
-                 .IsTitleText = True
+                 .DefaultStyle = defaultTextStyle
             }
             Dim outline As New Outline(doc) With {
                  .VerticalOffset = 100,

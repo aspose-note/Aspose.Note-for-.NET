@@ -17,7 +17,7 @@ namespace CSharp.Pages
             Document oneFile = new Document(dataDir + "Aspose.one");
 
             // Get number of pages
-            int count = oneFile.GetChildNodes(NodeType.Page).Count;
+            int count = oneFile.GetChildNodes<Page>().Count;
 
             // Print count on the output screen
             Console.WriteLine(count);

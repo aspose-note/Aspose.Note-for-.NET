@@ -30,8 +30,7 @@ namespace CSharp.Loading_Saving
             RichText titleText = new RichText(doc)
             {
                 Text = "Title!",
-                DefaultStyle = defaultTextStyle,
-                IsTitleText = true
+                DefaultStyle = defaultTextStyle
             };
             Outline outline = new Outline(doc)
             {

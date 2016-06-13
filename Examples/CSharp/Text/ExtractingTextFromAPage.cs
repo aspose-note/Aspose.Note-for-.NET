@@ -18,7 +18,7 @@ namespace CSharp.Text
             Document oneFile = new Document(dataDir + "Aspose.one");
 
             // Get list of page nodes
-            IList<Node> nodes = oneFile.GetChildNodes(NodeType.Page);
+            IList<Node> nodes = oneFile.GetChildNodes<Node>();
 
             if (nodes.Count > 0 && nodes[0].NodeType == NodeType.Page)
             {
