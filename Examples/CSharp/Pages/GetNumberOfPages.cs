@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 
-namespace CSharp.Pages
+namespace Aspose.Note.Examples.CSharp.Pages
 {
     public class GetNumberOfPages
     {

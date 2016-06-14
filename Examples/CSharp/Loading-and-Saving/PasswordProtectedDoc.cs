@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class PasswordProtectedDoc
     {

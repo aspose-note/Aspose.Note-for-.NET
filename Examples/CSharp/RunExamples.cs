@@ -4,26 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using CSharp.Loading_Saving;
-using CSharp.Images;
-using CSharp.Text;
-using CSharp.Pages;
-using CSharp.Tables;
-using CSharp.Attachments;
-using CSharp.Tags;
-using CSharp.Tasks;
-using CSharp.Hyperlinks;
+using Aspose.Note.Examples.CSharp.Loading_Saving;
+using Aspose.Note.Examples.CSharp.Images;
+using Aspose.Note.Examples.CSharp.Text;
+using Aspose.Note.Examples.CSharp.Pages;
+using Aspose.Note.Examples.CSharp.Tables;
+using Aspose.Note.Examples.CSharp.Attachments;
+using Aspose.Note.Examples.CSharp.Tags;
+using Aspose.Note.Examples.CSharp.Tasks;
+using Aspose.Note.Examples.CSharp.Hyperlinks;
 
-namespace CSharp
+namespace Aspose.Note.Examples.CSharp
 {
     class RunExamples
     {
         [STAThread]
         public static void Main()
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Un-comment the one you want to try out
+            // Uncomment the one you want to try out
 
             //// =====================================================
             //// =====================================================
@@ -136,7 +136,7 @@ namespace CSharp
             //// =====================================================
             //// =====================================================
 
-            //AddHyperlink.Run();
+            AddHyperlink.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

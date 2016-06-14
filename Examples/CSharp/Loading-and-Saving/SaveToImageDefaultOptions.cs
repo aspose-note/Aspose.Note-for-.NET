@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Aspose.Note;
 
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class SaveToImageDefaultOptions
     {

@@ -4,7 +4,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 
-namespace CSharp.Text
+namespace Aspose.Note.Examples.CSharp.Text
 {
     public class ExtractingTextFromAPage
     {

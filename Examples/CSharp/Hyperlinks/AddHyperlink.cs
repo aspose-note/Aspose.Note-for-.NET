@@ -4,7 +4,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-namespace CSharp.Hyperlinks
+namespace Aspose.Note.Examples.CSharp.Hyperlinks
 {
     public class AddHyperlink
     {

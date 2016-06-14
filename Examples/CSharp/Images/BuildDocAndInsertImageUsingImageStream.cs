@@ -3,7 +3,7 @@ using Aspose.Note;
 using System.Collections.Generic;
 using System.Drawing;
 using System;
-namespace CSharp.Images
+namespace Aspose.Note.Examples.CSharp.Images
 {
     public class BuildDocAndInsertImageUsingImageStream
     {

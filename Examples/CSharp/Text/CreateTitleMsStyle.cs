@@ -2,7 +2,7 @@
 using System.Globalization;
 using Aspose.Note;
 
-namespace CSharp.Text
+namespace Aspose.Note.Examples.CSharp.Text
 {
     public class CreateTitleMsStyle
     {

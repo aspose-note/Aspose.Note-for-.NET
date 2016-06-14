@@ -4,7 +4,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 
-namespace CSharp.Tags
+namespace Aspose.Note.Examples.CSharp.Tags
 {
     public class AddImageNodeWithTag
     {

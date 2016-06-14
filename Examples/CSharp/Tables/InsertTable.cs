@@ -3,7 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-namespace CSharp.Tables
+namespace Aspose.Note.Examples.CSharp.Tables
 {
     public class InsertTable
     {

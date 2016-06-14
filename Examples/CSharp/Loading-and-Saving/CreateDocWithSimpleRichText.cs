@@ -3,7 +3,7 @@ using Aspose.Note;
 using Aspose.Note.Saving;
 using System;
 using System.Drawing;
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class CreateDocWithSimpleRichText
     {

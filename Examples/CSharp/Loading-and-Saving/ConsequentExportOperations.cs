@@ -4,7 +4,7 @@ using Aspose.Note;
 using System;
 using System.Drawing;
 using System.Globalization;
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class ConsequentExportOperations
     {

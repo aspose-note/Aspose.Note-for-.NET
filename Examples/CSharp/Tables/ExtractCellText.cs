@@ -2,7 +2,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 using System.Collections.Generic;
-namespace CSharp.Tables
+namespace Aspose.Note.Examples.CSharp.Tables
 {
     public class ExtractCellText
     {

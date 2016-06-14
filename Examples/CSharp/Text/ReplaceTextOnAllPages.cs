@@ -2,7 +2,7 @@ using System.IO;
 using Aspose.Note;
 using System.Collections.Generic;
 using System;
-namespace CSharp.Text
+namespace Aspose.Note.Examples.CSharp.Text
 {
     public class ReplaceTextOnAllPages
     {

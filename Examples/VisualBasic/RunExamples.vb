@@ -1,20 +1,20 @@
 ﻿Imports System.IO
-Imports VisualBasic.Loading_Saving
-Imports VisualBasic.Images
-Imports VisualBasic.Text
-Imports VisualBasic.Pages
-Imports VisualBasic.Tables
-Imports VisualBasic.Attachments
-Imports VisualBasic.Tags
-Imports VisualBasic.Tasks
-Imports VisualBasic.Hyperlinks
+Imports Aspose.Note.Examples.VisualBasic.Loading_Saving
+Imports Aspose.Note.Examples.VisualBasic.Images
+Imports Aspose.Note.Examples.VisualBasic.Text
+Imports Aspose.Note.Examples.VisualBasic.Pages
+Imports Aspose.Note.Examples.VisualBasic.Tables
+Imports Aspose.Note.Examples.VisualBasic.Attachments
+Imports Aspose.Note.Examples.VisualBasic.Tags
+Imports Aspose.Note.Examples.VisualBasic.Tasks
+Imports Aspose.Note.Examples.VisualBasic.Hyperlinks
 
 Module RunExamples
     Sub Main()
-        Console.WriteLine("Open RunExamples.vb. In Main() method, Un-comment the example that you want to run")
+        Console.WriteLine("Open RunExamples.vb. " & vbLf & "In Main() method uncomment the example that you want to run.")
         Console.WriteLine("=====================================================")
 
-        ' Un-comment the one you want to try out
+        ' Uncomment the one you want to try out
 
         '' =====================================================
         '' =====================================================
@@ -66,7 +66,7 @@ Module RunExamples
         'ApplyNumberingOnText.Run()
         'InsertChineseNumberList.Run()
         'CreateTitleMsStyle.Run()
-        ChangeStyle.Run()
+        'ChangeStyle.Run()
 
         '' =====================================================
         '' =====================================================
@@ -123,7 +123,7 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
 
-        'AddHyperlink.Run()
+        AddHyperlink.Run()
         
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")

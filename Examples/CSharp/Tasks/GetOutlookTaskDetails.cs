@@ -4,7 +4,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 
-namespace CSharp.Tasks
+namespace Aspose.Note.Examples.CSharp.Tasks
 {
     public class GetOutlookTaskDetails
     {

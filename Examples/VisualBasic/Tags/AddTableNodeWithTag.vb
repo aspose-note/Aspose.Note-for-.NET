@@ -2,7 +2,7 @@
 Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
-Imports VisualBasic.Tables
+Imports Aspose.Note.Examples.VisualBasic.Tables
 Namespace Tags
     Public Class AddTableNodeWithTag
         Public Shared Sub Run()

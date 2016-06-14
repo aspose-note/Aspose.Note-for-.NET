@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 using Aspose.Note.Saving;
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm
     {

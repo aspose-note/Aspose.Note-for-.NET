@@ -3,8 +3,8 @@ using System.IO;
 using Aspose.Note;
 using System;
 using System.Collections.Generic;
-using CSharp.Tables;
-namespace CSharp.Tags
+using Aspose.Note.Examples.CSharp.Tables;
+namespace Aspose.Note.Examples.CSharp.Tags
 {
     public class AddTableNodeWithTag
     {

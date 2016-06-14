@@ -4,7 +4,7 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using Aspose.Note.Saving;
-namespace CSharp.Loading_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class CreateOneNoteDocAndSaveToHTML
     {
