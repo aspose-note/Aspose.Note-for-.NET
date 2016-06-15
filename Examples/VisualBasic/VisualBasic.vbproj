@@ -118,7 +118,10 @@
     </Compile>
     <Compile Include="NoteBook\AddChildNode.vb" />
     <Compile Include="NoteBook\ConvertToImage.vb" />
+    <Compile Include="NoteBook\ConvertToImageWithOptions.vb" />
     <Compile Include="NoteBook\ConvertToPDF.vb" />
+    <Compile Include="NoteBook\ConvertToPDFAsFlattened.vb" />
+    <Compile Include="NoteBook\ConvertToPDFWithOptions.vb" />
     <Compile Include="NoteBook\CreateNoteBook.vb" />
     <Compile Include="NoteBook\RemoveChildNode.vb" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.vb" />

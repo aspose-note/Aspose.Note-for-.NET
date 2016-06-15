@@ -78,6 +78,9 @@
     <Compile Include="Loading-and-Saving\SaveToStream.cs" />
     <Compile Include="Loading-and-Saving\SaveToImageDefaultOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveWithDefaultSettings.cs" />
+    <Compile Include="NoteBook\ConvertToImageWithOptions.cs" />
+    <Compile Include="NoteBook\ConvertToPDFAsFlattened.cs" />
+    <Compile Include="NoteBook\ConvertToPDFWithOptions.cs" />
     <Compile Include="NoteBook\RemoveChildNode.cs" />
     <Compile Include="NoteBook\CreateNoteBook.cs" />
     <Compile Include="NoteBook\ConvertToPDF.cs" />
