@@ -22,7 +22,7 @@ namespace Aspose.Note.Examples.CSharp.NoteBook
             // Save the Notebook
             notebook.Save(dataDir);
 
-            // ExEnd:ConvertToImage
+            // ExEnd:ConvertToPDF
             Console.WriteLine("\nNoteBook document converted to pdf successfully.\nFile saved at " + dataDir);
         }
     }

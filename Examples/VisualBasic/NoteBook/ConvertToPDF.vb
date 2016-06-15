@@ -17,7 +17,7 @@ Namespace NoteBook
             ' Save the Notebook
             notebook.Save(dataDir)
 
-            ' ExEnd:ConvertToImage
+            ' ExEnd:ConvertToPDF
             Console.WriteLine(Convert.ToString(vbLf & "NoteBook document converted to pdf successfully." & vbLf & "File saved at ") & dataDir)
         End Sub
     End Class
