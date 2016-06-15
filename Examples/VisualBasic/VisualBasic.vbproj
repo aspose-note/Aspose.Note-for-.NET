@@ -47,9 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Note, Version=2.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Note.2.3.0\lib\net4.0\Aspose.Note.dll</HintPath>
+      <HintPath>..\packages\Aspose.Note.2.4.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -116,6 +116,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NoteBook\AddChildNode.vb" />
+    <Compile Include="NoteBook\ConvertToImage.vb" />
+    <Compile Include="NoteBook\ConvertToPDF.vb" />
+    <Compile Include="NoteBook\CreateNoteBook.vb" />
+    <Compile Include="NoteBook\RemoveChildNode.vb" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.vb" />
     <Compile Include="Pages\GetNumberOfPages.vb" />
     <Compile Include="Pages\GetPageInformation.vb" />

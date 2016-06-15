@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Hyperlinks
@@ -12,7 +12,7 @@ Namespace Hyperlinks
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
             ' Initialize Title class object
             Dim title As New Title(doc)
 

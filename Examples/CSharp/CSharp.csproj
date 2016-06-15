@@ -36,9 +36,9 @@
     <StartupObject>Aspose.Note.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Note, Version=2.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Note.2.3.0\lib\net4.0\Aspose.Note.dll</HintPath>
+      <HintPath>..\packages\Aspose.Note.2.4.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,6 +78,11 @@
     <Compile Include="Loading-and-Saving\SaveToStream.cs" />
     <Compile Include="Loading-and-Saving\SaveToImageDefaultOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveWithDefaultSettings.cs" />
+    <Compile Include="NoteBook\RemoveChildNode.cs" />
+    <Compile Include="NoteBook\CreateNoteBook.cs" />
+    <Compile Include="NoteBook\ConvertToPDF.cs" />
+    <Compile Include="NoteBook\ConvertToImage.cs" />
+    <Compile Include="NoteBook\AddChildNode.cs" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.cs" />
     <Compile Include="Pages\GetPageRevisions.cs" />
     <Compile Include="Pages\GetPageInformation.cs" />
@@ -110,6 +115,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

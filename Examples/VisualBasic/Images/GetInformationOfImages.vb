@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 
 Namespace Images
@@ -13,9 +13,9 @@ Namespace Images
             Dim oneFile As New Document(dataDir & Convert.ToString("Aspose.one"))
 
             ' Get all Image nodes
-            Dim images As IList(Of Aspose.Note.Image) = oneFile.GetChildNodes(Of Aspose.Note.Image)()
+            Dim images As IList(Of AsposeNote.Image) = oneFile.GetChildNodes(Of AsposeNote.Image)()
 
-            For Each image As Aspose.Note.Image In images
+            For Each image As AsposeNote.Image In images
                 Console.WriteLine("Width: {0}", image.Width)
                 Console.WriteLine("Height: {0}", image.Height)
                 Console.WriteLine("OriginalWidth: {0}", image.OriginalWidth)

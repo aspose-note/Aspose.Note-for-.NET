@@ -1,6 +1,6 @@
 ﻿Imports System.Drawing
 Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 
 Namespace Tags
@@ -13,13 +13,13 @@ Namespace Tags
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
             ' Initialize Outline class object
             Dim outline As New Outline(doc)
             ' Initialize OutlineElement class object
             Dim outlineElem As New OutlineElement(doc)
             ' Load an image
-            Dim image As New Aspose.Note.Image(doc, dataDir & Convert.ToString("icon.jpg"))
+            Dim image As New AsposeNote.Image(doc, dataDir & Convert.ToString("icon.jpg"))
             ' Insert image in the document node
             outlineElem.AppendChild(image)
             image.Tags.Add(New NoteTag() With {

@@ -1,6 +1,6 @@
 ﻿Imports System.Globalization
 Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
 Namespace Text
@@ -13,7 +13,7 @@ Namespace Text
             Dim doc As New Document()
 
             ' Initialize Page class object
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
 
             ' Initialize Outline class object
             Dim outline As New Outline(doc)

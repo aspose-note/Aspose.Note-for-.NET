@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Images
@@ -11,7 +11,7 @@ Namespace Images
 
             Dim document = New Document()
             Dim page = New Page(document)
-            Dim image = New Aspose.Note.Image(document, dataDir & Convert.ToString("image.jpg"))
+            Dim image = New AsposeNote.Image(document, dataDir & Convert.ToString("image.jpg"))
             image.AlternativeText = "ImageAlternativeText"
             page.AppendChild(image)
             document.AppendChild(page)

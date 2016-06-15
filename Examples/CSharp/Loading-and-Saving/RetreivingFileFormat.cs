@@ -13,15 +13,15 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
             var document = new Aspose.Note.Document(dataDir + "Aspose.one");
-            //switch (document.FileFormat)
-            //{
-            //    case FileFormat.OneNote2010:
-            //        // process OneNote 2010
-            //        break;
-            //    case FileFormat.OneNoteOnline:
-            //        // process OneNote Online
-            //        break;
-            //}
+            switch (document.FileFormat)
+            {
+                case FileFormat.OneNote2010:
+                    // Process OneNote 2010
+                    break;
+                case FileFormat.OneNoteOnline:
+                    // Process OneNote Online
+                    break;
+            }
             // ExEnd:RetreivingFileFormat           
         }
     }

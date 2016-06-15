@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Tables
@@ -12,7 +12,7 @@ Namespace Tables
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
 
             ' Initialize TableRow class object
             Dim row1 As New TableRow(doc)
@@ -48,7 +48,7 @@ Namespace Tables
             row2.AppendChild(cell23)
 
             ' Initialize Table class object and set column widths
-            Dim table As New Aspose.Note.Table(doc) With {
+            Dim table As New AsposeNote.Table(doc) With {
       .IsBordersVisible = True}
             ' Append table rows to table
             table.AppendChild(row1)

@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Drawing
 Imports System.Globalization
 Imports Aspose.Note.Saving
@@ -12,7 +12,7 @@ Namespace Loading_Saving
 
             ' Initialize OneNote document
             Dim doc As New Document()
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
 
             ' Default style for all text in the document.
             Dim textStyle As New TextStyle() With {
@@ -49,7 +49,7 @@ Namespace Loading_Saving
             ' Initialize OneNote document
             Dim doc As New Document()
 
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
             ' Default style for all text in the document.
             Dim textStyle As New TextStyle() With {
                  .FontColor = Color.Black,

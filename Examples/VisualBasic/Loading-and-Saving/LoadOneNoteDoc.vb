@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports Aspose.Note.Saving
 
 Namespace Loading_Saving
@@ -11,13 +11,13 @@ Namespace Loading_Saving
             Dim fileName As String = ""
             If fileName <> "" Then
                 Try
-                    Dim notebook = New Notebook(dataDir & fileName)
+                    Dim notebook = New AsposeNote.Notebook(dataDir & fileName)
                     For Each notebookChildNode In notebook
                         Console.WriteLine(notebookChildNode.DisplayName)
                         ' Do something with child document
                         If TypeOf notebookChildNode Is Document Then
                             ' Do something with child notebook
-                        ElseIf TypeOf notebookChildNode Is Notebook Then
+                        ElseIf TypeOf notebookChildNode Is AsposeNote.Notebook Then
                         End If
                     Next
                 Catch ex As Exception

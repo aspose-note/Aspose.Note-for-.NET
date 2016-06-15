@@ -8,6 +8,7 @@ Imports Aspose.Note.Examples.VisualBasic.Attachments
 Imports Aspose.Note.Examples.VisualBasic.Tags
 Imports Aspose.Note.Examples.VisualBasic.Tasks
 Imports Aspose.Note.Examples.VisualBasic.Hyperlinks
+Imports Aspose.Note.Examples.VisualBasic.NoteBook
 
 Module RunExamples
     Sub Main()
@@ -123,7 +124,18 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
 
-        AddHyperlink.Run()
+        'AddHyperlink.Run()
+
+        '' =====================================================
+        '' =====================================================
+        '' NoteBook
+        '' =====================================================
+        '' =====================================================
+
+        'ConvertToImage.Run();
+        'ConvertToPDF.Run();
+        'CreateNoteBook.Run();
+        RemoveChildNode.Run()
         
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
@@ -155,6 +167,9 @@ Module RunExamples
     End Function
     Public Function GetDataDir_Tasks() As [String]
         Return Path.GetFullPath(GetDataDir_Data() + "Tasks/")
+    End Function
+    Public Function GetDataDir_NoteBook() As [String]
+        Return Path.GetFullPath(GetDataDir_Data() + "NoteBook/")
     End Function
     Public Function GetDataDir_Data() As String
         Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent

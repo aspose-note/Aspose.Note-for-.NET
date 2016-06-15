@@ -13,6 +13,7 @@ using Aspose.Note.Examples.CSharp.Attachments;
 using Aspose.Note.Examples.CSharp.Tags;
 using Aspose.Note.Examples.CSharp.Tasks;
 using Aspose.Note.Examples.CSharp.Hyperlinks;
+using Aspose.Note.Examples.CSharp.NoteBook;
 
 namespace Aspose.Note.Examples.CSharp
 {
@@ -136,7 +137,19 @@ namespace Aspose.Note.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            AddHyperlink.Run();
+            //AddHyperlink.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// NoteBook
+            //// =====================================================
+            //// =====================================================
+
+            
+            //ConvertToImage.Run();
+            //ConvertToPDF.Run();
+            //CreateNoteBook.Run();
+            RemoveChildNode.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -177,6 +190,10 @@ namespace Aspose.Note.Examples.CSharp
         public static String GetDataDir_Tasks()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Tasks/");
+        }
+        public static String GetDataDir_NoteBook()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "NoteBook/");
         }
         public static string GetDataDir_Data()
         {

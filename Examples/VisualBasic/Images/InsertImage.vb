@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Images
@@ -12,10 +12,10 @@ Namespace Images
             ' Load document from the stream.
             Dim doc As New Document(dataDir & Convert.ToString("Aspose.one"))
             ' Get the first page of the document.
-            Dim page As Aspose.Note.Page = doc.FirstChild
+            Dim page As AsposeNote.Page = doc.FirstChild
 
             ' Load an image from the file.
-            Dim image As New Aspose.Note.Image(doc, dataDir & Convert.ToString("image.jpg"))
+            Dim image As New AsposeNote.Image(doc, dataDir & Convert.ToString("image.jpg"))
             ' Change the image's size according to your needs (optional).
             image.Width = 100
             image.Height = 100

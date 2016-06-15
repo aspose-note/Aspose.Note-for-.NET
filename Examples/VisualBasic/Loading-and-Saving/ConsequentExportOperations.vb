@@ -1,5 +1,5 @@
 Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Drawing
 Imports System.Globalization
 Namespace Loading_Saving
@@ -10,9 +10,9 @@ Namespace Loading_Saving
             Dim dataDir As String = RunExamples.GetDataDir_LoadingAndSaving()
 
             ' Initialize the new Document
-            Dim doc As New Aspose.Note.Document() With {.AutomaticLayoutChangesDetectionEnabled = False}
+            Dim doc As New AsposeNote.Document() With {.AutomaticLayoutChangesDetectionEnabled = False}
             ' Initialize the new Page
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
             ' Default style for all text in the document.
             Dim textStyle As New TextStyle() With {.FontColor = System.Drawing.Color.Black, .FontName = "Arial", .FontSize = 10}
             page.Title = New Title(doc) With

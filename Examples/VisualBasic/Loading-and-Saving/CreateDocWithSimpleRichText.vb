@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports Aspose.Note
+Imports AsposeNote = Aspose.Note
 Imports System.Drawing
 Namespace Loading_Saving
     Public Class CreateDocWithSimpleRichText
@@ -9,9 +9,9 @@ Namespace Loading_Saving
             Dim dataDir As String = RunExamples.GetDataDir_LoadingAndSaving()
 
             ' Create an object of the Document class
-            Dim doc As New Aspose.Note.Document()
+            Dim doc As New AsposeNote.Document()
             ' Initialize Page class object
-            Dim page As New Aspose.Note.Page(doc)
+            Dim page As New AsposeNote.Page(doc)
             ' Initialize Outline class object
             Dim outline As New Outline(doc)
             ' Initialize OutlineElement class object
