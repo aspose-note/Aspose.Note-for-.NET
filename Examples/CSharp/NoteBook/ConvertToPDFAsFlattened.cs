@@ -5,7 +5,7 @@ using Aspose.Note.Saving;
 using System;
 using System.Collections.Generic;
 
-namespace Aspose.Note.Examples.CSharp.NoteBook
+namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 {
     public class ConvertToPDFAsFlattened
     {

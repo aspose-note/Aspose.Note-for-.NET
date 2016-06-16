@@ -13,7 +13,7 @@ using Aspose.Note.Examples.CSharp.Attachments;
 using Aspose.Note.Examples.CSharp.Tags;
 using Aspose.Note.Examples.CSharp.Tasks;
 using Aspose.Note.Examples.CSharp.Hyperlinks;
-using Aspose.Note.Examples.CSharp.NoteBook;
+using Aspose.Note.Examples.CSharp.WorkingWithNoteBook;
 
 namespace Aspose.Note.Examples.CSharp
 {
