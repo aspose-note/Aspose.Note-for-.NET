@@ -1,6 +1,6 @@
 ﻿Imports System.Globalization
 Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
 Namespace Text
@@ -10,9 +10,9 @@ Namespace Text
             Dim dataDir As String = RunExamples.GetDataDir_Text()
 
             ' Initialize OneNote document
-            Dim doc As New AsposeNote.Document()
+            Dim doc As New Document()
             ' Initialize OneNote page
-            Dim page As New AsposeNote.Page(doc)
+            Dim page As New Page(doc)
             Dim outline As New Outline(doc)
             ' Apply text style settings
             Dim defaultStyle As New TextStyle() With {

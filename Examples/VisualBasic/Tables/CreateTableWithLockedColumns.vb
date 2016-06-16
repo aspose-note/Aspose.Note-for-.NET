@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Tables
@@ -12,7 +12,7 @@ Namespace Tables
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New AsposeNote.Page(doc)
+            Dim page As New Page(doc)
 
             ' Initialize TableRow class object
             Dim row1 As New TableRow(doc)

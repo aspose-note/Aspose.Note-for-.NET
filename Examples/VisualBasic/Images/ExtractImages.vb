@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Images
@@ -14,9 +14,9 @@ Namespace Images
                 Dim oneFile As New Document(dataDir & Convert.ToString("Aspose.one"))
 
                 ' Get all Image nodes
-                Dim nodes As IList(Of AsposeNote.Image) = oneFile.GetChildNodes(Of AsposeNote.Image)()
+                Dim nodes As IList(Of Image) = oneFile.GetChildNodes(Of Image)()
 
-                For Each image As AsposeNote.Image In nodes
+                For Each image As Image In nodes
                     Using stream As New MemoryStream(image.Bytes)
                         Using bitMap As New Bitmap(stream)
                             ' Save image bytes to a file

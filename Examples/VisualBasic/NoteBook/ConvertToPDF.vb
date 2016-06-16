@@ -1,8 +1,8 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports Aspose.Note
 Imports System.Collections.Generic
 
-Namespace NoteBook
+Namespace WorkingWithNoteBook
     Public Class ConvertToPDF
         Public Shared Sub Run()
             ' ExStart:ConvertToPDF
@@ -10,7 +10,7 @@ Namespace NoteBook
             Dim dataDir As String = RunExamples.GetDataDir_NoteBook()
 
             ' Load a OneNote Notebook
-            Dim notebook = New AsposeNote.Notebook(dataDir & Convert.ToString("Notizbuch öffnen.onetoc2"))
+            Dim notebook = New Notebook(dataDir & Convert.ToString("Notizbuch öffnen.onetoc2"))
 
             dataDir = dataDir & Convert.ToString("ConvertToPDF_out_.pdf")
 

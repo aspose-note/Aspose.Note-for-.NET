@@ -1,9 +1,8 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
-Imports AsposeNote = Aspose.Note
 
-Namespace NoteBook
+Namespace WorkingWithNoteBook
     Public Class RemoveChildNode
         Public Shared Sub Run()
             ' ExStart:RemoveChildNode
@@ -11,7 +10,7 @@ Namespace NoteBook
             Dim dataDir As String = RunExamples.GetDataDir_NoteBook()
 
             ' Load a OneNote Notebook
-            Dim notebook = New AsposeNote.Notebook(dataDir & Convert.ToString("test.onetoc2"))
+            Dim notebook = New Notebook(dataDir & Convert.ToString("test.onetoc2"))
 
             ' Traverse through its child nodes for searching the desired child item
             For Each child In New List(Of INotebookChildNode)(notebook)

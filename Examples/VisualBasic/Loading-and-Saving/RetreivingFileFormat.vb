@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports Aspose.Note.Saving
 Namespace CSharp.Loading_Saving
     Public Class RetreivingFileFormat
@@ -8,7 +8,7 @@ Namespace CSharp.Loading_Saving
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_LoadingAndSaving()
 
-            Dim document = New AsposeNote.Document(dataDir & Convert.ToString("Aspose.one"))
+            Dim document = New Document(dataDir & Convert.ToString("Aspose.one"))
             Select Case document.FileFormat
                 Case FileFormat.OneNote2010
                     ' process OneNote 2010

@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports Aspose.Note.Saving
 Imports System.Drawing
 Namespace Loading_Saving
@@ -12,7 +12,7 @@ Namespace Loading_Saving
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New AsposeNote.Page(doc)
+            Dim page As New Page(doc)
             ' Initialize Title class object
             Dim title As New Title(doc)
             ' Initialize TextStyle class object and set formatting properties

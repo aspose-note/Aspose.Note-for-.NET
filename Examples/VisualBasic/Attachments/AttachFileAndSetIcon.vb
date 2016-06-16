@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing.Imaging
 Namespace Attachments
@@ -12,7 +12,7 @@ Namespace Attachments
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New AsposeNote.Page(doc)
+            Dim page As New Page(doc)
             ' Initialize Outline class object
             Dim outline As New Outline(doc)
             ' Initialize OutlineElement class object

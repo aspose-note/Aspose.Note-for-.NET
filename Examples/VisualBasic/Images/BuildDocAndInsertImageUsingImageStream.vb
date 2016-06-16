@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Images
@@ -12,7 +12,7 @@ Namespace Images
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object
-            Dim page As New AsposeNote.Page(doc)
+            Dim page As New Page(doc)
 
             Dim outline1 As New Outline(doc) With {
                  .VerticalOffset = 600,
@@ -21,7 +21,7 @@ Namespace Images
             Dim outlineElem1 As New OutlineElement(doc)
             Dim fs As FileStream = File.OpenRead(dataDir & Convert.ToString("image.jpg"))
             ' Load the second image using the image name, extension and stream.
-            Dim image1 As New AsposeNote.Image(doc, "Penguins", "jpg", fs)
+            Dim image1 As New Image(doc, "Penguins", "jpg", fs)
             ' Set image alignment
             image1.Alignment = HorizontalAlignment.Right
 

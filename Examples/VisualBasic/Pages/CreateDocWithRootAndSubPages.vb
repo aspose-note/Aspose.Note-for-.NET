@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports AsposeNote = Aspose.Note
+Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
 Namespace Pages
@@ -12,15 +12,15 @@ Namespace Pages
             ' Create an object of the Document class
             Dim doc As New Document()
             ' Initialize Page class object and set its level
-            Dim page1 As New AsposeNote.Page(doc) With {
+            Dim page1 As New Page(doc) With {
                  .Level = 1
             }
             ' Initialize Page class object and set its level
-            Dim page2 As New AsposeNote.Page(doc) With {
+            Dim page2 As New Page(doc) With {
                  .Level = 2
             }
             ' Initialize Page class object and set its level
-            Dim page3 As New AsposeNote.Page(doc) With {
+            Dim page3 As New Page(doc) With {
                  .Level = 1
             }
 

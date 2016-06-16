@@ -8,7 +8,7 @@ Imports Aspose.Note.Examples.VisualBasic.Attachments
 Imports Aspose.Note.Examples.VisualBasic.Tags
 Imports Aspose.Note.Examples.VisualBasic.Tasks
 Imports Aspose.Note.Examples.VisualBasic.Hyperlinks
-Imports Aspose.Note.Examples.VisualBasic.NoteBook
+Imports Aspose.Note.Examples.VisualBasic.WorkingWithNoteBook
 
 Module RunExamples
     Sub Main()

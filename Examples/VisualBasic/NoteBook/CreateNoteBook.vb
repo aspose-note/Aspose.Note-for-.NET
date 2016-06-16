@@ -1,16 +1,15 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
-Imports AsposeNote = Aspose.Note
 
-Namespace NoteBook
+Namespace WorkingWithNoteBook
     Public Class CreateNoteBook
         Public Shared Sub Run()
             ' ExStart:CreateNoteBook
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_NoteBook()
 
-            Dim notebook = New AsposeNote.Notebook()
+            Dim notebook = New Notebook()
 
             dataDir = dataDir & Convert.ToString("test_out_.onetoc2")
 
