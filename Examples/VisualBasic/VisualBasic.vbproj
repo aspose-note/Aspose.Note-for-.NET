@@ -72,6 +72,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyLicense\ApplyLicenseByEmbeddedResource.vb" />
+    <Compile Include="ApplyLicense\ApplyLicenseByPath.vb" />
+    <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.vb" />
     <Compile Include="Attachments\AttachFileAndSetIcon.vb" />
     <Compile Include="Attachments\AttachFileByPath.vb" />
     <Compile Include="Attachments\RetrieveAttachedFiles.vb" />
