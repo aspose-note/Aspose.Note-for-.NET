@@ -32,7 +32,7 @@ namespace Aspose.Note.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //LoadOneNoteDoc.Run();
+            LoadOneNoteDoc.Run();
             //SaveToStream.Run();
             //SpecifySaveOptions.Run();
             //SaveRangeOfPagesAsPDF.Run();
@@ -42,8 +42,7 @@ namespace Aspose.Note.Examples.CSharp
             //PasswordProtectedDoc.Run();
             //PageSplittUsingKeepSOlidObjectsAlgoirthm.Run();
             //ConsequentExportOperations.Run();
-            //SaveToImageDefaultOptions.Run();
-            //CheckVersionNumber.Run();
+            //SaveToImageDefaultOptions.Run();            
             //CreateDocWithSimpleRichText.Run();
             //CreateDocWithFormattedRichText.Run();
             //ExtractContent.Run();
@@ -89,6 +88,10 @@ namespace Aspose.Note.Examples.CSharp
             //GetPageInformation.Run();
             //CreateDocWithRootAndSubPages.Run();
             //GetPageRevisions.Run();
+            //WorkingWithPageRevisions.Run();
+            //RollBackRevisions.Run();
+            //PushCurrentPageVersion.Run();
+            //ModifyPageHistory.Run();
 
             //// =====================================================
             //// =====================================================
@@ -149,7 +152,7 @@ namespace Aspose.Note.Examples.CSharp
             //ConvertToImage.Run();
             //ConvertToPDF.Run();
             //CreateNoteBook.Run();
-            RemoveChildNode.Run();
+            //RemoveChildNode.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

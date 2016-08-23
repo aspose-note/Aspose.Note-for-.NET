@@ -47,9 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Note, Version=2.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Note.2.4.0\lib\net4.0\Aspose.Note.dll</HintPath>
+      <HintPath>..\packages\Aspose.Note.2.5.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -82,7 +82,6 @@
     <Compile Include="Images\GetInformationOfImages.vb" />
     <Compile Include="Images\ImageAlternativeText.vb" />
     <Compile Include="Images\InsertImage.vb" />
-    <Compile Include="Loading-and-Saving\CheckVersionNumber.vb" />
     <Compile Include="Loading-and-Saving\ConsequentExportOperations.vb" />
     <Compile Include="Loading-and-Saving\ConvertSpecificPageToImage.vb" />
     <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.vb" />
@@ -128,6 +127,10 @@
     <Compile Include="Pages\GetNumberOfPages.vb" />
     <Compile Include="Pages\GetPageInformation.vb" />
     <Compile Include="Pages\GetPageRevisions.vb" />
+    <Compile Include="Pages\ModifyPageHistory.vb" />
+    <Compile Include="Pages\PushCurrentPageVersion.vb" />
+    <Compile Include="Pages\RollBackRevisions.vb" />
+    <Compile Include="Pages\WorkingWithPageRevisions.vb" />
     <Compile Include="RunExamples.vb" />
     <Compile Include="Tables\CreateTableWithLockedColumns.vb" />
     <Compile Include="Tables\ExtractCellText.vb" />

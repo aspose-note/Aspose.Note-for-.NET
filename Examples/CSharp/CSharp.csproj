@@ -36,9 +36,9 @@
     <StartupObject>Aspose.Note.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Note, Version=2.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Note.2.4.0\lib\net4.0\Aspose.Note.dll</HintPath>
+      <HintPath>..\packages\Aspose.Note.2.5.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,7 +69,6 @@
     <Compile Include="Loading-and-Saving\PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
     <Compile Include="Loading-and-Saving\PasswordProtectedDoc.cs" />
     <Compile Include="Loading-and-Saving\PageSplittUsingKeepSOlidObjectsAlgoirthm.cs" />
-    <Compile Include="Loading-and-Saving\CheckVersionNumber.cs" />
     <Compile Include="Loading-and-Saving\ExtractContent.cs" />
     <Compile Include="Loading-and-Saving\NodeTypeEnumeration.cs" />
     <Compile Include="Loading-and-Saving\RetreivingFileFormat.cs" />
@@ -87,6 +86,10 @@
     <Compile Include="NoteBook\ConvertToImage.cs" />
     <Compile Include="NoteBook\AddChildNode.cs" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.cs" />
+    <Compile Include="Pages\PushCurrentPageVersion.cs" />
+    <Compile Include="Pages\ModifyPageHistory.cs" />
+    <Compile Include="Pages\RollBackRevisions.cs" />
+    <Compile Include="Pages\WorkingWithPageRevisions.cs" />
     <Compile Include="Pages\GetPageRevisions.cs" />
     <Compile Include="Pages\GetPageInformation.cs" />
     <Compile Include="Pages\GetNumberOfPages.cs" />

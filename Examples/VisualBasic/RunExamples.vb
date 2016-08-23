@@ -23,7 +23,7 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
         'ConsequentExportOperations.Run()
-        'LoadOneNoteDoc.Run()
+        LoadOneNoteDoc.Run()
         'SaveToStream.Run()
         'SpecifySaveOptions.Run()
         'SaveRangeOfPagesAsPDF.Run()
@@ -33,7 +33,6 @@ Module RunExamples
         'PasswordProtectedDoc.Run()
         'PageSplittUsingKeepSOlidObjectsAlgoirthm.Run()
         'SaveToImageDefaultOptions.Run()
-        'CheckVersionNumber.Run()
         'CreateDocWithSimpleRichText.Run()
         'CreateDocWithFormattedRichText.Run()
         'ExtractContent.Run()
@@ -79,6 +78,9 @@ Module RunExamples
         'GetNumberOfPages.Run()
         'GetPageInformation.Run()
         'GetPageRevisions.Run()
+        'WorkingWithPageRevisions.Run()
+        'PushCurrentPageVersion.Run()
+        'ModifyPageHistory.Run()
 
         '' =====================================================
         '' =====================================================
@@ -135,7 +137,7 @@ Module RunExamples
         'ConvertToImage.Run();
         'ConvertToPDF.Run();
         'CreateNoteBook.Run();
-        RemoveChildNode.Run()
+        'RemoveChildNode.Run()
         
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
