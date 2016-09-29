@@ -134,9 +134,9 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
 
-        'ConvertToImage.Run();
-        'ConvertToPDF.Run();
-        'CreateNoteBook.Run();
+        'ConvertToImage.Run()
+        'ConvertToPDF.Run()
+        'CreateNoteBook.Run()
         'RemoveChildNode.Run()
         
         ' Stop before exiting
