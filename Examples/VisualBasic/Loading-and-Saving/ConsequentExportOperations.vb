@@ -23,17 +23,13 @@ Namespace Loading_Saving
             }
             ' Append page node
             doc.AppendChild(page)
-            ' Save OneNote document in the HTML format
-            doc.Save("out.html")
-            ' Save OneNote document in the PDF format
-            doc.Save("out.pdf")
-            ' Save OneNote document in the JPG format
-            doc.Save("out.jpg")
-            ' Set text font size
+            ' Save OneNote document in different formats, set text font size and detect layout changes manually.
+            doc.Save(dataDir & "ConsequentExportOperations_out_.html")
+            doc.Save(dataDir & "ConsequentExportOperations_out_.pdf")
+            doc.Save(dataDir & "ConsequentExportOperations_out_.jpg")
             textStyle.FontSize = 11
-            ' Detect layout changes manually
             doc.DetectLayoutChanges()
-            ' Save OneNote document in the BMP format
+            doc.Save(dataDir & "ConsequentExportOperations_out_.bmp")
             ' ExEnd:ConsequentExportOperations
             Console.WriteLine(vbLf & "Consequent export operations performed successfully.")
         End Sub

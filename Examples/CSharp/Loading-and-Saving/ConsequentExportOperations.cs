@@ -28,18 +28,13 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             };
             // Append page node
             doc.AppendChild(page);
-            // Save OneNote document in the HTML format
-            doc.Save("ConsequentExportOperations_out_.html");
-            // Save OneNote document in the PDF format
-            doc.Save("ConsequentExportOperations_out_.pdf");
-            // Save OneNote document in the JPG format
-            doc.Save("ConsequentExportOperations_out_.jpg");
-            // Set text font size
-            textStyle.FontSize = 11;
-            // Detect layout changes manually
-            doc.DetectLayoutChanges();
-            // Save OneNote document in the BMP format
-            doc.Save("ConsequentExportOperations_out_.bmp");
+            // Save OneNote document in different formats, set text font size and detect layout changes manually.
+            doc.Save(dataDir + "ConsequentExportOperations_out_.html");            
+            doc.Save(dataDir + "ConsequentExportOperations_out_.pdf");            
+            doc.Save(dataDir + "ConsequentExportOperations_out_.jpg");            
+            textStyle.FontSize = 11;           
+            doc.DetectLayoutChanges();            
+            doc.Save(dataDir + "ConsequentExportOperations_out_.bmp");
             // ExEnd:ConsequentExportOperations
             Console.WriteLine("\nConsequent export operations performed successfully.");
         }
