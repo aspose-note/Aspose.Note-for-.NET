@@ -40,7 +40,7 @@ Namespace Tags
             ' Add page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("AddTextNodeWithTag_out_.one")
+            dataDir = dataDir & Convert.ToString("AddTextNodeWithTag_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:AddTextNodeWithTag

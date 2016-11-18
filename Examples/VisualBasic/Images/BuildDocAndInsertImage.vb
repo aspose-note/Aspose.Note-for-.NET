@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Images
     Public Class BuildDocAndInsertImage
         Public Shared Sub Run()
@@ -33,7 +34,7 @@ Namespace Images
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("BuildDocAndInsertImage_out_.one")
+            dataDir = dataDir & Convert.ToString("BuildDocAndInsertImage_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:BuildDocAndInsertImage 

@@ -1,9 +1,9 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
 using System.Drawing;
 using System.Globalization;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class ConsequentExportOperations
@@ -29,12 +29,12 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Append page node
             doc.AppendChild(page);
             // Save OneNote document in different formats, set text font size and detect layout changes manually.
-            doc.Save(dataDir + "ConsequentExportOperations_out_.html");            
-            doc.Save(dataDir + "ConsequentExportOperations_out_.pdf");            
-            doc.Save(dataDir + "ConsequentExportOperations_out_.jpg");            
+            doc.Save(dataDir + "ConsequentExportOperations_out.html");            
+            doc.Save(dataDir + "ConsequentExportOperations_out.pdf");            
+            doc.Save(dataDir + "ConsequentExportOperations_out.jpg");            
             textStyle.FontSize = 11;           
             doc.DetectLayoutChanges();            
-            doc.Save(dataDir + "ConsequentExportOperations_out_.bmp");
+            doc.Save(dataDir + "ConsequentExportOperations_out.bmp");
             // ExEnd:ConsequentExportOperations
             Console.WriteLine("\nConsequent export operations performed successfully.");
         }

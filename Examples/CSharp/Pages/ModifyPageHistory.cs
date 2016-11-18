@@ -30,7 +30,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
 
                 pageHistory.Insert(1, new Page(document));
 
-                document.Save(dataDir + "ModifyPageHistory_out_.one");
+                document.Save(dataDir + "ModifyPageHistory_out.one");
             }
             // ExEnd:ModifyPageHistory
         }

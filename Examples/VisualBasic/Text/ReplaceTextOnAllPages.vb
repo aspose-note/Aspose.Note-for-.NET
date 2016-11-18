@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class ReplaceTextOnAllPages
         Public Shared Sub Run()
@@ -26,7 +27,7 @@ Namespace Text
                 Next
             Next
 
-            dataDir = dataDir & Convert.ToString("ReplaceTextOnAllPages_out_.pdf")
+            dataDir = dataDir & Convert.ToString("ReplaceTextOnAllPages_out.pdf")
 
             ' Save to any supported file format
             oneFile.Save(dataDir, SaveFormat.Pdf)

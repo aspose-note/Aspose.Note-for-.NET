@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
@@ -16,7 +15,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             
             var notebook = new Notebook();
 
-            dataDir = dataDir + "test_out_.onetoc2";
+            dataDir = dataDir + "test_out.onetoc2";
 
             // Save the Notebook
             notebook.Save(dataDir);

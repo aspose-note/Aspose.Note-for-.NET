@@ -2,6 +2,7 @@ Imports System.IO
 Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Globalization
+
 Namespace Loading_Saving
     Public Class ConsequentExportOperations
         Public Shared Sub Run()
@@ -24,12 +25,12 @@ Namespace Loading_Saving
             ' Append page node
             doc.AppendChild(page)
             ' Save OneNote document in different formats, set text font size and detect layout changes manually.
-            doc.Save(dataDir & "ConsequentExportOperations_out_.html")
-            doc.Save(dataDir & "ConsequentExportOperations_out_.pdf")
-            doc.Save(dataDir & "ConsequentExportOperations_out_.jpg")
+            doc.Save(dataDir & "ConsequentExportOperations_out.html")
+            doc.Save(dataDir & "ConsequentExportOperations_out.pdf")
+            doc.Save(dataDir & "ConsequentExportOperations_out.jpg")
             textStyle.FontSize = 11
             doc.DetectLayoutChanges()
-            doc.Save(dataDir & "ConsequentExportOperations_out_.bmp")
+            doc.Save(dataDir & "ConsequentExportOperations_out.bmp")
             ' ExEnd:ConsequentExportOperations
             Console.WriteLine(vbLf & "Consequent export operations performed successfully.")
         End Sub

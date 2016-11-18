@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports Aspose.Note.Saving
 Imports System.Drawing
+
 Namespace Loading_Saving
     Public Class CreateDocWithFormattedRichText
         Public Shared Sub Run()
@@ -73,7 +74,7 @@ Namespace Loading_Saving
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("CreateDocWithFormattedRichText_out_.one")
+            dataDir = dataDir & Convert.ToString("CreateDocWithFormattedRichText_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:CreateDocWithFormattedRichText

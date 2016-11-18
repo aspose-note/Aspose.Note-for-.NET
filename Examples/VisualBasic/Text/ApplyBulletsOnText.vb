@@ -3,6 +3,7 @@ Imports System.IO
 Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class ApplyBulletsOnText
         Public Shared Sub Run()
@@ -61,7 +62,7 @@ Namespace Text
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("ApplyBulletsOnText_out_.one")
+            dataDir = dataDir & Convert.ToString("ApplyBulletsOnText_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:ApplyBulletsOnText

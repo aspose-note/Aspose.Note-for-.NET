@@ -4,6 +4,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using Aspose.Note.Examples.CSharp.Tables;
+
 namespace Aspose.Note.Examples.CSharp.Tags
 {
     public class AddTableNodeWithTag
@@ -49,7 +50,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
             page.AppendChild(outline);
             doc.AppendChild(page);
 
-            dataDir = dataDir + "AddTableNodeWithTag_out_.one";
+            dataDir = dataDir + "AddTableNodeWithTag_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:AddTableNodeWithTag

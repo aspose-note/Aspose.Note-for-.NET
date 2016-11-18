@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports Aspose.Note.Saving
+
 Namespace Loading_Saving
     Public Class SaveRangeOfPagesAsPDF
         Public Shared Sub Run()
@@ -22,7 +23,7 @@ Namespace Loading_Saving
             ' Set page count
             opts.PageCount = 1
 
-            dataDir = dataDir & Convert.ToString("SaveRangeOfPagesAsPDF_out_.pdf")
+            dataDir = dataDir & Convert.ToString("SaveRangeOfPagesAsPDF_out.pdf")
 
             ' Save the document as PDF
             oneFile.Save(dataDir, opts)

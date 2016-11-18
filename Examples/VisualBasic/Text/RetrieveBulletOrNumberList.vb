@@ -2,6 +2,7 @@
 Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class RetrieveBulletOrNumberList
         Public Shared Sub Run()

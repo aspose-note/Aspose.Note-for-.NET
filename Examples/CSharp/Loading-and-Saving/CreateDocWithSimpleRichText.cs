@@ -3,6 +3,7 @@ using Aspose.Note;
 using Aspose.Note.Saving;
 using System;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class CreateDocWithSimpleRichText
@@ -36,7 +37,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Add Page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "CreateDocWithSimpleRichText_out_.one";
+            dataDir = dataDir + "CreateDocWithSimpleRichText_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:CreateDocWithSimpleRichText

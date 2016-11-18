@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Tables
 {
     public class CreateTableWithLockedColumns
@@ -52,7 +53,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
             page.AppendChild(outline);
             // Add page node
             doc.AppendChild(page);
-            dataDir = dataDir + "CreateTableWithLockedColumns_out_.one";
+            dataDir = dataDir + "CreateTableWithLockedColumns_out.one";
             doc.Save(dataDir);
             // ExEnd:CreateTableWithLockedColumns
 

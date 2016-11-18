@@ -4,6 +4,7 @@ using Aspose.Note.Saving;
 using System;
 using System.Drawing;
 using System.Globalization;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class CreateDocWithPageTitle
@@ -31,7 +32,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Append Page node in the document
             doc.AppendChild(page);
 
-            dataDir = dataDir + "CreateDocWithPageTitle_out_.one";
+            dataDir = dataDir + "CreateDocWithPageTitle_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:CreateDocWithPageTitle

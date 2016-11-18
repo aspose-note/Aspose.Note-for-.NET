@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Images
     Public Class ImageAlternativeText
         Public Shared Sub Run()
@@ -16,7 +17,7 @@ Namespace Images
             page.AppendChild(image)
             document.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("ImageAlternativeText_out_.one")
+            dataDir = dataDir & Convert.ToString("ImageAlternativeText_out.one")
             document.Save(dataDir)
             ' ExEnd:ImageAlternativeText 
             Console.WriteLine(Convert.ToString(vbLf & "Image alternative text setup successfully." & vbLf & "File saved at ") & dataDir)

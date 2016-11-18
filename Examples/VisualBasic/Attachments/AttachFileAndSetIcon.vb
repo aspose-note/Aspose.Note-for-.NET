@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing.Imaging
+
 Namespace Attachments
     Public Class AttachFileAndSetIcon
         Public Shared Sub Run()
@@ -28,7 +29,7 @@ Namespace Attachments
             ' Add page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("AttachFileAndSetIcon_out_.one")
+            dataDir = dataDir & Convert.ToString("AttachFileAndSetIcon_out.one")
             doc.Save(dataDir)
             ' ExEnd:AttachFileAndSetIcon      
 

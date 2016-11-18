@@ -3,6 +3,7 @@ Imports System.IO
 Imports Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class ChangeStyle
         Public Shared Sub Run()

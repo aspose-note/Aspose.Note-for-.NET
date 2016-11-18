@@ -16,7 +16,7 @@ Namespace WorkingWithNoteBook
             ' Append a new child to the Notebook
             notebook.AppendChild(New Document(dataDir & Convert.ToString("Neuer Abschnitt 1.one")))
 
-            dataDir = dataDir & Convert.ToString("AddChildNode_out_.onetoc2")
+            dataDir = dataDir & Convert.ToString("AddChildNode_out.onetoc2")
 
             ' Save the Notebook
             notebook.Save(dataDir)

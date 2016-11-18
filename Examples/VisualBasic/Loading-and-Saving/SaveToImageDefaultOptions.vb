@@ -11,7 +11,7 @@ Namespace Loading_Saving
             ' Load the document into Aspose.Note.
             Dim oneFile As New Document(dataDir & Convert.ToString("Aspose.one"))
 
-            dataDir = dataDir & Convert.ToString("SaveToImageDefaultOptions_out_.gif")
+            dataDir = dataDir & Convert.ToString("SaveToImageDefaultOptions_out.gif")
 
             ' Save the document as gif.
             oneFile.Save(dataDir, SaveFormat.Gif)

@@ -11,7 +11,7 @@ Namespace WorkingWithNoteBook
 
             Dim notebook = New Notebook()
 
-            dataDir = dataDir & Convert.ToString("test_out_.onetoc2")
+            dataDir = dataDir & Convert.ToString("test_out.onetoc2")
 
             ' Save the Notebook
             notebook.Save(dataDir)

@@ -38,7 +38,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Add page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "AddTextNodeWithTag_out_.one";
+            dataDir = dataDir + "AddTextNodeWithTag_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:AddTextNodeWithTag

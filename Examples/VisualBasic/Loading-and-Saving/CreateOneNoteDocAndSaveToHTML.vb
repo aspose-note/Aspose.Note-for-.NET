@@ -3,6 +3,7 @@ Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Globalization
 Imports Aspose.Note.Saving
+
 Namespace Loading_Saving
     Public Class CreateOneNoteDocAndSaveToHTML
         Public Shared Sub Run()
@@ -35,7 +36,7 @@ Namespace Loading_Saving
                 }
             }
             doc.AppendChild(page)
-            dataDir = dataDir & Convert.ToString("CreateOneNoteDocAndSaveToHTML_out_.html")
+            dataDir = dataDir & Convert.ToString("CreateOneNoteDocAndSaveToHTML_out.html")
             ' Save as HTML format
             doc.Save(dataDir)
             ' ExEnd:CreateOneNoteDocAndSaveToHTML
@@ -72,7 +73,7 @@ Namespace Loading_Saving
             }
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("CreateAndSavePageRange_out_.html")
+            dataDir = dataDir & Convert.ToString("CreateAndSavePageRange_out.html")
             ' Save as HTML format
             doc.Save(dataDir, New HtmlSaveOptions() With {
                  .PageCount = 1,

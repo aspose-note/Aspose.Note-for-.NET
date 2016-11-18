@@ -47,9 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=2.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Note.2.5.0\lib\net4.0\Aspose.Note.dll</HintPath>
+    <Reference Include="Aspose.Note, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Note.16.11\lib\net4.0\Aspose.Note.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -125,7 +125,12 @@
     <Compile Include="NoteBook\ConvertToPDFAsFlattened.vb" />
     <Compile Include="NoteBook\ConvertToPDFWithOptions.vb" />
     <Compile Include="NoteBook\CreateNoteBook.vb" />
+    <Compile Include="NoteBook\CreatingPasswordProtectedDoc.vb" />
+    <Compile Include="NoteBook\LoadFromStream.vb" />
+    <Compile Include="NoteBook\LoadingPasswordProtectedDoc.vb" />
     <Compile Include="NoteBook\RemoveChildNode.vb" />
+    <Compile Include="NoteBook\SaveNotebookToStream.vb" />
+    <Compile Include="NoteBook\WritingPasswordProtectedDoc.vb" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.vb" />
     <Compile Include="Pages\GetNumberOfPages.vb" />
     <Compile Include="Pages\GetPageInformation.vb" />
@@ -140,6 +145,7 @@
     <Compile Include="Tables\ExtractRowText.vb" />
     <Compile Include="Tables\ExtractTableText.vb" />
     <Compile Include="Tables\InsertTable.vb" />
+    <Compile Include="Tables\SettingCellBackGroundColor.vb" />
     <Compile Include="Tags\AddImageNodeWithTag.vb" />
     <Compile Include="Tags\AddTableNodeWithTag.vb" />
     <Compile Include="Tags\AddTextNodeWithTag.vb" />

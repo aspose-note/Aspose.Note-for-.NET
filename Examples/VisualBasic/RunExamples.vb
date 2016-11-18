@@ -23,7 +23,7 @@ Module RunExamples
         '' =====================================================
         '' =====================================================
         'ConsequentExportOperations.Run()
-        LoadOneNoteDoc.Run()
+        'LoadOneNoteDoc.Run()
         'SaveToStream.Run()
         'SpecifySaveOptions.Run()
         'SaveRangeOfPagesAsPDF.Run()
@@ -91,6 +91,7 @@ Module RunExamples
         'ExtractCellText.Run()
         'ExtractRowText.Run()
         'ExtractTableText.Run()
+        SettingCellBackGroundColor.Run()
 
         '' =====================================================
         '' =====================================================
@@ -138,6 +139,12 @@ Module RunExamples
         'ConvertToPDF.Run()
         'CreateNoteBook.Run()
         'RemoveChildNode.Run()
+        'CreatingPasswordProtectedDoc.Run()
+        'LoadingPasswordProtectedDoc.Run()
+        'LoadFromStream.Run()
+        'SaveNotebookToStream.Run()
+        'WritingPasswordProtectedDoc.Run()
+
         
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")

@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Hyperlinks
     Public Class AddHyperlink
         Public Shared Sub Run()
@@ -60,7 +61,7 @@ Namespace Hyperlinks
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("AddHyperlink_out_.one")
+            dataDir = dataDir & Convert.ToString("AddHyperlink_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:AddHyperlink

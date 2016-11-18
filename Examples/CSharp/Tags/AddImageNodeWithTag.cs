@@ -37,7 +37,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Add page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "AddImageNodeWithTag_out_.one";
+            dataDir = dataDir + "AddImageNodeWithTag_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:AddImageNodeWithTag

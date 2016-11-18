@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Tables
 {
     public class InsertTable
@@ -73,7 +74,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
             page.AppendChild(outline);
             // Add page to document node
             doc.AppendChild(page);
-            dataDir = dataDir + "InsertTable_out_.one";
+            dataDir = dataDir + "InsertTable_out.one";
             doc.Save(dataDir);
             // ExEnd:InsertTable
 

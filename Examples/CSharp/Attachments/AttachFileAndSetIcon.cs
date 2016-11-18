@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
+
 namespace Aspose.Note.Examples.CSharp.Attachments
 {
     public class AttachFileAndSetIcon
@@ -32,7 +33,7 @@ namespace Aspose.Note.Examples.CSharp.Attachments
             // Add page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "AttachFileAndSetIcon_out_.one";
+            dataDir = dataDir + "AttachFileAndSetIcon_out.one";
             doc.Save(dataDir);
             // ExEnd:AttachFileAndSetIcon      
 

@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports Aspose.Note.Saving
+
 Namespace Loading_Saving
     Public Class PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm
         Public Shared Sub Run()
@@ -21,7 +22,7 @@ Namespace Loading_Saving
             pdfSaveOptions.PageSplittingAlgorithm = New KeepPartAndCloneSolidObjectToNextPageAlgorithm(400)
             ' ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
 
-            dataDir = dataDir & Convert.ToString("PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm_out_.pdf")
+            dataDir = dataDir & Convert.ToString("PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm_out.pdf")
             doc.Save(dataDir)
             Console.WriteLine(vbLf & "Page splitt successfully using keep part and clone solid object to next page algorithm.")
         End Sub

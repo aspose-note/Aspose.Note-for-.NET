@@ -20,7 +20,7 @@ Namespace WorkingWithNoteBook
                 End If
             Next
 
-            dataDir = dataDir & Convert.ToString("RemoveChildNode_out_.onetoc2")
+            dataDir = dataDir & Convert.ToString("RemoveChildNode_out.onetoc2")
 
             ' Save the Notebook
             notebook.Save(dataDir)

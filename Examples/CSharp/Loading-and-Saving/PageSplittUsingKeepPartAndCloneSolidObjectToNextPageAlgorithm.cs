@@ -1,8 +1,8 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
 using Aspose.Note.Saving;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm
@@ -26,7 +26,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             pdfSaveOptions.PageSplittingAlgorithm = new KeepPartAndCloneSolidObjectToNextPageAlgorithm(400);
             // ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
 
-            dataDir = dataDir + "PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm_out_.pdf";
+            dataDir = dataDir + "PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm_out.pdf";
             doc.Save(dataDir);
             Console.WriteLine("\nPage splitt successfully using keep part and clone solid object to next page algorithm.");
         }

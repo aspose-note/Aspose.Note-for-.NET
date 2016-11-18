@@ -3,6 +3,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 using Aspose.Note.Saving;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class PageSplittUsingKeepSOlidObjectsAlgoirthm
@@ -39,7 +40,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             pdfSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm(400);
             // ExEnd:KeepSOlidObjectsAlgoirthm-4
 
-            dataDir = dataDir + "UsingKeepSOlidObjectsAlgoirthm_out_.pdf";
+            dataDir = dataDir + "UsingKeepSOlidObjectsAlgoirthm_out.pdf";
             doc.Save(dataDir);
             Console.WriteLine("\nPage splitt successfully using keep solid objects algoirthm method.");
         }

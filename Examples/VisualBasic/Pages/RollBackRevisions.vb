@@ -20,7 +20,7 @@ Namespace Pages
 
             document.AppendChild(lastPage)
 
-            document.Save(dataDir & "RollBackRevisions_out_.one")
+            document.Save(dataDir & "RollBackRevisions_out.one")
             ' ExEnd:RollBackRevisions
         End Sub
     End Class

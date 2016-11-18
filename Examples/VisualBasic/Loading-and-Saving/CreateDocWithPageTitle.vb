@@ -3,6 +3,7 @@ Imports  Aspose.Note
 Imports Aspose.Note.Saving
 Imports System.Drawing
 Imports System.Globalization
+
 Namespace Loading_Saving
     Public Class CreateDocWithPageTitle
         Public Shared Sub Run()
@@ -39,7 +40,7 @@ Namespace Loading_Saving
             ' Append Page node in the document
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("CreateDocWithPageTitle_out_.one")
+            dataDir = dataDir & Convert.ToString("CreateDocWithPageTitle_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:CreateDocWithPageTitle

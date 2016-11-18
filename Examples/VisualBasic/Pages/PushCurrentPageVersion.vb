@@ -17,7 +17,7 @@ Namespace Pages
 
             pageHistory.Add(page.Clone())
 
-            document.Save(dataDir & "PushCurrentPageVersion_out_.one")
+            document.Save(dataDir & "PushCurrentPageVersion_out.one")
             ' ExEnd:PushCurrentPageVersion
         End Sub
     End Class

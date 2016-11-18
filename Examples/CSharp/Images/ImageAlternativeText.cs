@@ -3,6 +3,7 @@ using Aspose.Note;
 using System.Collections.Generic;
 using System.Drawing;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Images
 {
     public class ImageAlternativeText
@@ -20,7 +21,7 @@ namespace Aspose.Note.Examples.CSharp.Images
             page.AppendChild(image);
             document.AppendChild(page);
 
-            dataDir = dataDir + "ImageAlternativeText_out_.one";
+            dataDir = dataDir + "ImageAlternativeText_out.one";
             document.Save(dataDir);
             // ExEnd:ImageAlternativeText 
             Console.WriteLine("\nImage alternative text setup successfully.\nFile saved at " + dataDir); 

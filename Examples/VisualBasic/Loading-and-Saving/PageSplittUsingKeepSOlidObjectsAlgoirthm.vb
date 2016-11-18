@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports Aspose.Note.Saving
+
 Namespace Loading_Saving
     Public Class PageSplittUsingKeepSOlidObjectsAlgoirthm
         Public Shared Sub Run()
@@ -34,7 +35,7 @@ Namespace Loading_Saving
             pdfSaveOptions.PageSplittingAlgorithm = New KeepSolidObjectsAlgorithm(400)
             ' ExEnd:KeepSOlidObjectsAlgoirthm-4
 
-            dataDir = dataDir & Convert.ToString("UsingKeepSOlidObjectsAlgoirthm_out_.pdf")
+            dataDir = dataDir & Convert.ToString("UsingKeepSOlidObjectsAlgoirthm_out.pdf")
             doc.Save(dataDir)
             Console.WriteLine(vbLf & "Page splitt successfully using keep solid objects algoirthm method.")
         End Sub

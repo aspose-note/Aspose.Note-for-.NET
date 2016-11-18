@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Attachments
 {
     public class RetrieveAttachedFiles

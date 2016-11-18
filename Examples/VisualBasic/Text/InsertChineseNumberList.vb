@@ -3,6 +3,7 @@ Imports System.IO
 Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class InsertChineseNumberList
         Public Shared Sub Run()
@@ -55,7 +56,7 @@ Namespace Text
             page.AppendChild(outline)
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("InsertChineseNumberList_out_.one")
+            dataDir = dataDir & Convert.ToString("InsertChineseNumberList_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:InsertChineseNumberList

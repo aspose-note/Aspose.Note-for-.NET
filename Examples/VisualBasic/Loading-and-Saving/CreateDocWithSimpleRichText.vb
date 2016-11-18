@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports  Aspose.Note
 Imports System.Drawing
+
 Namespace Loading_Saving
     Public Class CreateDocWithSimpleRichText
         Public Shared Sub Run()
@@ -31,7 +32,7 @@ Namespace Loading_Saving
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir + "CreateDocWithSimpleRichText_out_.one"
+            dataDir = dataDir + "CreateDocWithSimpleRichText_out.one"
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:CreateDocWithSimpleRichText

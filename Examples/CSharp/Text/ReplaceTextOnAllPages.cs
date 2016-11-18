@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Note;
 using System.Collections.Generic;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Text
 {
     public class ReplaceTextOnAllPages
@@ -33,7 +34,7 @@ namespace Aspose.Note.Examples.CSharp.Text
                 }
             }
 
-            dataDir = dataDir + "ReplaceTextOnAllPages_out_.pdf";
+            dataDir = dataDir + "ReplaceTextOnAllPages_out.pdf";
 
             // Save to any supported file format
             oneFile.Save(dataDir, SaveFormat.Pdf);

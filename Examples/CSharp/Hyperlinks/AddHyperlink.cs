@@ -1,9 +1,9 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Hyperlinks
 {
     public class AddHyperlink
@@ -70,7 +70,7 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             // Add Page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "AddHyperlink_out_.one";
+            dataDir = dataDir + "AddHyperlink_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:AddHyperlink

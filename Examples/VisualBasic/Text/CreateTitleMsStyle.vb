@@ -6,7 +6,7 @@ Namespace Text
         Public Shared Sub Run()
             ' ExStart:CreateTitleMsStyle
             Dim dataDir As String = RunExamples.GetDataDir_Text()
-            Dim outputPath As String = dataDir & Convert.ToString("CreateTitleMsStyle_out_.one")
+            Dim outputPath As String = dataDir & Convert.ToString("CreateTitleMsStyle_out.one")
 
             Dim doc = New Document()
             Dim page = New Page(doc)

@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class SpecifySaveOptions
@@ -22,7 +23,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Set page count
             opts.PageCount = 3;
 
-            dataDir = dataDir + "Document.SaveWithOptions_out_.pdf";
+            dataDir = dataDir + "Document.SaveWithOptions_out.pdf";
             doc.Save(dataDir, opts);
             // ExEnd:SpecifySaveOptions
             Console.WriteLine("\nOneNote document saved successfully.\nFile saved at " + dataDir);

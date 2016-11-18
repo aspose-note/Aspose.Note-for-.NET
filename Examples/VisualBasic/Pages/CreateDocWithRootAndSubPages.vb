@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Pages
     Public Class CreateDocWithRootAndSubPages
         Public Shared Sub Run()
@@ -81,7 +82,7 @@ Namespace Pages
             doc.AppendChild(page2)
             doc.AppendChild(page3)
 
-            dataDir = dataDir & Convert.ToString("CreateDocWithRootAndSubPages_out_.one")
+            dataDir = dataDir & Convert.ToString("CreateDocWithRootAndSubPages_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:CreateDocWithRootAndSubPages

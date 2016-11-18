@@ -3,6 +3,7 @@ using Aspose.Note;
 using System.Collections.Generic;
 using System.Drawing;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Images
 {
     public class BuildDocAndInsertImage
@@ -34,7 +35,7 @@ namespace Aspose.Note.Examples.CSharp.Images
             // Add Page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "BuildDocAndInsertImage_out_.one";
+            dataDir = dataDir + "BuildDocAndInsertImage_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:BuildDocAndInsertImage 

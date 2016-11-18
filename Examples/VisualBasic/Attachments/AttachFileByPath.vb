@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Attachments
     Public Class AttachFileByPath
         Public Shared Sub Run()
@@ -27,7 +28,7 @@ Namespace Attachments
             page.AppendChild(outline)
             ' Add page node
             doc.AppendChild(page)
-            dataDir = dataDir & Convert.ToString("AttachFileByPath_out_.one")
+            dataDir = dataDir & Convert.ToString("AttachFileByPath_out.one")
             doc.Save(dataDir)
             ' ExEnd:AttachFileByPath      
 

@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
@@ -27,7 +26,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
                 }
             }
 
-            dataDir = dataDir + "RemoveChildNode_out_.onetoc2";
+            dataDir = dataDir + "RemoveChildNode_out.onetoc2";
 
             // Save the Notebook
             notebook.Save(dataDir);

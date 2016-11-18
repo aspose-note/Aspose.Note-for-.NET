@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Tables
     Public Class InsertTable
         Public Shared Sub Run()
@@ -66,7 +67,7 @@ Namespace Tables
             page.AppendChild(outline)
             ' Add page to document node
             doc.AppendChild(page)
-            dataDir = dataDir & Convert.ToString("InsertTable_out_.one")
+            dataDir = dataDir & Convert.ToString("InsertTable_out.one")
             'doc.Save(dataDir)
             ' ExEnd:InsertTable
 

@@ -19,7 +19,7 @@ Namespace WorkingWithNoteBook
 
             documentSaveOptions.Resolution = 400
 
-            dataDir = dataDir & Convert.ToString("ConvertToImageWithOptions_out_.png")
+            dataDir = dataDir & Convert.ToString("ConvertToImageWithOptions_out.png")
 
             ' Save the Notebook
             notebook.Save(dataDir, notebookSaveOptions)

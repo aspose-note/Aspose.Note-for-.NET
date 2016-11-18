@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class SaveRangeOfPagesAsPDF
@@ -26,7 +27,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Set page count
             opts.PageCount = 1;
 
-            dataDir = dataDir + "SaveRangeOfPagesAsPDF_out_.pdf";
+            dataDir = dataDir + "SaveRangeOfPagesAsPDF_out.pdf";
 
             // Save the document as PDF
             oneFile.Save(dataDir, opts);

@@ -1,6 +1,7 @@
 using System.IO;
 using Aspose.Note;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class SaveWithDefaultSettings
@@ -14,7 +15,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Load the document into Aspose.Note.
             Document oneFile = new Document(dataDir + "Aspose.one");
 
-            dataDir = dataDir + "SaveWithDefaultSettings_out_.pdf";
+            dataDir = dataDir + "SaveWithDefaultSettings_out.pdf";
             // Save the document as PDF
             oneFile.Save(dataDir, SaveFormat.Pdf);
             // ExEnd:SaveWithDefaultSettings

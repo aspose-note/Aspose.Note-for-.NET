@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
@@ -24,7 +23,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 
             documentSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm();
 
-            dataDir = dataDir + "ConvertToPDF_out_.pdf";
+            dataDir = dataDir + "ConvertToPDF_out.pdf";
 
             // Save the Notebook
             notebook.Save(dataDir, notebookSaveOptions);

@@ -32,7 +32,7 @@ namespace Aspose.Note.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            LoadOneNoteDoc.Run();
+            //LoadOneNoteDoc.Run();
             //SaveToStream.Run();
             //SpecifySaveOptions.Run();
             //SaveRangeOfPagesAsPDF.Run();
@@ -104,6 +104,7 @@ namespace Aspose.Note.Examples.CSharp
             //ExtractCellText.Run();
             //InsertTable.Run();
             //CreateTableWithLockedColumns.Run();
+            SettingCellBackGroundColor.Run();
 
             //// =====================================================
             //// =====================================================
@@ -153,6 +154,11 @@ namespace Aspose.Note.Examples.CSharp
             //ConvertToPDF.Run();
             //CreateNoteBook.Run();
             //RemoveChildNode.Run();
+            CreatingPasswordProtectedDoc.Run();
+            LoadingPasswordProtectedDoc.Run();
+            LoadFromStream.Run();
+            SaveNotebookToStream.Run();
+            WritingPasswordProtectedDoc.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

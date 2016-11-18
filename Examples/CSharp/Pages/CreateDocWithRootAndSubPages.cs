@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Pages
 {
     public class CreateDocWithRootAndSubPages
@@ -54,7 +55,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
             doc.AppendChild(page2);
             doc.AppendChild(page3);
 
-            dataDir = dataDir + "CreateDocWithRootAndSubPages_out_.one";
+            dataDir = dataDir + "CreateDocWithRootAndSubPages_out.one";
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:CreateDocWithRootAndSubPages

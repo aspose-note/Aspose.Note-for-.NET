@@ -3,6 +3,7 @@ Imports System.IO
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports Aspose.Note.Examples.VisualBasic.Tables
+
 Namespace Tags
     Public Class AddTableNodeWithTag
         Public Shared Sub Run()
@@ -42,7 +43,7 @@ Namespace Tags
             page.AppendChild(outline)
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("AddTableNodeWithTag_out_.one")
+            dataDir = dataDir & Convert.ToString("AddTableNodeWithTag_out.one")
             ' Save OneNote document
             'doc.Save(dataDir)
             ' ExEnd:AddTableNodeWithTag

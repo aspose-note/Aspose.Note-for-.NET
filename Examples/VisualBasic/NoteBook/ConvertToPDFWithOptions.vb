@@ -19,7 +19,7 @@ Namespace WorkingWithNoteBook
 
             documentSaveOptions.PageSplittingAlgorithm = New KeepSolidObjectsAlgorithm()
 
-            dataDir = dataDir & Convert.ToString("ConvertToPDF_out_.pdf")
+            dataDir = dataDir & Convert.ToString("ConvertToPDF_out.pdf")
 
             ' Save the Notebook
             notebook.Save(dataDir, notebookSaveOptions)

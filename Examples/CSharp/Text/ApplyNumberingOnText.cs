@@ -4,6 +4,7 @@ using System.IO;
 using Aspose.Note;
 using System.Drawing;
 using System.Collections.Generic;
+
 namespace Aspose.Note.Examples.CSharp.Text
 {
     public class ApplyNumberingOnText
@@ -49,7 +50,7 @@ namespace Aspose.Note.Examples.CSharp.Text
             // Add Page node
             doc.AppendChild(page);
 
-            dataDir = dataDir + "ApplyNumberingOnText_out_.one"; 
+            dataDir = dataDir + "ApplyNumberingOnText_out.one"; 
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:ApplyNumberingOnText

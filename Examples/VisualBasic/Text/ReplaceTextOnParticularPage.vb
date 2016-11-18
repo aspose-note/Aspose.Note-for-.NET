@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class ReplaceTextOnParticularPage
         Public Shared Sub Run()
@@ -28,7 +29,7 @@ Namespace Text
                     End If
                 Next
             Next
-            dataDir = dataDir & Convert.ToString("ReplaceTextOnParticularPage_out_.pdf")
+            dataDir = dataDir & Convert.ToString("ReplaceTextOnParticularPage_out.pdf")
             ' Save to any supported file format
             oneFile.Save(dataDir, SaveFormat.Pdf)
             ' ExEnd:ReplaceTextOnParticularPage

@@ -4,6 +4,7 @@ using System.IO;
 using Aspose.Note;
 using System.Drawing;
 using System.Collections.Generic;
+
 namespace Aspose.Note.Examples.CSharp.Text
 {
     public class InsertChineseNumberList
@@ -40,7 +41,7 @@ namespace Aspose.Note.Examples.CSharp.Text
             page.AppendChild(outline);
             doc.AppendChild(page);
 
-            dataDir = dataDir + "InsertChineseNumberList_out_.one"; 
+            dataDir = dataDir + "InsertChineseNumberList_out.one"; 
             // Save OneNote document
             doc.Save(dataDir);
             // ExEnd:InsertChineseNumberList

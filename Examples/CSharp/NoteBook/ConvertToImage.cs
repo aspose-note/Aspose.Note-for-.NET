@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
@@ -17,7 +16,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             // Load a OneNote Notebook
             var notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
 
-            dataDir = dataDir + "ConvertToImage_out_.png";
+            dataDir = dataDir + "ConvertToImage_out.png";
 
             // Save the Notebook
             notebook.Save(dataDir);

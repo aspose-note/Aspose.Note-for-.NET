@@ -21,7 +21,7 @@ Namespace Pages
             ' Update Page Revision Summary for this page
             pageRevisionInfo.AuthorMostRecent = "New Author"
             pageRevisionInfo.LastModifiedTime = DateTime.Now
-            document.Save(dataDir & "WorkingWithPageRevisions_out_.one")
+            document.Save(dataDir & "WorkingWithPageRevisions_out.one")
             ' ExEnd:WorkingWithPageRevisions
         End Sub
     End Class

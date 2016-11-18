@@ -25,7 +25,7 @@ Namespace Pages
 
                 pageHistory.Insert(1, New Page(document))
 
-                document.Save(dataDir & "ModifyPageHistory_out_.one")
+                document.Save(dataDir & "ModifyPageHistory_out.one")
             End If
             ' ExEnd:ModifyPageHistory
         End Sub

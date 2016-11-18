@@ -12,7 +12,7 @@ Namespace WorkingWithNoteBook
             ' Load a OneNote Notebook
             Dim notebook = New Notebook(dataDir & Convert.ToString("Notizbuch öffnen.onetoc2"))
 
-            dataDir = dataDir & Convert.ToString("ConvertToImage_out_.png")
+            dataDir = dataDir & Convert.ToString("ConvertToImage_out.png")
 
             ' Save the Notebook
             notebook.Save(dataDir)

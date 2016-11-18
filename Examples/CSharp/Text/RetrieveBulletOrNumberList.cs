@@ -3,6 +3,7 @@ using System.Globalization;
 using System.IO;
 using Aspose.Note;
 using System.Collections.Generic;
+
 namespace Aspose.Note.Examples.CSharp.Text
 {
     public class RetrieveBulletOrNumberList

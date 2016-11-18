@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using System;
@@ -20,7 +19,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             // Append a new child to the Notebook
             notebook.AppendChild(new Document(dataDir + "Neuer Abschnitt 1.one"));
 
-            dataDir = dataDir + "AddChildNode_out_.onetoc2";
+            dataDir = dataDir + "AddChildNode_out.onetoc2";
 
             // Save the Notebook
             notebook.Save(dataDir);

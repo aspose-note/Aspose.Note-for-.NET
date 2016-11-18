@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class ConvertSpecificPageToImage
@@ -21,7 +22,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Set page index
             opts.PageIndex = 1;
 
-            dataDir = dataDir + "ConvertSpecificPageToImage_out_.png";
+            dataDir = dataDir + "ConvertSpecificPageToImage_out.png";
 
             // Save the document as PNG.
             oneFile.Save(dataDir, opts);
@@ -37,7 +38,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Load the document into Aspose.Note.
             Document doc = new Document(dataDir + "Aspose.one");
 
-            dataDir = dataDir + "SetOutputImageResolution_out_.jpg";
+            dataDir = dataDir + "SetOutputImageResolution_out.jpg";
 
             // Save the document.
             doc.Save(dataDir, new ImageSaveOptions(SaveFormat.Jpeg) { Resolution = 220 });

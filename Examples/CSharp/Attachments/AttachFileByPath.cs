@@ -3,6 +3,7 @@ using Aspose.Note;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+
 namespace Aspose.Note.Examples.CSharp.Attachments
 {
     public class AttachFileByPath
@@ -31,7 +32,7 @@ namespace Aspose.Note.Examples.CSharp.Attachments
             page.AppendChild(outline);
             // Add page node
             doc.AppendChild(page);
-            dataDir = dataDir + "AttachFileByPath_out_.one";
+            dataDir = dataDir + "AttachFileByPath_out.one";
             doc.Save(dataDir);
             // ExEnd:AttachFileByPath      
 

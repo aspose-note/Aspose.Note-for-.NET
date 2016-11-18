@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports Aspose.Note
 Imports Aspose.Note.Saving
+
 Namespace Loading_Saving
     Public Class ConvertSpecificPageToImage
         Public Shared Sub Run()
@@ -17,7 +18,7 @@ Namespace Loading_Saving
             ' Set page index
             opts.PageIndex = 1
 
-            dataDir = dataDir & Convert.ToString("ConvertSpecificPageToImage_out_.png")
+            dataDir = dataDir & Convert.ToString("ConvertSpecificPageToImage_out.png")
 
             ' Save the document as PNG.
             oneFile.Save(dataDir, opts)
@@ -32,7 +33,7 @@ Namespace Loading_Saving
             ' Load the document into Aspose.Note.
             Dim doc As New Document(dataDir & Convert.ToString("Aspose.one"))
 
-            dataDir = dataDir & Convert.ToString("SetOutputImageResolution_out_.jpg")
+            dataDir = dataDir & Convert.ToString("SetOutputImageResolution_out.jpg")
 
             ' Save the document.
             doc.Save(dataDir, New ImageSaveOptions(SaveFormat.Jpeg) With {.Resolution = 220})

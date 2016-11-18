@@ -2,6 +2,7 @@
 Imports  Aspose.Note
 Imports System.Collections.Generic
 Imports System.Drawing
+
 Namespace Tables
     Public Class CreateTableWithLockedColumns
         Public Shared Sub Run()
@@ -45,7 +46,7 @@ Namespace Tables
             ' Add page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("CreateTableWithLockedColumns_out_.one")
+            dataDir = dataDir & Convert.ToString("CreateTableWithLockedColumns_out.one")
 
             'doc.Save(dataDir)
             ' ExEnd:CreateTableWithLockedColumns

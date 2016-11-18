@@ -15,7 +15,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Load the document into Aspose.Note.
             Document oneFile = new Document(dataDir + "Aspose.one");
 
-            dataDir = dataDir + "SaveToImageDefaultOptions_out_.gif";
+            dataDir = dataDir + "SaveToImageDefaultOptions_out.gif";
 
             // Save the document as gif.
             oneFile.Save(dataDir, SaveFormat.Gif);

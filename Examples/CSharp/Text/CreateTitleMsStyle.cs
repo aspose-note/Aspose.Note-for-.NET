@@ -10,7 +10,7 @@ namespace Aspose.Note.Examples.CSharp.Text
         {
             // ExStart:CreateTitleMsStyle
             string dataDir = RunExamples.GetDataDir_Text();
-            string outputPath = dataDir + "CreateTitleMsStyle_out_.one";
+            string outputPath = dataDir + "CreateTitleMsStyle_out.one";
 
             var doc = new Document();
             var page = new Page(doc);

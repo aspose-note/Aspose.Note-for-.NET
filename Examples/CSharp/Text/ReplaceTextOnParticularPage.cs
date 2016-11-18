@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Note;
 using System.Collections.Generic;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Text
 {
     public class ReplaceTextOnParticularPage
@@ -35,7 +36,7 @@ namespace Aspose.Note.Examples.CSharp.Text
                     }
                 }
             }
-            dataDir = dataDir + "ReplaceTextOnParticularPage_out_.pdf";
+            dataDir = dataDir + "ReplaceTextOnParticularPage_out.pdf";
             // Save to any supported file format
             oneFile.Save(dataDir, SaveFormat.Pdf);
             // ExEnd:ReplaceTextOnParticularPage

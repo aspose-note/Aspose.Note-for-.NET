@@ -3,6 +3,7 @@ Imports System.IO
 Imports  Aspose.Note
 Imports System.Drawing
 Imports System.Collections.Generic
+
 Namespace Text
     Public Class ApplyNumberingOnText
         Public Shared Sub Run()
@@ -64,7 +65,7 @@ Namespace Text
             ' Add Page node
             doc.AppendChild(page)
 
-            dataDir = dataDir & Convert.ToString("ApplyNumberingOnText_out_.one")
+            dataDir = dataDir & Convert.ToString("ApplyNumberingOnText_out.one")
             ' Save OneNote document
             doc.Save(dataDir)
             ' ExEnd:ApplyNumberingOnText

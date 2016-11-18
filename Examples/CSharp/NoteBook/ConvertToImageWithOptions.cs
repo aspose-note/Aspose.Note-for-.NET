@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
@@ -24,7 +23,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 
             documentSaveOptions.Resolution = 400;
 
-            dataDir = dataDir + "ConvertToImageWithOptions_out_.png";
+            dataDir = dataDir + "ConvertToImageWithOptions_out.png";
 
             // Save the Notebook
             notebook.Save(dataDir, notebookSaveOptions);

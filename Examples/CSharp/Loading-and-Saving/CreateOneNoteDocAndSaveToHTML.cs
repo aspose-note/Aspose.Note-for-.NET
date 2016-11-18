@@ -4,6 +4,7 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using Aspose.Note.Saving;
+
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class CreateOneNoteDocAndSaveToHTML
@@ -27,7 +28,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                 TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
             };
             doc.AppendChild(page);
-            dataDir = dataDir + "CreateOneNoteDocAndSaveToHTML_out_.html";
+            dataDir = dataDir + "CreateOneNoteDocAndSaveToHTML_out.html";
             // Save as HTML format
             doc.Save(dataDir);
             // ExEnd:CreateOneNoteDocAndSaveToHTML
@@ -53,7 +54,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             };
             doc.AppendChild(page);
 
-            dataDir = dataDir + "CreateAndSavePageRange_out_.html";
+            dataDir = dataDir + "CreateAndSavePageRange_out.html";
             // Save as HTML format
             doc.Save(dataDir, new HtmlSaveOptions
             {

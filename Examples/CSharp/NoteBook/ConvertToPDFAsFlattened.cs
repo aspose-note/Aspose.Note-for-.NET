@@ -1,4 +1,3 @@
-
 using System.IO;
 using Aspose.Note;
 using Aspose.Note.Saving;
@@ -18,7 +17,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             // Load a OneNote Notebook
             var notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
 
-            dataDir = dataDir + "ConvertToPDFAsFlattened_out_.pdf";
+            dataDir = dataDir + "ConvertToPDFAsFlattened_out.pdf";
             // Save the Notebook
             notebook.Save(
                 dataDir,
