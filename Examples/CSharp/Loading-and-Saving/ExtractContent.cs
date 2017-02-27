@@ -7,9 +7,9 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     public class ExtractContent
     {
+        // ExStart:ExtractContent
         public static void Run()
-        {
-            // ExStart:ExtractContent
+        {            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
@@ -30,9 +30,9 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Once the visiting is complete, we can retrieve the result of the operation,
             // that in this example, has accumulated in the visitor.
             Console.WriteLine(myConverter.GetText());
-            Console.WriteLine(myConverter.NodeCount);
-            // ExEnd:ExtractContent          
+            Console.WriteLine(myConverter.NodeCount);            
         }
+
         /// <summary>
         /// Simple implementation of saving a document in the plain text format. Implemented as a Visitor.
         /// </summary>
@@ -139,5 +139,6 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             private bool mIsSkipText;
             private Int32 nodecount;
         }
+        // ExEnd:ExtractContent          
     }
 }

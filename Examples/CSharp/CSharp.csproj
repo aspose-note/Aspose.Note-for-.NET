@@ -36,8 +36,8 @@
     <StartupObject>Aspose.Note.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.16.11\lib\net4.0\Aspose.Note.dll</HintPath>
+    <Reference Include="Aspose.Note, Version=16.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Note.16.12.0\lib\net4.0\Aspose.Note.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -63,6 +63,13 @@
     <Compile Include="Images\ExtractImages.cs" />
     <Compile Include="Images\GetInformationOfImages.cs" />
     <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.cs" />
+    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormat.cs" />
+    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingOnesaveoptions.cs" />
+    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingSaveFormat.cs" />
+    <Compile Include="NoteBook\LoadingNotebookFilewithLoadOptions.cs" />
+    <Compile Include="NoteBook\LoadingNotebookInstantly.cs" />
+    <Compile Include="NoteBook\ReadRichText.cs" />
+    <Compile Include="NoteBook\RetrieveDocumentsfromOneNoteNotebook.cs" />
     <Compile Include="NoteBook\SaveNotebookToStream.cs" />
     <Compile Include="NoteBook\LoadFromStream.cs" />
     <Compile Include="NoteBook\WritingPasswordProtectedDoc.cs" />

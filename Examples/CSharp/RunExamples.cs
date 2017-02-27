@@ -14,6 +14,7 @@ using Aspose.Note.Examples.CSharp.Tags;
 using Aspose.Note.Examples.CSharp.Tasks;
 using Aspose.Note.Examples.CSharp.Hyperlinks;
 using Aspose.Note.Examples.CSharp.WorkingWithNoteBook;
+using Aspose.Note.Examples.CSharp.NoteBook;
 
 namespace Aspose.Note.Examples.CSharp
 {
@@ -47,6 +48,9 @@ namespace Aspose.Note.Examples.CSharp
             //CreateDocWithFormattedRichText.Run();
             //ExtractContent.Run();
             //CreateDocWithPageTitle.Run();
+            //SaveDocToOneNoteFormat.Run();
+            //SaveDocToOneNoteFormatUsingOnesaveoptions.Run();
+            //SaveDocToOneNoteFormatUsingSaveFormat.Run();
 
             //// =====================================================
             //// =====================================================
@@ -104,7 +108,7 @@ namespace Aspose.Note.Examples.CSharp
             //ExtractCellText.Run();
             //InsertTable.Run();
             //CreateTableWithLockedColumns.Run();
-            SettingCellBackGroundColor.Run();
+            //SettingCellBackGroundColor.Run();
 
             //// =====================================================
             //// =====================================================
@@ -154,11 +158,15 @@ namespace Aspose.Note.Examples.CSharp
             //ConvertToPDF.Run();
             //CreateNoteBook.Run();
             //RemoveChildNode.Run();
-            CreatingPasswordProtectedDoc.Run();
-            LoadingPasswordProtectedDoc.Run();
-            LoadFromStream.Run();
-            SaveNotebookToStream.Run();
-            WritingPasswordProtectedDoc.Run();
+            //CreatingPasswordProtectedDoc.Run();
+            //LoadingPasswordProtectedDoc.Run();
+            //LoadFromStream.Run();
+            //SaveNotebookToStream.Run();
+            //WritingPasswordProtectedDoc.Run();
+            //LoadingNotebookFilewithLoadOptions.Run();
+            //LoadingNotebookInstantly.Run();
+            //RetrieveDocumentsfromOneNoteNotebook.Run();
+            //ReadRichText.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
