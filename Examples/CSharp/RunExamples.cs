@@ -167,6 +167,7 @@ namespace Aspose.Note.Examples.CSharp
             //LoadingNotebookInstantly.Run();
             //RetrieveDocumentsfromOneNoteNotebook.Run();
             //ReadRichText.Run();
+            //ConvertToImageAsFlattenedNotebook.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
