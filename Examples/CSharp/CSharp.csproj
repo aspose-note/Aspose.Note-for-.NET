@@ -66,6 +66,7 @@
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormat.cs" />
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingOnesaveoptions.cs" />
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingSaveFormat.cs" />
+    <Compile Include="NoteBook\ConvertToImageAsFlattenedNotebook.cs" />
     <Compile Include="NoteBook\LoadingNotebookFilewithLoadOptions.cs" />
     <Compile Include="NoteBook\LoadingNotebookInstantly.cs" />
     <Compile Include="NoteBook\ReadRichText.cs" />
