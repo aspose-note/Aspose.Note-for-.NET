@@ -59,6 +59,7 @@
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
     <Compile Include="Images\ImageAlternativeText.cs" />
+    <Compile Include="Images\ImageWithHyperlink.cs" />
     <Compile Include="Images\InsertImage.cs" />
     <Compile Include="Images\ExtractImages.cs" />
     <Compile Include="Images\GetInformationOfImages.cs" />

@@ -7,16 +7,16 @@ namespace Aspose.Note.Examples.CSharp.PrintingDocument
 {
     class PrintDocument
     {
-        // ExStart:PrintDocument
         public static void Run()
         {
+            // ExStart:PrintDocument
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
             var document = new Aspose.Note.Document(dataDir + "Aspose.one");
 
             document.Print();
+            // ExEnd:PrintDocument
         }
-        // ExStart:PrintDocument
     }
 }
