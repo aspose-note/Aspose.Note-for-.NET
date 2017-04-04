@@ -9,9 +9,9 @@ namespace Aspose.Note.Examples.CSharp.PrintingDocument
 {
     class PrintDocumentWithPrintOptions
     {
-        // ExStart:PrintDocumentWithPrintOptions
         public static void Run()
         {
+            // ExStart:PrintDocumentWithPrintOptions
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
@@ -28,7 +28,7 @@ namespace Aspose.Note.Examples.CSharp.PrintingDocument
                 PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm(),
                 DocumentName = "Test.one"
             });
+            // ExEnd:PrintDocumentWithPrintOptions
         }
-        // ExStart:PrintDocumentWithPrintOptions
     }
 }
