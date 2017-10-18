@@ -14,7 +14,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             // ExStart:LoadFromStream
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
-            FileStream stream = new FileStream(dataDir + "notebook.onetoc2", FileMode.Open);
+            FileStream stream = new FileStream(dataDir + "Notizbuch öffnen.onetoc2", FileMode.Open);
             var notebook = new Notebook(stream);
 
             FileStream childStream = new FileStream(dataDir + "Aspose.one", FileMode.Open);

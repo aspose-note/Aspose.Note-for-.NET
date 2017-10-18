@@ -15,7 +15,7 @@ namespace Aspose.Note.Examples.CSharp.NoteBook
             // it is necessary to set the NotebookLoadOptions.InstantLoading flag.
             NotebookLoadOptions loadOptions = new NotebookLoadOptions();
             loadOptions.InstantLoading = true;
-            String inputFile = "notebook.onetoc2";
+            String inputFile = "Notizbuch öffnen.onetoc2";
             String dataDir = RunExamples.GetDataDir_NoteBook();
             Notebook notebook = new Notebook(dataDir + inputFile, loadOptions);
 
