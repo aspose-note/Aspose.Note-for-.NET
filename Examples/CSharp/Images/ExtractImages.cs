@@ -37,7 +37,7 @@ namespace Aspose.Note.Examples.CSharp.Images
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("\r\nError: " + ex.Message + "\r\nPress any key to continue.");
                 Console.ReadLine();
             }
         }

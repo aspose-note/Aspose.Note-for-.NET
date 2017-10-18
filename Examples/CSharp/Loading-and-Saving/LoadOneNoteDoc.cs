@@ -12,7 +12,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExStart:LoadOneNoteDoc
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
-            string fileName = "";
+            string fileName = "Open Notebook.onetoc2";
             if (fileName != "")
             {
                 try
