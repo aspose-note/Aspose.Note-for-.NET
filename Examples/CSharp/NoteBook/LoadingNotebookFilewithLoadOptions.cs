@@ -10,7 +10,7 @@ namespace Aspose.Note.Examples.CSharp.NoteBook
         public static void Run()
         {
             // ExStart:LoadingNotebookFilewithLoadOptions
-            string inputFile = "notebook.onetoc2";
+            string inputFile = "Notizbuch öffnen.onetoc2";
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
             // By default children loading is "lazy".
