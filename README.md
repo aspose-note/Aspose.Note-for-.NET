@@ -22,5 +22,5 @@ Directory | Description
 + **Product Home:** [Aspose.Note for .NET](https://www.aspose.com/products/note/net)
 + **Download:** [Downlolad Aspose.Note for .NET](https://downloads.aspose.com/note/net)
 + **Documentation:** [Aspose.Note for .NET Documentation](https://docs.aspose.com/display/notenet/Home)
-+ **Forum:** [Aspose.Note for .NET Forum](https://www.aspose.com/community/forums/aspose.note-product-family/522/showforum.aspx)
++ **Forum:** [Aspose.Note for .NET Forum](https://forum.aspose.com/c/note)
 + **Blog:** [Aspose.Note for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-note-product-family/)
