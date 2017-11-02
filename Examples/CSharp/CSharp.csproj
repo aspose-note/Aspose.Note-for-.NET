@@ -82,9 +82,9 @@
     <Compile Include="Loading-and-Saving\ConvertSpecificPageToImage.cs" />
     <Compile Include="Loading-and-Saving\CreateOneNoteDocAndSaveToHTML.cs" />
     <Compile Include="Loading-and-Saving\ConsequentExportOperations.cs" />
-    <Compile Include="Loading-and-Saving\PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
+    <Compile Include="Loading-and-Saving\PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
     <Compile Include="Loading-and-Saving\PasswordProtectedDoc.cs" />
-    <Compile Include="Loading-and-Saving\PageSplittUsingKeepSOlidObjectsAlgoirthm.cs" />
+    <Compile Include="Loading-and-Saving\PageSplitUsingKeepSolidObjectsAlgoirthm.cs" />
     <Compile Include="Loading-and-Saving\ExtractContent.cs" />
     <Compile Include="Loading-and-Saving\NodeTypeEnumeration.cs" />
     <Compile Include="Loading-and-Saving\RetreivingFileFormat.cs" />

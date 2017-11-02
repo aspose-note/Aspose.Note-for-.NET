@@ -15,6 +15,7 @@ using Aspose.Note.Examples.CSharp.Tasks;
 using Aspose.Note.Examples.CSharp.Hyperlinks;
 using Aspose.Note.Examples.CSharp.WorkingWithNoteBook;
 using Aspose.Note.Examples.CSharp.NoteBook;
+//using Aspose.Note.Examples.CSharp.PrintingDocument;
 
 namespace Aspose.Note.Examples.CSharp
 {
@@ -23,56 +24,75 @@ namespace Aspose.Note.Examples.CSharp
         [STAThread]
         public static void Main()
         {
+            //The API has evaluation limitaions as mentioned in https://docs.aspose.com/display/notenet/Licensing#Licensing-EvaluationVersionLimitations
+            //You can get a 30-day temporary license free of cost for evaluating the API without any limitations.
+            //Get a temporary license from http://www.aspose.com/corporate/purchase/temporary-license.aspx and apply before executing the code samples.
+            License lic = new License();
+            lic.SetLicense("E:\\Lics\\Aspose.Total.Lic");     //Comment this line if you would like to try the API with Evaluation limitations
+
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
             // Uncomment the one you want to try out
 
+            #region Loading and Saving Section
             //// =====================================================
             //// =====================================================
             //// Loading and Saving
             //// =====================================================
             //// =====================================================
-
-            //LoadOneNoteDoc.Run();
-            //SaveToStream.Run();
-            //SpecifySaveOptions.Run();
-            //SaveRangeOfPagesAsPDF.Run();
-            //SaveWithDefaultSettings.Run();
-            //ConvertSpecificPageToImage.Run();
-            //CreateOneNoteDocAndSaveToHTML.Run();
-            //PasswordProtectedDoc.Run();
-            //PageSplittUsingKeepSOlidObjectsAlgoirthm.Run();
             //ConsequentExportOperations.Run();
-            //SaveToImageDefaultOptions.Run();            
-            //CreateDocWithSimpleRichText.Run();
+            //ConvertSpecificPageToImage.Run();
             //CreateDocWithFormattedRichText.Run();
-            //ExtractContent.Run();
             //CreateDocWithPageTitle.Run();
+            //CreateDocWithSimpleRichText.Run();
+            //CreateOneNoteDocAndSaveToHTML.Run();
+            //ExtractContent.Run();
+            //LoadOneNoteDoc.Run();
+            //NodeTypeEnumeration.Run();
+            //PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.Run();
+            //PageSplittUsingKeepSOlidObjectsAlgoirthm.Run();
+            //PasswordProtectedDoc.Run();
+            //RetreivingFileFormat.Run();
             //SaveDocToOneNoteFormat.Run();
             //SaveDocToOneNoteFormatUsingOnesaveoptions.Run();
             //SaveDocToOneNoteFormatUsingSaveFormat.Run();
-
+            //SaveRangeOfPagesAsPDF.Run();
+            //SaveToImageDefaultOptions.Run();   
+            //SaveToStream.Run();
+            //SaveWithDefaultSettings.Run();
+            //SpecifySaveOptions.Run();
             //// =====================================================
+            #endregion
+
+            #region Printing Documents
             //// =====================================================
             //// Printing Documents
             //// =====================================================
             //// =====================================================
-            //PrintDocument();
-            //PrintDocumentWithPrintOptions();
+            //PrintDocument.Run();
+            //PrintDocumentWithPrintOptions.Run();
             //// =====================================================
+            #endregion
+
+            #region Images
             //// =====================================================
             //// Images
             //// =====================================================
             //// =====================================================
 
-            //ExtractImages.Run(); 
-            //GetInformationOfImages.Run();  
-            //InsertImage.Run();
             //BuildDocAndInsertImage.Run();
             //BuildDocAndInsertImageUsingImageStream.Run();
+            //ExtractImages.Run();
+            //GetInformationOfImages.Run();
             //ImageAlternativeText.Run();
+            //ImageWithHyperlink.Run();
+            //InsertImage.Run();
+
 
             //// =====================================================
+            #endregion
+
+            #region Text
             //// =====================================================
             //// Text
             //// =====================================================
@@ -90,6 +110,9 @@ namespace Aspose.Note.Examples.CSharp
             //ChangeStyle.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Pages
             //// =====================================================
             //// Pages
             //// =====================================================
@@ -105,6 +128,9 @@ namespace Aspose.Note.Examples.CSharp
             //ModifyPageHistory.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Tables
             //// =====================================================
             //// Tables
             //// =====================================================
@@ -118,6 +144,9 @@ namespace Aspose.Note.Examples.CSharp
             //SettingCellBackGroundColor.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Attachments
             //// =====================================================
             //// Attachments
             //// =====================================================
@@ -128,6 +157,9 @@ namespace Aspose.Note.Examples.CSharp
             //AttachFileAndSetIcon.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Tags
             //// =====================================================
             //// Tags
             //// =====================================================
@@ -139,6 +171,9 @@ namespace Aspose.Note.Examples.CSharp
             //AddTableNodeWithTag.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Tasks
             //// =====================================================
             //// Tasks
             //// =====================================================
@@ -147,6 +182,9 @@ namespace Aspose.Note.Examples.CSharp
             //GetOutlookTaskDetails.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Hyperlinks
             //// =====================================================
             //// Hyperlinks
             //// =====================================================
@@ -155,12 +193,14 @@ namespace Aspose.Note.Examples.CSharp
             //AddHyperlink.Run();
 
             //// =====================================================
+            #endregion
+
+            #region Notebook
             //// =====================================================
             //// NoteBook
             //// =====================================================
             //// =====================================================
 
-            
             //ConvertToImage.Run();
             //ConvertToPDF.Run();
             //CreateNoteBook.Run();
@@ -175,6 +215,7 @@ namespace Aspose.Note.Examples.CSharp
             //RetrieveDocumentsfromOneNoteNotebook.Run();
             //ReadRichText.Run();
             //ConvertToImageAsFlattenedNotebook.Run();
+            #endregion
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

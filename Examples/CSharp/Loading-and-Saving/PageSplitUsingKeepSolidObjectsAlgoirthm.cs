@@ -6,7 +6,7 @@ using Aspose.Note.Saving;
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
-    public class PageSplittUsingKeepSOlidObjectsAlgoirthm
+    public class PageSplitUsingKeepSolidObjectsAlgoirthm
     {
         public static void Run()
         {
