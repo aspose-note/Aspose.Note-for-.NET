@@ -117,7 +117,7 @@ namespace Aspose.Note.Examples.CSharp
             //// Pages
             //// =====================================================
             //// =====================================================
-
+            ConflictPageManipulation.Run();
             //GetNumberOfPages.Run();
             //GetPageInformation.Run();
             //CreateDocWithRootAndSubPages.Run();
