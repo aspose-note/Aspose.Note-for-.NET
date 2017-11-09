@@ -1,6 +1,6 @@
 ## Aspose.Note for .NET Examples
 
-This repository contains C# and VB.NET examples for [Aspose.Note for .NET](http://www.aspose.com/products/note/net) which will help you learn Aspose.Note for .NET and write your own applications.
+This repository contains C# examples for [Aspose.Note for .NET](http://www.aspose.com/products/note/net) which will help you learn Aspose.Note for .NET and write your own applications.
 
 <p align="center">
   <a title="Download Examples ZIP" href="https://github.com/aspose-note/Aspose.Note-for-.NET/archive/master.zip">
