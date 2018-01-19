@@ -4,6 +4,8 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using Aspose.Note.Saving;
+using Aspose.Note.Saving.Html;
+using Aspose.Note.Examples.CSharp.Loading_and_Saving;
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
@@ -34,6 +36,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExEnd:CreateOneNoteDocAndSaveToHTML
             Console.WriteLine("\nOneNote document created successfully.\nFile saved at " + dataDir);
         }
+
         public static void CreateAndSavePageRange()
         {
             // ExStart:CreateAndSavePageRange
@@ -63,6 +66,84 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             });
             // ExEnd:CreateAndSavePageRange
             Console.WriteLine("\nOneNote document created successfully and saved as page range.\nFile saved at " + dataDir);
+        }
+
+        public static void SaveAsHTMLToMemoryStreamWithEmbeddedResources()
+        {
+            //ExStart: SaveAsHTMLToMemoryStream
+            string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
+            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+
+            var options = new HtmlSaveOptions()
+            {
+                ExportCss = ResourceExportType.ExportEmbedded,
+                ExportFonts = ResourceExportType.ExportEmbedded,
+                ExportImages = ResourceExportType.ExportEmbedded,
+                FontFaceTypes = FontFaceType.Ttf
+            };
+            var r = new MemoryStream();
+            document.Save(r, options);
+            //ExEnd: SaveAsHTMLToMemoryStream
+        }
+
+        public static void SaveAsHTMLToFileWithResourcesInSeparateFiles()
+        {
+            //ExStart: SaveAsHTMLWithResourcesInSeparateFiles
+            string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
+            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+
+            var options = new HtmlSaveOptions()
+            {
+                ExportCss = ResourceExportType.ExportAsFile,
+                ExportFonts = ResourceExportType.ExportAsFile,
+                ExportImages = ResourceExportType.ExportAsFile,
+                FontFaceTypes = FontFaceType.Ttf
+            };
+            document.Save(dataDir + "document_out.html", options);
+            //ExEnd: SaveAsHTMLWithResourcesInSeparateFiles
+        }
+
+
+        public static void SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources()
+        {
+            //ExStart: SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources
+            // This code creates documentFolder containing document.html, css folder with style.css file, images folder with images and fonts folder with fonts.
+            // style.css file will contains at the end the following string "/* This line is appended to stream manually by user */"
+            var options = new HtmlSaveOptions()
+            {
+                FontFaceTypes = FontFaceType.Ttf
+            };
+            var savingCallbacks = new UserSavingCallbacks()
+            {
+                RootFolder = "documentFolder",
+                CssFolder = "css",
+                KeepCssStreamOpened = true,
+                ImagesFolder = "images",
+                FontsFolder = "fonts"
+            };
+            options.CssSavingCallback = savingCallbacks;
+            options.FontSavingCallback = savingCallbacks;
+            options.ImageSavingCallback = savingCallbacks;
+
+            if (!Directory.Exists(savingCallbacks.RootFolder))
+            {
+                Directory.CreateDirectory(savingCallbacks.RootFolder);
+            }
+
+            string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
+            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+
+            using (var stream = File.Create(Path.Combine(savingCallbacks.RootFolder, "document.html")))
+            {
+                document.Save(stream, options);
+            }
+
+            using (var writer = new StreamWriter(savingCallbacks.CssStream))
+            {
+                writer.WriteLine();
+                writer.WriteLine("/* This line is appended to stream manually by user */");
+            }
+            //ExEnd: SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources
         }
     }
 }

@@ -46,6 +46,9 @@ namespace Aspose.Note.Examples.CSharp
             //CreateDocWithPageTitle.Run();
             //CreateDocWithSimpleRichText.Run();
             //CreateOneNoteDocAndSaveToHTML.Run();
+            //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToMemoryStreamWithEmbeddedResources();
+            //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToFileWithResourcesInSeparateFiles();
+            //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources();
             //ExtractContent.Run();
             //LoadOneNoteDoc.Run();
             //NodeTypeEnumeration.Run();
@@ -117,7 +120,7 @@ namespace Aspose.Note.Examples.CSharp
             //// Pages
             //// =====================================================
             //// =====================================================
-            ConflictPageManipulation.Run();
+            //ConflictPageManipulation.Run();
             //GetNumberOfPages.Run();
             //GetPageInformation.Run();
             //CreateDocWithRootAndSubPages.Run();
