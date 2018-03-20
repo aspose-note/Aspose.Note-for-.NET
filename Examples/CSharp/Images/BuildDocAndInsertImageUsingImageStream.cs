@@ -23,7 +23,7 @@ namespace Aspose.Note.Examples.CSharp.Images
             OutlineElement outlineElem1 = new OutlineElement(doc);
             FileStream fs = File.OpenRead(dataDir +  "image.jpg");
             // Load the second image using the image name, extension and stream.
-            Aspose.Note.Image image1 = new Aspose.Note.Image(doc, "Penguins", "jpg", fs);
+            Aspose.Note.Image image1 = new Aspose.Note.Image(doc, "Penguins.jpg", fs);
             // Set image alignment
             image1.Alignment = HorizontalAlignment.Right;
 

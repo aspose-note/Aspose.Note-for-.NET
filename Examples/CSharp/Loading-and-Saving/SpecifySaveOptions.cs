@@ -23,6 +23,10 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Set page count
             opts.PageCount = 3;
 
+            //specify compression if required
+            opts.ImageCompression = Saving.Pdf.PdfImageCompression.Jpeg;
+            opts.JpegQuality = 90;
+
             dataDir = dataDir + "Document.SaveWithOptions_out.pdf";
             doc.Save(dataDir, opts);
             // ExEnd:SpecifySaveOptions

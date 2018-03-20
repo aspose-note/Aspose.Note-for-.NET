@@ -117,7 +117,7 @@ namespace Aspose.Note.Examples.CSharp
             //// Pages
             //// =====================================================
             //// =====================================================
-            ConflictPageManipulation.Run();
+            //ConflictPageManipulation.Run();
             //GetNumberOfPages.Run();
             //GetPageInformation.Run();
             //CreateDocWithRootAndSubPages.Run();
@@ -126,6 +126,7 @@ namespace Aspose.Note.Examples.CSharp
             //RollBackRevisions.Run();
             //PushCurrentPageVersion.Run();
             //ModifyPageHistory.Run();
+            //PageClone.Run();
 
             //// =====================================================
             #endregion
