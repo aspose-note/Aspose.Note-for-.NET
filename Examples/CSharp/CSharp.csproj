@@ -36,8 +36,8 @@
     <StartupObject>Aspose.Note.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=18.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.18.1.0\lib\net4.0\Aspose.Note.dll</HintPath>
+    <Reference Include="Aspose.Note, Version=18.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Note.18.3.0\lib\net4.0\Aspose.Note.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -104,6 +104,7 @@
     <Compile Include="NoteBook\AddChildNode.cs" />
     <Compile Include="Pages\ConflictPageManipulation.cs" />
     <Compile Include="Pages\CreateDocWithRootAndSubPages.cs" />
+    <Compile Include="Pages\PageClone.cs" />
     <Compile Include="Pages\PushCurrentPageVersion.cs" />
     <Compile Include="Pages\ModifyPageHistory.cs" />
     <Compile Include="Pages\RollBackRevisions.cs" />
