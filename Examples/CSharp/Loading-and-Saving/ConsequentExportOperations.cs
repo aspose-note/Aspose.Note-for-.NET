@@ -27,7 +27,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                 TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
             };
             // Append page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
             // Save OneNote document in different formats, set text font size and detect layout changes manually.
             doc.Save(dataDir + "ConsequentExportOperations_out.html");            
             doc.Save(dataDir + "ConsequentExportOperations_out.pdf");            

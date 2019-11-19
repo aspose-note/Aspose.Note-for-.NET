@@ -23,7 +23,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
             }
             document.RemoveChild(page);
 
-            document.AppendChild(lastPage);
+            document.AppendChildLast(lastPage);
 
             document.Save(dataDir + "RollBackRevisions_out.one");          
             // ExEnd:RollBackRevisions

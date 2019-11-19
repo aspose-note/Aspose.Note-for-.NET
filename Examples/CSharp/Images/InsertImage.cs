@@ -29,7 +29,7 @@ namespace Aspose.Note.Examples.CSharp.Images
             // Set image alignment
             image.Alignment = HorizontalAlignment.Right;
             // Add the image to the page.
-            page.AppendChild(image);            
+            page.AppendChildLast(image);            
             // ExEnd:InsertImage 
             Console.WriteLine("\nImage inserted successfully to OneNote document.");
         }

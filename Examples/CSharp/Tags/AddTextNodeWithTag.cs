@@ -30,13 +30,13 @@ namespace Aspose.Note.Examples.CSharp.Tags
             });
 
             // Add text node
-            outlineElem.AppendChild(text);
+            outlineElem.AppendChildLast(text);
             // Add outline element node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "AddTextNodeWithTag_out.one";
             // Save OneNote document

@@ -26,7 +26,6 @@ namespace Aspose.Note.Examples.CSharp.Images
                 Console.WriteLine("OriginalWidth: {0}", image.OriginalWidth);
                 Console.WriteLine("OriginalHeight: {0}", image.OriginalHeight);
                 Console.WriteLine("FileName: {0}", image.FileName);
-                Console.WriteLine("Extension: {0}", image.Extension);
                 Console.WriteLine("LastModifiedTime: {0}", image.LastModifiedTime);
                 Console.WriteLine();
             }

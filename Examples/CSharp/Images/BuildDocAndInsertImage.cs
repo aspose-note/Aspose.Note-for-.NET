@@ -27,13 +27,13 @@ namespace Aspose.Note.Examples.CSharp.Images
             // Set image alignment
             image.Alignment = HorizontalAlignment.Right;
             // Add image
-            outlineElem.AppendChild(image);
+            outlineElem.AppendChildLast(image);
             // Add outline elements
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add Outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add Page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "BuildDocAndInsertImage_out.one";
             // Save OneNote document

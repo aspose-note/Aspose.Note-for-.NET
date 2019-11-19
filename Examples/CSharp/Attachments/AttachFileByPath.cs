@@ -25,13 +25,13 @@ namespace Aspose.Note.Examples.CSharp.Attachments
             // Initialize AttachedFile class object
             AttachedFile attachedFile = new AttachedFile(doc,  dataDir + "attachment.txt");
             // Add attached file
-            outlineElem.AppendChild(attachedFile);
+            outlineElem.AppendChildLast(attachedFile);
             // Add outline element node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
             dataDir = dataDir + "AttachFileByPath_out.one";
             doc.Save(dataDir);
             // ExEnd:AttachFileByPath      

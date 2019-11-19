@@ -25,17 +25,17 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Load an image
             Aspose.Note.Image image = new Aspose.Note.Image(doc, dataDir + "icon.jpg");
             // Insert image in the document node
-            outlineElem.AppendChild(image);
+            outlineElem.AppendChildLast(image);
             image.Tags.Add(new NoteTag
             {
                 Icon = TagIcon.YellowStar,
             });
             // Add outline element node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "AddImageNodeWithTag_out.one";
             // Save OneNote document

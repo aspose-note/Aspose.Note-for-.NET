@@ -27,25 +27,25 @@ namespace Aspose.Note.Examples.CSharp.Text
             OutlineElement outlineElem1 = new OutlineElement(doc) { NumberList = new NumberList("*", "Arial", 10) };
             // Initialize RichText class object and apply text style
             RichText text1 = new RichText(doc) { Text = "First", DefaultStyle = defaultStyle };
-            outlineElem1.AppendChild(text1);
+            outlineElem1.AppendChildLast(text1);
 
             OutlineElement outlineElem2 = new OutlineElement(doc) { NumberList = new NumberList("*", "Arial", 10) };
             RichText text2 = new RichText(doc) { Text = "Second", DefaultStyle = defaultStyle };
-            outlineElem2.AppendChild(text2);
+            outlineElem2.AppendChildLast(text2);
 
             OutlineElement outlineElem3 = new OutlineElement(doc) { NumberList = new NumberList("*", "Arial", 10) };
             RichText text3 = new RichText(doc) { Text = "Third", DefaultStyle = defaultStyle };
-            outlineElem3.AppendChild(text3);
+            outlineElem3.AppendChildLast(text3);
 
             // Add outline elements
-            outline.AppendChild(outlineElem1);
-            outline.AppendChild(outlineElem2);
-            outline.AppendChild(outlineElem3);
+            outline.AppendChildLast(outlineElem1);
+            outline.AppendChildLast(outlineElem2);
+            outline.AppendChildLast(outlineElem3);
 
             // Add Outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add Page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "ApplyBulletsOnText_out.one"; 
             // Save OneNote document

@@ -29,13 +29,13 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             RichText text = new RichText(doc) { Text = "Hello OneNote text!", DefaultStyle = textStyle };
 
             // Add RichText node
-            outlineElem.AppendChild(text);
+            outlineElem.AppendChildLast(text);
             // Add OutlineElement node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add Outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add Page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "CreateDocWithSimpleRichText_out.one";
             // Save OneNote document

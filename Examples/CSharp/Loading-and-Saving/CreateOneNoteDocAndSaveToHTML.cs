@@ -29,7 +29,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                 TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), DefaultStyle = textStyle },
                 TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
             };
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
             dataDir = dataDir + "CreateOneNoteDocAndSaveToHTML_out.html";
             // Save as HTML format
             doc.Save(dataDir);
@@ -55,7 +55,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                 TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), DefaultStyle = textStyle },
                 TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
             };
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "CreateAndSavePageRange_out.html";
             // Save as HTML format
@@ -94,9 +94,9 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
 
             var options = new HtmlSaveOptions()
             {
-                ExportCss = ResourceExportType.ExportAsFile,
-                ExportFonts = ResourceExportType.ExportAsFile,
-                ExportImages = ResourceExportType.ExportAsFile,
+                ExportCss = ResourceExportType.ExportEmbedded,
+                ExportFonts = ResourceExportType.ExportEmbedded,
+                ExportImages = ResourceExportType.ExportEmbedded,
                 FontFaceTypes = FontFaceType.Ttf
             };
             document.Save(dataDir + "document_out.html", options);

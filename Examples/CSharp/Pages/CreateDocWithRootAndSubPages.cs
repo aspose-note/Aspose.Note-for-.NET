@@ -28,32 +28,32 @@ namespace Aspose.Note.Examples.CSharp.Pages
             OutlineElement outlineElem = new OutlineElement(doc);
             TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             RichText text = new RichText(doc) { Text = "First page.", DefaultStyle = textStyle };
-            outlineElem.AppendChild(text);
-            outline.AppendChild(outlineElem);
-            page1.AppendChild(outline);
+            outlineElem.AppendChildLast(text);
+            outline.AppendChildLast(outlineElem);
+            page1.AppendChildLast(outline);
 
             /*---------- Adding nodes to second Page ----------*/
             var outline2 = new Outline(doc);
             var outlineElem2 = new OutlineElement(doc);
             var textStyle2 = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             var text2 = new RichText(doc) { Text = "Second page.", DefaultStyle = textStyle2 };
-            outlineElem2.AppendChild(text2);
-            outline2.AppendChild(outlineElem2);
-            page2.AppendChild(outline2);
+            outlineElem2.AppendChildLast(text2);
+            outline2.AppendChildLast(outlineElem2);
+            page2.AppendChildLast(outline2);
 
             /*---------- Adding nodes to third Page ----------*/
             var outline3 = new Outline(doc);
             var outlineElem3 = new OutlineElement(doc);
             var textStyle3 = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             var text3 = new RichText(doc) { Text = "Third page.", DefaultStyle = textStyle3 };
-            outlineElem3.AppendChild(text3);
-            outline3.AppendChild(outlineElem3);
-            page3.AppendChild(outline3);
+            outlineElem3.AppendChildLast(text3);
+            outline3.AppendChildLast(outlineElem3);
+            page3.AppendChildLast(outline3);
 
             /*---------- Add pages to the OneNote Document ----------*/
-            doc.AppendChild(page1);
-            doc.AppendChild(page2);
-            doc.AppendChild(page3);
+            doc.AppendChildLast(page1);
+            doc.AppendChildLast(page2);
+            doc.AppendChildLast(page3);
 
             dataDir = dataDir + "CreateDocWithRootAndSubPages_out.one";
             // Save OneNote document

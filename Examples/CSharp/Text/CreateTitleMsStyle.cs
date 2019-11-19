@@ -34,7 +34,7 @@ namespace Aspose.Note.Examples.CSharp.Text
                 }
             };
 
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             doc.Save(outputPath);
             // ExEnd:CreateTitleMsStyle

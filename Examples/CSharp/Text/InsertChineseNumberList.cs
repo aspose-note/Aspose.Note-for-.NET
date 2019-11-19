@@ -25,21 +25,21 @@ namespace Aspose.Note.Examples.CSharp.Text
             // Numbers in the same outline are automatically incremented.
             OutlineElement outlineElem1 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10) };
             RichText text1 = new RichText(doc) { Text = "First", DefaultStyle = defaultStyle };
-            outlineElem1.AppendChild(text1);
+            outlineElem1.AppendChildLast(text1);
             //------------------------
             OutlineElement outlineElem2 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10) };
             RichText text2 = new RichText(doc) { Text = "Second", DefaultStyle = defaultStyle };
-            outlineElem2.AppendChild(text2);
+            outlineElem2.AppendChildLast(text2);
             //------------------------
             OutlineElement outlineElem3 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10) };
             RichText text3 = new RichText(doc) { Text = "Third", DefaultStyle = defaultStyle };
-            outlineElem3.AppendChild(text3);
+            outlineElem3.AppendChildLast(text3);
             //------------------------
-            outline.AppendChild(outlineElem1);
-            outline.AppendChild(outlineElem2);
-            outline.AppendChild(outlineElem3);
-            page.AppendChild(outline);
-            doc.AppendChild(page);
+            outline.AppendChildLast(outlineElem1);
+            outline.AppendChildLast(outlineElem2);
+            outline.AppendChildLast(outlineElem3);
+            page.AppendChildLast(outline);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "InsertChineseNumberList_out.one"; 
             // Save OneNote document

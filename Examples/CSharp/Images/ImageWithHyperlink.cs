@@ -21,9 +21,9 @@ namespace Aspose.Note.Examples.CSharp.Images
             
             image.HyperlinkUrl = "http://image.com";
             
-            page.AppendChild(image);
+            page.AppendChildLast(image);
             
-            document.AppendChild(page);
+            document.AppendChildLast(page);
             
             document.Save(dataDir + "Image with Hyperlink_out.one");
             //ExEnd: ImageWithHyperlink

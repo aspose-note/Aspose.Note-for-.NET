@@ -24,9 +24,9 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Initialize TableCell class object
             TableCell cell = new TableCell(doc);
             // Insert cell content
-            cell.AppendChild(InsertTable.GetOutlineElementWithText(doc, "Single cell."));
+            cell.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Single cell."));
             // Add cell to row node
-            row.AppendChild(cell);
+            row.AppendChildLast(cell);
             // Initialize table node
             Table table = new Table(doc)
             {
@@ -34,7 +34,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
                 Columns = { new TableColumn { Width = 70 } }
             };
             // Insert row node in table
-            table.AppendChild(row);
+            table.AppendChildLast(row);
             // Add tag to this table node
             table.Tags.Add(new NoteTag
             {
@@ -44,11 +44,11 @@ namespace Aspose.Note.Examples.CSharp.Tags
             Outline outline = new Outline(doc);
             OutlineElement outlineElem = new OutlineElement(doc);
             // Add table node
-            outlineElem.AppendChild(table);
+            outlineElem.AppendChildLast(table);
             // Add outline elements
-            outline.AppendChild(outlineElem);
-            page.AppendChild(outline);
-            doc.AppendChild(page);
+            outline.AppendChildLast(outlineElem);
+            page.AppendChildLast(outline);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "AddTableNodeWithTag_out.one";
             // Save OneNote document

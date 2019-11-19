@@ -16,10 +16,11 @@ namespace Aspose.Note.Examples.CSharp.Images
 
             var document = new Document();
             var page = new Page(document);
-            var image = new Aspose.Note.Image(document, dataDir + "image.jpg");
-            image.AlternativeText = "ImageAlternativeText";
-            page.AppendChild(image);
-            document.AppendChild(page);
+            var image = new Image(document, dataDir + "image.jpg");
+            image.AlternativeTextTitle = "This is an image's title!";
+            image.AlternativeTextDescription = "And this is an image's description!";
+            page.AppendChildLast(image);
+            document.AppendChildLast(page);
 
             dataDir = dataDir + "ImageAlternativeText_out.one";
             document.Save(dataDir);

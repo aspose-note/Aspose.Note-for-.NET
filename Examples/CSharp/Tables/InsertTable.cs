@@ -27,13 +27,13 @@ namespace Aspose.Note.Examples.CSharp.Tables
             TableCell cell13 = new TableCell(doc);
 
             // Append outline elements in the table cell
-            cell11.AppendChild(GetOutlineElementWithText(doc, "cell_1.1"));
-            cell12.AppendChild(GetOutlineElementWithText(doc, "cell_1.2"));
-            cell13.AppendChild(GetOutlineElementWithText(doc, "cell_1.3"));
+            cell11.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.1"));
+            cell12.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.2"));
+            cell13.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.3"));
             // Table cells to rows
-            row1.AppendChild(cell11);
-            row1.AppendChild(cell12);
-            row1.AppendChild(cell13);
+            row1.AppendChildLast(cell11);
+            row1.AppendChildLast(cell12);
+            row1.AppendChildLast(cell13);
 
             // Initialize TableRow class object
             TableRow row2 = new TableRow(doc);
@@ -43,14 +43,14 @@ namespace Aspose.Note.Examples.CSharp.Tables
             TableCell cell23 = new TableCell(doc);
 
             // Append outline elements in the table cell
-            cell21.AppendChild(GetOutlineElementWithText(doc, "cell_2.1"));
-            cell22.AppendChild(GetOutlineElementWithText(doc, "cell_2.2"));
-            cell23.AppendChild(GetOutlineElementWithText(doc, "cell_2.3"));
+            cell21.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.1"));
+            cell22.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.2"));
+            cell23.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.3"));
 
             // Append table cells to rows
-            row2.AppendChild(cell21);
-            row2.AppendChild(cell22);
-            row2.AppendChild(cell23);
+            row2.AppendChildLast(cell21);
+            row2.AppendChildLast(cell22);
+            row2.AppendChildLast(cell23);
 
             // Initialize Table class object and set column widths
             Table table = new Table(doc)
@@ -59,21 +59,21 @@ namespace Aspose.Note.Examples.CSharp.Tables
                 Columns = { new TableColumn { Width = 200 }, new TableColumn { Width = 200 }, new TableColumn { Width = 200 } }
             };
             // Append table rows to table
-            table.AppendChild(row1);
-            table.AppendChild(row2);
+            table.AppendChildLast(row1);
+            table.AppendChildLast(row2);
 
             // Initialize Outline object
             Outline outline = new Outline(doc);
             // Initialize OutlineElement object
             OutlineElement outlineElem = new OutlineElement(doc);
             // Add table to outline element node
-            outlineElem.AppendChild(table);
+            outlineElem.AppendChildLast(table);
             // Add outline element to outline
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add outline to page node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add page to document node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
             dataDir = dataDir + "InsertTable_out.one";
             doc.Save(dataDir);
             // ExEnd:InsertTable
@@ -85,7 +85,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
         {
             OutlineElement outlineElem = new OutlineElement(doc);
             TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            outlineElem.AppendChild(new RichText(doc) { Text = text, DefaultStyle = textStyle });
+            outlineElem.AppendChildLast(new RichText(doc) { Text = text, DefaultStyle = textStyle });
             return outlineElem;
         }
         // ExEnd:GetOutlineElementWithText

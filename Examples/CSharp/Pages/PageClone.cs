@@ -18,11 +18,11 @@ namespace Aspose.Note.Examples.CSharp.Pages
 
             //Clone into new document without history
             var cloned = new Document();
-            cloned.AppendChild(document.FirstChild.Clone());
+            cloned.AppendChildLast(document.FirstChild.Clone());
 
             //Clone into new document with history
             cloned = new Document();
-            cloned.AppendChild(document.FirstChild.Clone(true));
+            cloned.AppendChildLast(document.FirstChild.Clone(true));
             //ExEnd: PageClone
         }
     }

@@ -78,13 +78,13 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Set page title
             page.Title = title;
             // Add RichText node
-            outlineElem.AppendChild(text);
+            outlineElem.AppendChildLast(text);
             // Add OutlineElement node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add Outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add Page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "CreateDocWithFormattedRichText_out.one";
             // Save OneNote document

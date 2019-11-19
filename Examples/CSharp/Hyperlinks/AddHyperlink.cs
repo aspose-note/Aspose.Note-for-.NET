@@ -62,13 +62,13 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
 
             title.TitleText = titleText;
             page.Title = title;
-            outlineElem.AppendChild(text);
+            outlineElem.AppendChildLast(text);
             // Add outline elements
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add Outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add Page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "AddHyperlink_out.one";
             // Save OneNote document

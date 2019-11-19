@@ -30,7 +30,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                 TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
             };
             // Append Page node in the document
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
 
             dataDir = dataDir + "CreateDocWithPageTitle_out.one";
             // Save OneNote document

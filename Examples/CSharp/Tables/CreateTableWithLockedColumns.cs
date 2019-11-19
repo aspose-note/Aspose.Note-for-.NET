@@ -23,15 +23,15 @@ namespace Aspose.Note.Examples.CSharp.Tables
             TableRow row1 = new TableRow(doc);
             // Initialize TableCell class object and set text content
             TableCell cell11 = new TableCell(doc);
-            cell11.AppendChild(InsertTable.GetOutlineElementWithText(doc, "Small text"));
-            row1.AppendChild(cell11);
+            cell11.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Small text"));
+            row1.AppendChildLast(cell11);
 
             // Initialize TableRow class object
             TableRow row2 = new TableRow(doc);
             // Initialize TableCell class object and set text content
             TableCell cell21 = new TableCell(doc);
-            cell21.AppendChild(InsertTable.GetOutlineElementWithText(doc, "Long   text    with    several   words and    spaces."));
-            row2.AppendChild(cell21);
+            cell21.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Long   text    with    several   words and    spaces."));
+            row2.AppendChildLast(cell21);
 
             // Initialize Table class object
             Table table = new Table(doc)
@@ -40,19 +40,19 @@ namespace Aspose.Note.Examples.CSharp.Tables
                 Columns = { new TableColumn { Width = 70, LockedWidth = true } }
             };
             // Add rows
-            table.AppendChild(row1);
-            table.AppendChild(row2);
+            table.AppendChildLast(row1);
+            table.AppendChildLast(row2);
 
             Outline outline = new Outline(doc);
             OutlineElement outlineElem = new OutlineElement(doc);
             // Add table node
-            outlineElem.AppendChild(table);
+            outlineElem.AppendChildLast(table);
             // Add outline element node
-            outline.AppendChild(outlineElem);
+            outline.AppendChildLast(outlineElem);
             // Add outline node
-            page.AppendChild(outline);
+            page.AppendChildLast(outline);
             // Add page node
-            doc.AppendChild(page);
+            doc.AppendChildLast(page);
             dataDir = dataDir + "CreateTableWithLockedColumns_out.one";
             doc.Save(dataDir);
             // ExEnd:CreateTableWithLockedColumns

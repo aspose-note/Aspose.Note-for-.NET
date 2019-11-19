@@ -20,9 +20,9 @@ namespace Aspose.Note.Examples.CSharp.Tables
             TableRow row1 = new TableRow(doc);
             // Initialize TableCell class object and set text content
             TableCell cell11 = new TableCell(doc);
-            cell11.AppendChild(InsertTable.GetOutlineElementWithText(doc, "Small text"));
+            cell11.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Small text"));
             cell11.BackgroundColor = Color.Coral;
-            row1.AppendChild(cell11);  
+            row1.AppendChildLast(cell11);  
             // ExEnd:SettingCellBackGroundColor
         }
     }
