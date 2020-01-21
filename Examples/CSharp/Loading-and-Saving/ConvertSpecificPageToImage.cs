@@ -9,6 +9,11 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
     {
         public static void Run()
         {
+            ConvertDocumentToImage();
+            SetOutputImageResolution();
+        }
+        public static void ConvertDocumentToImage()
+        {
             // ExStart:ConvertSpecificPageToImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
@@ -44,6 +49,22 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             doc.Save(dataDir, new ImageSaveOptions(SaveFormat.Jpeg) { Resolution = 220 });
             // ExEnd:SetOutputImageResolution
             Console.WriteLine("\nOneNote document output resolution setup successfully.\nFile saved at " + dataDir);
+        }
+        public static void SetOutputImageQuality()
+        {
+            // ExStart:SetOutputImageQuality
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
+
+            // Load the document into Aspose.Note.
+            Document doc = new Document(dataDir + "Aspose.one");
+
+            dataDir = dataDir + "SetOutputImageResolution_out.jpg";
+
+            // Save the document.
+            doc.Save(dataDir, new ImageSaveOptions(SaveFormat.Jpeg) { Quality = 100 });
+            // ExEnd:SetOutputImageQuality
+            Console.WriteLine("\nOneNote document output quality setup successfully.\nFile saved at " + dataDir);
         }
     }
 }
