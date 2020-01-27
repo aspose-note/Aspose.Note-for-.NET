@@ -3,6 +3,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Aspose.Note.Examples.CSharp.Text
 {
@@ -24,7 +25,7 @@ namespace Aspose.Note.Examples.CSharp.Text
             {
                 Page page = (Page)nodes[0];
                 // Retrieve text
-                string text = page.GetText();
+                string text = string.Join(Environment.NewLine, page.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
                 // Print text on the output screen
                 Console.WriteLine(text);
             }

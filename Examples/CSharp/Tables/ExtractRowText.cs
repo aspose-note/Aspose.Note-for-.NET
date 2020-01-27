@@ -2,6 +2,7 @@ using System.IO;
 using Aspose.Note;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Aspose.Note.Examples.CSharp.Tables
 {
@@ -29,7 +30,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
                 {
                     rowCount++;
                     // Retrieve text
-                    string text = row.GetText();
+                    string text = string.Join(Environment.NewLine, row.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
                     // Print text on the output screen
                     Console.WriteLine(text);
                 }

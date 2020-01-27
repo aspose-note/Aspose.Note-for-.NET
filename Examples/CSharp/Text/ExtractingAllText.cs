@@ -2,6 +2,7 @@
 using System.IO;
 using Aspose.Note;
 using System;
+using System.Linq;
 
 namespace Aspose.Note.Examples.CSharp.Text
 {
@@ -17,8 +18,8 @@ namespace Aspose.Note.Examples.CSharp.Text
             Document oneFile = new Document(dataDir + "Aspose.one");
 
             // Retrieve text
-            string text = oneFile.GetText();
-            
+            string text = string.Join(Environment.NewLine, oneFile.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
+
             // Print text on the output screen
             Console.WriteLine(text);
             // ExEnd:ExtractingAllText
