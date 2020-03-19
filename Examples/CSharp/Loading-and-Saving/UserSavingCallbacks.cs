@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Note.Examples.CSharp.Loading_and_Saving
+namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
     class UserSavingCallbacks : ICssSavingCallback, IFontSavingCallback, IImageSavingCallback
     {
