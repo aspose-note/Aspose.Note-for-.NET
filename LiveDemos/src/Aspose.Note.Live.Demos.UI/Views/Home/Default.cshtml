@@ -1,0 +1,58 @@
+﻿
+@model  LandingPageModel
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid header1 header2 minify-header appfamily-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>@Model.Resources["notePageMainTitle"] </h1>
+				<h4>@Model.Resources["notePageSubHeading"] </h4>
+			</div>
+			<div class="col-md-4 tc">
+				<img class=" col-xs-12" src="../img/aspose_note-brand.png" alt="Aspose.Eps" width="320" />
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid productfamilypage bg-white pdb-5">
+	<div class="row">
+		<div class="container tc">
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<h3>@string.Format(@Model.Resources["AsposeProductFamilyInclude"], @Model.Resources["AsposeNote"])  </h3>
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_viewer-app.png" alt="Aspose.CAD Product Family" />
+					</div>
+					<a href="/note/viewer"><span class="spanclass">@Model.Resources["AsposeNote"] @Model.Resources["AsposeProductFor"]  <em>@Model.Resources["Viewerh4"] </em></span><em>View your Microsoft OneNote document in image format while on the go. Just drop and Upload ONE file and view it without installing any software.</em></a>
+				</div>
+
+			</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_conversion-app.png" alt="Aspose.CAD for .NET" />
+					</div>
+					<a href="/note/conversion"><span class="spanclass">@Model.Resources["AsposeNote"] @Model.Resources["AsposeProductFor"]  <em>Conversion</em></span><em>Instant conversion from Microsoft OneNote format to fixed-layout, web & raster image formats. Converts ONE to PDF, HTML, JPG, PNG, BMP, & TIFF.</em></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_unlock-app.png" alt="Aspose.CAD for .NET" />
+					</div>
+					<a href="/note/unlock"><span class="spanclass">@Model.Resources["AsposeNote"] @Model.Resources["AsposeProductFor"]  <em>Unlock</em></span><em>Unlock Microsoft OneNote files online, within your web broswer.</em></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="spacer">&nbsp;</div>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <res name="ApplicationTitle">Aspose.PSD Live Demos</res>
+  <res name="ApplicationTitle2">Free App Solutions for PSD files nanipulation </res>
+
+	<res name="Viewerh4">Viewer</res>
+	<res name="btnViewNow">VIEW NOW</res>
+	<res name="ViewerAction">View</res>
+  <res name="HomePageTitle">Home</res>
+  <res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+  <res name="FileConvertedSuccessMessage">Your file has been converted successfully, please download converted file</res>
+  <res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+  <res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+  <res name="btnConvertNow">CONVERT NOW</res>
+	<res name="AsposeNote">Aspose.note</res>
+	<res name="EditorReturnQuestion">Are you sure you want to return?</res>
+	<res name="Asposenote">Aspose.note</res>
+  <res name="PageNotFound">404 Page not found</res>
+  <res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+  <res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select a file to convert</res>
+  <res name="SaveAs">Save as</res>
+	<res name="ViewerAPPName">Viewer</res>
+	<res name="noteConversionSaveAsOptions">PDF, HTML, JPG, PNG, BMP, TIFF</res>
+  <res name="DropOrUploadFile">Drop or upload your file</res>
+  <res name="DropOrUploadFiles">Drop or upload your files</res>
+	
+  <res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
+  <res name="DownLoadNow">DOWNLOAD NOW</res>
+  <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+	<res name="noteConversionPageTitle">Convert OneNote Files to PDF, HTML &amp; Images</res>
+	<res name="noteConversionMetaDescription">Free universal app to convert Microsoft OneNote files (ONE) to fixed-layout PDF files as well as HTML, JPEG, JPG, PNG, BMP or TIFF images.</res>
+	<res name="noteConversionTitle">Free OneNote Converter App</res>
+	<res name="noteConversionSubTitle">Convert OneNote files to PDF, HTML, Images and many other formats.</res>
+	<!-- Conversion App - How To-->
+	<res name="HowtoConversionTitle">How to convert {0} file using {1}</res>
+	<res name="HowtoConversionFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoConversionFeature2">Your file will be uploaded and will be converted to required format.</res>
+	<res name="HowtoConversionFeature3">Download link of converted file will be available instantly after conversion.</res>
+	<res name="WrongRegExpMessage">Wrong regular expression</res>
+  <res name="ConvertAnotherFile">Convert another file</res>
+  
+	<res name="AsposeProductFor"></res>
+
+ 
+  <res name="Feature1">Fast and Easy Conversion</res>
+  <res name="Feature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature1TasksDescription">Upload your project (or select online), choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature2">Convert from Anywhere</res>
+  <res name="Feature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+  <res name="Feature3">Conversion Quality</res>
+  <res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	<res name="notePageMainTitle">Microsoft OneNote File Format Solution</res>
+	<res name="notePageSubHeading">Process, view or convert Microsoft OneNote files via On Premise APIs or prebuilt Cross-Platform apps.</res>
+  <res name="PoweredBy">Powered by</res>
+  <res name="Conversionh4">Conversion</res>
+  
+  <res name="SaveAsDescription">Save as: {0}</res>
+  <res name="ConversionCategory">conversion</res>
+  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
+
+	<res name="ConversionFeature1">Fast and Easy Conversion</res>
+	<res name="ConversionFeature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	<res name="ConversionFeature1TasksDescription">Upload your project (or select online), choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	<res name="ConversionFeature2">Convert from Anywhere</res>
+	<res name="ConversionFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ConversionFeature3">Conversion Quality</res>
+	<res name="ConversionButton">CONVERT</res>
+	<res name="ConversionAnotherFile">Convert other documents</res>
+	<res name="ConversionSuccessMessage">Your files have been processed successfully</res>	
+	<res name="ConversionAction">Convert</res>
+
+
+	<res name="noteViewerPageTitle">Free App to view OneNote files on any platform</res>
+	<res name="noteViewerMetaDescription">Free online App to view Microsoft OneNote files on any platform. Use App on mobile or desktop. No fees attached. No subscription required.</res>
+	<res name="noteViewerTitle">Reliable and Robust Free OneNote Viewer</res>
+	<res name="noteViewerSubTitle">View your OneNote files from any where, on any platform and any browser.</res>
+	<res name="noteValidationExpression">.one</res>
+	<res name="noteViewerLiFeature1">View your Free Online OneNote as an image representation</res>
+	
+	<res name="HowtoViewerTitle">How to View {0} file using {1}</res>
+	<res name="HowtoViewerFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoViewerFeature2">Your document file will be automatically rendered for you to view instantly.</res>
+	<res name="HowtoViewerFeature3">Download the document file in original, image or PDF format.</res>
+
+	<res name="ViewerFeature1">Quick and Easy Viewer</res>
+	<res name="ViewerFeature1Description">Upload your document and you will be redirected to the Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature1DescriptionChoice">Upload your document and you will be redirected to the {0} Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature2">View from Anywhere</res>
+	<res name="ViewerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ViewerFeature3">Viewer Quality</res>
+	<res name="ViewerLiFeature1">View your Photoshop online</res>
+	<res name="ViewerFeature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+
+	<res name="UnlockPasswordPlaceholder">Type Password</res>
+	<res name="PasswordPlaceholderErrorMessage">Password input can&apos;t be empty</res>
+	<res name="UnlockButton">UNLOCK NOW</res>
+	<res name="HowtoUnlockTitle">How to Unlock OneNote files using {1}</res>
+	<res name="HowtoUnlockFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoUnlockFeature2">Your document file will be rendered automatically to unlock.</res>
+	<res name="HowtoUnlockFeature3">Download link of document file will be available instantly after unlock.</res>
+	<res name="noteUnlockPageTitle">Free Online OneNote file Unlocker</res>
+	<res name="noteUnlockMetaDescription">Unlock MS OneNote files online, unlock MS OneNote files online free, unlock password protected MS OneNote files online.</res>
+	<res name="noteUnlockTitle">Free Online OneNote file Unlocker</res>
+	<res name="noteUnlockSubTitle">Unlock password protected MS OneNote files.</res>
+	<res name="noteUnlockLiFeature1">Remove password in multiple files</res>
+	<res name="noteUnlockLiFeature2">We don't decrypt or recover your documents</res>
+	<res name="noteUnlockValidationExpression">.one</res>
+	<res name="UnlockFeature1">Fast and Easy Unlock</res>
+	<res name="UnlockFeature1Description">Upload your password protected file, enter current password and click on "UNLOCK NOW" button. You will get unlocked file as soon as the unlocking is performed</res>
+	<res name="UnlockFeature2">Unlock from Anywhere</res>
+	<res name="UnlockFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="UnlockFeature3">Unlock Quality</res>
+	<res name="UnlockAnotherFile">Unlock another file</res>
+	<res name="UnlockSuccessMessage">Your file has been unlocked successfully</res>
+	<res name="UnlockAction">Unlock</res>
+</resources>
+
+
+
