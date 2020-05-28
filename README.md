@@ -2,7 +2,7 @@
 
 [Aspose.Note for .NET](https://products.aspose.com/note/net) is OneNote API to read, write and modify Microsoft Office OneNote files. It allows developers to work with .one files in C#, VB.NET, ASP.NET web applications, web services and Windows applications. It makes it possible to open files and manipulate the elements of OneNote books, from text, images and properties to more complex elements, and then export to ONE, PNG, GIF, JPEG, BMP, HTML or PDF formats.
 
-This repository contains [Examples](Examples), [LiveDemos](LiveDemos) and Showcase projects for [Aspose.Note for .NET](https://products.aspose.com/note/net) to help you learn and write your own applications.
+This repository contains [Demos](Demos), [Examples](Examples) and Showcase projects for [Aspose.Note for .NET](https://products.aspose.com/note/net) to help you learn and write your own applications.
 
 
 <p align="center">
@@ -14,8 +14,9 @@ This repository contains [Examples](Examples), [LiveDemos](LiveDemos) and Showca
 
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.Note for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
-[LiveDemos](LiveDemos)  | Aspose.Note for .NET Live Demos Source Code
+
 
 ## How to Run the Examples
 <ul>
