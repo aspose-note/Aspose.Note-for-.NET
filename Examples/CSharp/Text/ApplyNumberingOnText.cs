@@ -22,22 +22,22 @@ namespace Aspose.Note.Examples.CSharp.Text
             
             // Initialize Outline class object
             Outline outline = new Outline(doc);
-            
+
             // Initialize TextStyle class object and set formatting properties
-            TextStyle defaultStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            ParagraphStyle defaultStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
 
             // Initialize OutlineElement class objects and apply numbering
             // Numbers in the same outline are automatically incremented.
             OutlineElement outlineElem1 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.DecimalNumbers, "Arial", 10) };
-            RichText text1 = new RichText(doc) { Text = "First", DefaultStyle = defaultStyle };
+            RichText text1 = new RichText(doc) { Text = "First", ParagraphStyle = defaultStyle };
             outlineElem1.AppendChildLast(text1);
 
             OutlineElement outlineElem2 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.DecimalNumbers, "Arial", 10) };
-            RichText text2 = new RichText(doc) { Text = "Second", DefaultStyle = defaultStyle };
+            RichText text2 = new RichText(doc) { Text = "Second", ParagraphStyle = defaultStyle };
             outlineElem2.AppendChildLast(text2);
 
             OutlineElement outlineElem3 = new OutlineElement(doc) { NumberList = new NumberList("{0})", NumberFormat.DecimalNumbers, "Arial", 10) };
-            RichText text3 = new RichText(doc) { Text = "Third", DefaultStyle = defaultStyle };
+            RichText text3 = new RichText(doc) { Text = "Third", ParagraphStyle = defaultStyle };
             outlineElem3.AppendChildLast(text3);
 
             // Add outline elements

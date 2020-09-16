@@ -21,7 +21,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Initialize Title class object
             Title title = new Title(doc);
             // Initialize TextStyle class object and set formatting properties
-            TextStyle defaultTextStyle = new TextStyle
+            ParagraphStyle defaultTextStyle = new ParagraphStyle
             {
                 FontColor = Color.Black,
                 FontName = "Arial",
@@ -31,7 +31,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             RichText titleText = new RichText(doc)
             {
                 Text = "Title!",
-                DefaultStyle = defaultTextStyle
+                ParagraphStyle = defaultTextStyle
             };
             Outline outline = new Outline(doc)
             {
@@ -70,7 +70,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             RichText text = new RichText(doc)
             {
                 Text = "Hello OneNote text!",
-                DefaultStyle = defaultTextStyle,
+                ParagraphStyle = defaultTextStyle,
                 Styles = { textStyleForHelloWord, textStyleForOneNoteWord, textStyleForTextWord }
             };
 

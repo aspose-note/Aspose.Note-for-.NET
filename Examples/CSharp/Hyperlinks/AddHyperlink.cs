@@ -21,7 +21,7 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             // Initialize Title class object
             Title title = new Title(doc);
 
-            TextStyle defaultTextStyle = new TextStyle
+            ParagraphStyle defaultTextStyle = new ParagraphStyle
             {
                 FontName = "Arial",
                 FontSize = 10,
@@ -30,7 +30,7 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             RichText titleText = new RichText(doc)
             {
                 Text = "Title!",
-                DefaultStyle = defaultTextStyle
+                ParagraphStyle = defaultTextStyle
             };
             Outline outline = new Outline(doc)
             {
@@ -56,7 +56,7 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             RichText text = new RichText(doc)
             {
                 Text = "This is hyperlink. This text is not a hyperlink.",
-                DefaultStyle = defaultTextStyle,
+                ParagraphStyle = defaultTextStyle,
                 Styles = { textStyleRed, textStyleHyperlink }
             };
 

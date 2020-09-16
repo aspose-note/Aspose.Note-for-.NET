@@ -20,17 +20,17 @@ namespace Aspose.Note.Examples.CSharp.Text
                 TitleText = new RichText(doc)
                 {
                     Text = "Title text.",
-                    DefaultStyle = TextStyle.DefaultMsOneNoteTitleTextStyle
+                    ParagraphStyle = ParagraphStyle.Default
                 },
                 TitleDate = new RichText(doc)
                 {
                     Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture),
-                    DefaultStyle = TextStyle.DefaultMsOneNoteTitleDateStyle
+                    ParagraphStyle = ParagraphStyle.Default
                 },
                 TitleTime = new RichText(doc)
                 {
                     Text = "12:34",
-                    DefaultStyle = TextStyle.DefaultMsOneNoteTitleTimeStyle
+                    ParagraphStyle = ParagraphStyle.Default
                 }
             };
 

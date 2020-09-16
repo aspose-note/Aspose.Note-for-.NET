@@ -21,13 +21,13 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             Aspose.Note.Page page = new Aspose.Note.Page(doc);
 
             // Default style for all text in the document.
-            Aspose.Note.TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             // Set page title properties
             page.Title = new Title(doc)
             {
-                TitleText = new RichText(doc) { Text = "Title text.", DefaultStyle = textStyle },
-                TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), DefaultStyle = textStyle },
-                TitleTime = new RichText(doc) { Text = "12:34", DefaultStyle = textStyle }
+                TitleText = new RichText(doc) { Text = "Title text.", ParagraphStyle = textStyle },
+                TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
+                TitleTime = new RichText(doc) { Text = "12:34", ParagraphStyle = textStyle }
             };
             // Append Page node in the document
             doc.AppendChildLast(page);

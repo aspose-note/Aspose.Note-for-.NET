@@ -26,8 +26,8 @@ namespace Aspose.Note.Examples.CSharp.Pages
             /*---------- Adding nodes to first Page ----------*/
             Outline outline = new Outline(doc);
             OutlineElement outlineElem = new OutlineElement(doc);
-            TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            RichText text = new RichText(doc) { Text = "First page.", DefaultStyle = textStyle };
+            ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            RichText text = new RichText(doc) { Text = "First page.", ParagraphStyle = textStyle };
             outlineElem.AppendChildLast(text);
             outline.AppendChildLast(outlineElem);
             page1.AppendChildLast(outline);
@@ -35,8 +35,8 @@ namespace Aspose.Note.Examples.CSharp.Pages
             /*---------- Adding nodes to second Page ----------*/
             var outline2 = new Outline(doc);
             var outlineElem2 = new OutlineElement(doc);
-            var textStyle2 = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            var text2 = new RichText(doc) { Text = "Second page.", DefaultStyle = textStyle2 };
+            var textStyle2 = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            var text2 = new RichText(doc) { Text = "Second page.", ParagraphStyle = textStyle2 };
             outlineElem2.AppendChildLast(text2);
             outline2.AppendChildLast(outlineElem2);
             page2.AppendChildLast(outline2);
@@ -44,8 +44,8 @@ namespace Aspose.Note.Examples.CSharp.Pages
             /*---------- Adding nodes to third Page ----------*/
             var outline3 = new Outline(doc);
             var outlineElem3 = new OutlineElement(doc);
-            var textStyle3 = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            var text3 = new RichText(doc) { Text = "Third page.", DefaultStyle = textStyle3 };
+            var textStyle3 = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            var text3 = new RichText(doc) { Text = "Third page.", ParagraphStyle = textStyle3 };
             outlineElem3.AppendChildLast(text3);
             outline3.AppendChildLast(outlineElem3);
             page3.AppendChildLast(outline3);

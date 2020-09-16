@@ -22,8 +22,8 @@ namespace Aspose.Note.Examples.CSharp.Tags
             Outline outline = new Outline(doc);
             // Initialize OutlineElement class object
             OutlineElement outlineElem = new OutlineElement(doc);
-            TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            RichText text = new RichText(doc) { Text = "OneNote text.", DefaultStyle = textStyle };
+            ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            RichText text = new RichText(doc) { Text = "OneNote text.", ParagraphStyle = textStyle };
             text.Tags.Add(new NoteTag
             {
                 Icon = TagIcon.YellowStar,

@@ -84,8 +84,8 @@ namespace Aspose.Note.Examples.CSharp.Tables
         public static OutlineElement GetOutlineElementWithText(Document doc, string text)
         {
             OutlineElement outlineElem = new OutlineElement(doc);
-            TextStyle textStyle = new TextStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            outlineElem.AppendChildLast(new RichText(doc) { Text = text, DefaultStyle = textStyle });
+            ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
+            outlineElem.AppendChildLast(new RichText(doc) { Text = text, ParagraphStyle = textStyle });
             return outlineElem;
         }
         // ExEnd:GetOutlineElementWithText
