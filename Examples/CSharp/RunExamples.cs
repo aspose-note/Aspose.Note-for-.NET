@@ -112,6 +112,7 @@ namespace Aspose.Note.Examples.CSharp
             //InsertChineseNumberList.Run();
             //CreateTitleMsStyle.Run();
             //ChangeStyle.Run();
+            //ChangePageTitleStyle.Run();
 
             //// =====================================================
             #endregion

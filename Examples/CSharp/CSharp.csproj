@@ -127,6 +127,7 @@
     <Compile Include="Tags\AddTableNodeWithTag.cs" />
     <Compile Include="Tags\AddTextNodeWithTag.cs" />
     <Compile Include="Tags\GetTagDetails.cs" />
+    <Compile Include="Text\ChangePageTitleStyle.cs" />
     <Compile Include="Text\ChangeStyle.cs" />
     <Compile Include="Text\InsertChineseNumberList.cs" />
     <Compile Include="Text\ApplyBulletsOnText.cs" />
