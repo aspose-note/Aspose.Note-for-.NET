@@ -11,6 +11,11 @@ namespace Aspose.Note.Examples.CSharp.Tables
         public static void Run()
         {
             // ExStart:ExtractTableText
+            // ExFor:Table
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to get text from a table.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -30,9 +35,11 @@ namespace Aspose.Note.Examples.CSharp.Tables
 
                 // Retrieve text
                 string text = string.Join(Environment.NewLine, table.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
+               
                 // Print text on the output screen
                 Console.WriteLine(text);
             }
+
             // ExEnd:ExtractTableText
         }
     }

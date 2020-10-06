@@ -11,6 +11,12 @@ namespace Aspose.Note.Examples.CSharp.Tables
         public static void Run()
         {
             // ExStart:ExtractRowText
+            // ExFor:Table
+            // ExFor:TableRow
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to get text from every table's row.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -20,21 +26,19 @@ namespace Aspose.Note.Examples.CSharp.Tables
             // Get a list of table nodes
             IList<Table> nodes = document.GetChildNodes<Table>();
 
-            // Set row count
-            int rowCount = 0;
-
             foreach (Table table in nodes)
             {
                 // Iterate through table rows
                 foreach (TableRow row in table)
                 {
-                    rowCount++;
                     // Retrieve text
                     string text = string.Join(Environment.NewLine, row.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
+               
                     // Print text on the output screen
                     Console.WriteLine(text);
                 }
             }
+
             // ExEnd:ExtractRowText
         }
     }
