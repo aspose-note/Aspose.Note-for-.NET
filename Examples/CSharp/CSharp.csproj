@@ -55,6 +55,7 @@
     <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
     <Compile Include="Attachments\AttachFileByPath.cs" />
     <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
+    <Compile Include="Text\HighlightAllRecentChanges.cs" />
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
     <Compile Include="Images\ImageAlternativeText.cs" />
