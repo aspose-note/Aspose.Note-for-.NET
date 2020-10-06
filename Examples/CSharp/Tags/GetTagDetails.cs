@@ -6,11 +6,21 @@ using System.Collections.Generic;
 
 namespace Aspose.Note.Examples.CSharp.Tags
 {
+    using System.Linq;
+
     public class GetTagDetails
     {
         public static void Run()
         {
             // ExStart:GetTagDetails
+            // ExFor:NoteTagCore
+            // ExFor:NoteTagCore.Icon
+            // ExFor:NoteTag
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExFor:RichText.ParagraphStyle
+            // ExSummary:Shows how to access details of a tag.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tags();
 
@@ -23,19 +33,20 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Iterate through each node
             foreach (RichText richText in nodes)
             {
-                foreach (var tag in richText.Tags)
+                var tags = richText.Tags.OfType<NoteTag>();
+                if (tags.Any())
                 {
-                    if (tag is NoteTag)
+                    Console.WriteLine($"Text: {richText.Text}");
+                    foreach (var noteTag in tags)
                     {
-                        NoteTag noteTag = (NoteTag)tag;
                         // Retrieve properties
-                        Console.WriteLine("Completed Time: " + noteTag.CompletedTime);
-                        Console.WriteLine("Create Time: " + noteTag.CreationTime);
-                        Console.WriteLine("Font Color: " + noteTag.FontColor);
-                        Console.WriteLine("Status: " + noteTag.Status);
-                        Console.WriteLine("Label: " + noteTag.Label);
-                        Console.WriteLine("Icon: " + noteTag.Icon);
-                        Console.WriteLine("High Light: " + noteTag.Highlight);
+                        Console.WriteLine($"    Completed Time: {noteTag.CompletedTime}");
+                        Console.WriteLine($"    Create Time: {noteTag.CreationTime}");
+                        Console.WriteLine($"    Font Color: {noteTag.FontColor}");
+                        Console.WriteLine($"    Status: {noteTag.Status}");
+                        Console.WriteLine($"    Label: {noteTag.Label}");
+                        Console.WriteLine($"    Icon: {noteTag.Icon}");
+                        Console.WriteLine($"    High Light: {noteTag.Highlight}");
                     }
                 }
             }
