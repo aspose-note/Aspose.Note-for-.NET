@@ -12,6 +12,11 @@ namespace Aspose.Note.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:ExtractingTextFromAPage
+            // ExFor:Page.GetChildNodes
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to get all text from the page.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -19,16 +24,16 @@ namespace Aspose.Note.Examples.CSharp.Text
             Document oneFile = new Document(dataDir + "Aspose.one");
 
             // Get list of page nodes
-            IList<Node> nodes = oneFile.GetChildNodes<Node>();
+            var page = oneFile.GetChildNodes<Page>().FirstOrDefault();
 
-            if (nodes.Count > 0 && nodes[0].NodeType == NodeType.Page)
+            if (page != null)
             {
-                Page page = (Page)nodes[0];
                 // Retrieve text
                 string text = string.Join(Environment.NewLine, page.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
                 // Print text on the output screen
                 Console.WriteLine(text);
             }
+
             // ExEnd:ExtractingTextFromAPage
         }
     }
