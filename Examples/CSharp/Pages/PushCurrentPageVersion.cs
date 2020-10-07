@@ -10,6 +10,9 @@ namespace Aspose.Note.Examples.CSharp.Pages
         public static void Run()
         {
             // ExStart:PushCurrentPageVersion
+            // ExFor:Page.Clone
+            // ExSummary:Shows how to push current version of a page to history.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Pages();
 
@@ -22,6 +25,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
             pageHistory.Add(page.Clone());
 
             document.Save(dataDir + "PushCurrentPageVersion_out.one");
+
             // ExEnd:PushCurrentPageVersion
         }
     }

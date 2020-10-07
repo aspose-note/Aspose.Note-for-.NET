@@ -9,7 +9,18 @@ namespace Aspose.Note.Examples.CSharp.Pages
     {
         public static void Run()
         {
-            //ExStart:ConflictPageManipulation
+            // ExStart:ConflictPageManipulation
+            // ExFor:Document
+            // ExFor:Document.GetPageHistory
+            // ExFor:CompositeNode`1.FirstChild
+            // ExFor:Page
+            // ExFor:Page.PageContentRevisionSummary
+            // ExFor:Page.IsConflictPage
+            // ExFor:RevisionSummary
+            // ExFor:RevisionSummary.AuthorMostRecent
+            // ExFor:RevisionSummary.LastModifiedTime
+            // ExSummary:Shows how to check if a page is a conflict page(i.e. it has changes that OneNote couldn't automatically merge).
+
             string dataDir = RunExamples.GetDataDir_Pages();
 
             // Load OneNote document
@@ -24,6 +35,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
                                 historyPage.PageContentRevisionSummary.AuthorMostRecent,
                                 historyPage.PageContentRevisionSummary.LastModifiedTime);
                 Console.WriteLine(historyPage.IsConflictPage ? ", IsConflict: true" : string.Empty);
+
                 // By default conflict pages are just skipped on saving.
                 // If mark it as non-conflict then it will be saved as usual one in the history.
                 if (historyPage.IsConflictPage)
@@ -31,7 +43,8 @@ namespace Aspose.Note.Examples.CSharp.Pages
             }
 
             doc.Save(dataDir + "ConflictPageManipulation_out.one", SaveFormat.One);
-            //ExEnd:ConflictPageManipulation
+
+            // ExEnd:ConflictPageManipulation
         }
 }
 }

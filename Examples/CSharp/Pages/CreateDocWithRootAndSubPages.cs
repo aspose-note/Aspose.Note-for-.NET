@@ -11,15 +11,22 @@ namespace Aspose.Note.Examples.CSharp.Pages
         public static void Run()
         {
             // ExStart:CreateDocWithRootAndSubPages
+            // ExFor:Page
+            // ExFor:Page.Level
+            // ExSummary:Shows how to add a page with a subpage.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Pages();
 
             // Create an object of the Document class
             Document doc = new Document();
+
             // Initialize Page class object and set its level
             Aspose.Note.Page page1 = new Aspose.Note.Page(doc) { Level = 1 };
+
             // Initialize Page class object and set its level
             Aspose.Note.Page page2 = new Aspose.Note.Page(doc) { Level = 2 };
+
             // Initialize Page class object and set its level
             Aspose.Note.Page page3 = new Aspose.Note.Page(doc) { Level = 1 };
 
@@ -55,10 +62,12 @@ namespace Aspose.Note.Examples.CSharp.Pages
             doc.AppendChildLast(page2);
             doc.AppendChildLast(page3);
 
-            dataDir = dataDir + "CreateDocWithRootAndSubPages_out.one";
             // Save OneNote document
+            dataDir = dataDir + "CreateDocWithRootAndSubPages_out.one";
             doc.Save(dataDir);
+            
             // ExEnd:CreateDocWithRootAndSubPages
+
             Console.WriteLine("\nOneNote document created successfully with root and sub level pages.\nFile saved at " + dataDir);
         }
     }
