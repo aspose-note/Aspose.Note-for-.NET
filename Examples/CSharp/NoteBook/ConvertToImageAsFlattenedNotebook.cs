@@ -11,6 +11,14 @@ namespace Aspose.Note.Examples.CSharp.NoteBook
         public static void Run()
         {
             // ExStart:ConvertToImageAsFlattenedNotebook
+            // ExFor:Notebook
+            // ExFor:NotebookSaveOptions
+            // ExFor:NotebookSaveOptions.Flatten
+            // ExFor:NotebookImageSaveOptions
+            // ExFor:ImageSaveOptions
+            // ExFor:ImageSaveOptions.Resolution
+            // ExSummary:Shows how to save flattened notebook as image.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
@@ -28,6 +36,7 @@ namespace Aspose.Note.Examples.CSharp.NoteBook
 
             // Save the Notebook
             notebook.Save(dataDir, notebookSaveOptions);
+
             // ExEnd:ConvertToImageAsFlattenedNotebook
         }
     }

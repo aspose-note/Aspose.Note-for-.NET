@@ -10,6 +10,11 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:RemoveChildNode
+            // ExFor:Notebook
+            // ExFor:Notebook.DisplayName
+            // ExFor:Notebook.RemoveChild
+            // ExSummary:Shows how to remove a section from a notebook.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
@@ -30,6 +35,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 
             // Save the Notebook
             notebook.Save(dataDir);
+
             // ExEnd:RemoveChildNode
 
             Console.WriteLine("\nChild node removed successfully.\nFile saved at " + dataDir);

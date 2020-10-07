@@ -10,6 +10,10 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:AddChildNode
+            // ExFor:Notebook
+            // ExFor:Document
+            // ExSummary:Shows how to add new section to a notebook.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
@@ -23,7 +27,9 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 
             // Save the Notebook
             notebook.Save(dataDir);
+
             // ExEnd:AddChildNode
+
             Console.WriteLine("\nChild node added successfully.\nFile saved at " + dataDir);
         }
     }

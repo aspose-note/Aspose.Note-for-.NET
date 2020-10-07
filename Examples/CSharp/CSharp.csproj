@@ -68,11 +68,10 @@
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingSaveFormat.cs" />
     <Compile Include="Loading-and-Saving\UserSavingCallbacks.cs" />
     <Compile Include="NoteBook\ConvertToImageAsFlattenedNotebook.cs" />
-    <Compile Include="NoteBook\LoadingNotebookFilewithLoadOptions.cs" />
+    <Compile Include="NoteBook\LoadingNotebookFileWithLoadOptions.cs" />
     <Compile Include="NoteBook\LoadingNotebookInstantly.cs" />
     <Compile Include="NoteBook\ReadRichText.cs" />
-    <Compile Include="NoteBook\RetrieveDocumentsfromOneNoteNotebook.cs" />
-    <Compile Include="NoteBook\SaveNotebookToStream.cs" />
+    <Compile Include="NoteBook\RetrieveDocumentsFromOneNoteNotebook.cs" />
     <Compile Include="NoteBook\LoadFromStream.cs" />
     <Compile Include="NoteBook\WritingPasswordProtectedDoc.cs" />
     <Compile Include="NoteBook\LoadingPasswordProtectedDoc.cs" />

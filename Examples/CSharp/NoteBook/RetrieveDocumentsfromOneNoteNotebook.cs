@@ -5,20 +5,26 @@ using System.Text;
 
 namespace Aspose.Note.Examples.CSharp.NoteBook
 {
-    class RetrieveDocumentsfromOneNoteNotebook
+    class RetrieveDocumentsFromOneNoteNotebook
     {
         public static void Run()
         {
-            // ExStart:RetrieveDocumentsfromOneNoteNotebook
+            // ExStart:RetrieveDocumentsFromOneNoteNotebook
+            // ExFor:Notebook.RemoveChild
+            // ExSummary:Shows how to access all sections from a notebook.
+
             string inputFile = "notebook.onetoc2";
             string dataDir = RunExamples.GetDataDir_NoteBook();
+            
             Notebook rootNotebook = new Notebook(dataDir + inputFile);
 
             IList<Document> allDocuments = rootNotebook.GetChildNodes<Document>();
-            foreach (Document document in allDocuments) {
+            foreach (Document document in allDocuments) 
+            {
 	            Console.WriteLine(document.DisplayName);
             }
-            // ExEnd:RetrieveDocumentsfromOneNoteNotebook
+
+            // ExEnd:RetrieveDocumentsFromOneNoteNotebook
         }
     }
 }

@@ -10,6 +10,9 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:CreateNoteBook
+            // ExFor:Notebook
+            // ExSummary:Shows how to save notebook.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
             
@@ -21,6 +24,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             notebook.Save(dataDir);
 
             // ExEnd:CreateNoteBook
+
             Console.WriteLine("\nNoteBook created successfully.\nFile saved at " + dataDir);
         }
     }

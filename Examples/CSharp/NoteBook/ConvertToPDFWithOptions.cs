@@ -11,6 +11,15 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:ConvertToPDFWithOptions
+            // ExFor:NotebookSaveOptions
+            // ExFor:NotebookSaveOptions`1
+            // ExFor:NotebookSaveOptions`1.DocumentSaveOptions
+            // ExFor:NotebookPdfSaveOptions
+            // ExFor:PdfSaveOptions
+            // ExFor:PdfSaveOptions.PageSplittingAlgorithm
+            // ExFor:KeepSolidObjectsAlgorithm
+            // ExSummary:Shows how to save notebook in pdf format with specified options.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
@@ -29,6 +38,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             notebook.Save(dataDir, notebookSaveOptions);
 
             // ExEnd:ConvertToPDFWithOptions
+
             Console.WriteLine("\nNoteBook document converted to pdf successfully with save options.\nFile saved at " + dataDir);
         }
     }
