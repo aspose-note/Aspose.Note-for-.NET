@@ -11,8 +11,13 @@ namespace Aspose.Note.Examples.CSharp.ApplyLicense
         public static void Run() 
         {
             // ExStart:ApplyLicenseByPath        
+            // ExFor:License
+            // ExFor:License.SetLicense(System.String)
+            // ExSummary:Shows how to load a license for Aspose.Note from a file.
+
             Aspose.Note.License license = new Aspose.Note.License();
             license.SetLicense("Aspose.Note.lic");
+
             // ExEnd:ApplyLicenseByPath
         }
     }
