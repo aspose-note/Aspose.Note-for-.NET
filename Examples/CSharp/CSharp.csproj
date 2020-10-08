@@ -64,7 +64,7 @@
     <Compile Include="Images\GetInformationOfImages.cs" />
     <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.cs" />
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormat.cs" />
-    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingOnesaveoptions.cs" />
+    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingOneSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingSaveFormat.cs" />
     <Compile Include="Loading-and-Saving\UserSavingCallbacks.cs" />
     <Compile Include="NoteBook\ConvertToImageAsFlattenedNotebook.cs" />
@@ -84,10 +84,9 @@
     <Compile Include="Loading-and-Saving\ConsequentExportOperations.cs" />
     <Compile Include="Loading-and-Saving\PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
     <Compile Include="Loading-and-Saving\PasswordProtectedDoc.cs" />
-    <Compile Include="Loading-and-Saving\PageSplitUsingKeepSolidObjectsAlgoirthm.cs" />
+    <Compile Include="Loading-and-Saving\PageSplitUsingKeepSolidObjectsAlgorithm.cs" />
     <Compile Include="Loading-and-Saving\ExtractContent.cs" />
-    <Compile Include="Loading-and-Saving\NodeTypeEnumeration.cs" />
-    <Compile Include="Loading-and-Saving\RetreivingFileFormat.cs" />
+    <Compile Include="Loading-and-Saving\RetrievingFileFormat.cs" />
     <Compile Include="Loading-and-Saving\SpecifySaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveRangeOfPagesAsPDF.cs" />
     <Compile Include="Loading-and-Saving\SaveToStream.cs" />

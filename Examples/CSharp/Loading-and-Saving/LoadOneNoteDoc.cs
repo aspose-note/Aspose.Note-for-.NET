@@ -10,6 +10,10 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
         public static void Run()
         {
             // ExStart:LoadOneNoteDoc
+            // ExFor:Notebook
+            // ExFor:Document
+            // ExSummary:Shows how to pass through content of a notebook.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
             string fileName = "Open Notebook.onetoc2";
@@ -40,6 +44,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             {
                 Console.WriteLine("\nPlease enter valid file name.");
             }
+
             // ExEnd:LoadOneNoteDoc
         }
     }

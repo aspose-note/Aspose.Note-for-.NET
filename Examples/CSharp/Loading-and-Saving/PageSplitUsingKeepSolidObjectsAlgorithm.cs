@@ -6,43 +6,47 @@ using Aspose.Note.Saving;
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
-    public class PageSplitUsingKeepSolidObjectsAlgoirthm
+    public class PageSplitUsingKeepSolidObjectsAlgorithm
     {
         public static void Run()
         {
-            
+
+            // ExStart:KeepSolidObjectsAlgorithm
+            // ExFor:Document
+            // ExFor:PdfSaveOptions
+            // ExFor:PdfSaveOptions.PageSplittingAlgorithm
+            // ExFor:AlwaysSplitObjectsAlgorithm
+            // ExFor:KeepPartAndCloneSolidObjectToNextPageAlgorithm
+            // ExFor:KeepSolidObjectsAlgorithm
+            // ExSummary:When long OneNote pages are saved in pdf format they are split across pages. The example shows how to configure the splitting logic of objects located on page's breaks.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
             // Load the document into Aspose.Note.
             Document doc = new Document(dataDir + "Aspose.one");
-            // ExStart:KeepSOlidObjectsAlgoirthm-1
             var pdfSaveOptions = new PdfSaveOptions();
             pdfSaveOptions.PageSplittingAlgorithm = new AlwaysSplitObjectsAlgorithm();
             // Or
             pdfSaveOptions.PageSplittingAlgorithm = new KeepPartAndCloneSolidObjectToNextPageAlgorithm();
             // Or
             pdfSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm();
-            // ExEnd:KeepSOlidObjectsAlgoirthm-1
 
-            // ExStart:KeepSOlidObjectsAlgoirthm-2
             float heightLimitOfClonedPart = 500;
             pdfSaveOptions.PageSplittingAlgorithm = new KeepPartAndCloneSolidObjectToNextPageAlgorithm(heightLimitOfClonedPart);
             // Or
             pdfSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm(heightLimitOfClonedPart);
-            // ExEnd:KeepSOlidObjectsAlgoirthm-2
 
-            // ExStart:KeepSOlidObjectsAlgoirthm-3
             pdfSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm(100);
-            // ExEnd:KeepSOlidObjectsAlgoirthm-3
             // Or
-            // ExStart:KeepSOlidObjectsAlgoirthm-4
             pdfSaveOptions.PageSplittingAlgorithm = new KeepSolidObjectsAlgorithm(400);
-            // ExEnd:KeepSOlidObjectsAlgoirthm-4
 
-            dataDir = dataDir + "UsingKeepSOlidObjectsAlgoirthm_out.pdf";
+            dataDir = dataDir + "UsingKeepSOlidObjectsAlgorithm_out.pdf";
             doc.Save(dataDir);
-            Console.WriteLine("\nPage splitt successfully using keep solid objects algoirthm method.");
+
+            // ExEnd: KeepSolidObjectsAlgorithm
+
+            Console.WriteLine("\nPage split successfully using keep solid objects algorithm method.");
         }
     }
 }

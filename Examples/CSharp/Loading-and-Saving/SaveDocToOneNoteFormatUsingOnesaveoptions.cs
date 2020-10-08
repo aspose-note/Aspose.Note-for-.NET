@@ -10,15 +10,21 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
     {
         public static void Run()
         {
-            // ExStart:SaveDocToOneNoteFormatUsingOnesaveoptions
+            // ExStart:SaveDocToOneNoteFormatUsingOneSaveOptions
+            // ExFor:Document
+            // ExFor:Document.Save(System.String, Aspose.Note.Saving.SaveOptions)
+            // ExFor:OneSaveOptions
+            // ExSummary:Shows how to save a document using OneSaveOptions.
+
             string inputFile = "Sample1.one";
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
-            string outputFile = "SaveDocToOneNoteFormatUsingOnesaveoptions_out.one";
+            string outputFile = "SaveDocToOneNoteFormatUsingOneSaveOptions_out.one";
 
             Document document = new Document(dataDir + inputFile);
 
             document.Save(dataDir + outputFile, new OneSaveOptions());
-            // ExEnd:SaveDocToOneNoteFormatUsingOnesaveoptions
+
+            // ExEnd:SaveDocToOneNoteFormatUsingOneSaveOptions
         }
     }
 }
