@@ -10,6 +10,17 @@ namespace Aspose.Note.Examples.CSharp.Images
         public static void Run()
         {
             // ExStart:GetInformationOfImages
+            // ExFor:Document
+            // ExFor:CompositeNode`1.GetChildNodes
+            // ExFor:Image
+            // ExFor:Image.Width
+            // ExFor:Image.Height
+            // ExFor:Image.OriginalWidth
+            // ExFor:Image.OriginalHeight
+            // ExFor:Image.FileName
+            // ExFor:Image.LastModifiedTime
+            // ExSummary:Shows how to get image's meta information.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Images();
 
@@ -29,6 +40,7 @@ namespace Aspose.Note.Examples.CSharp.Images
                 Console.WriteLine("LastModifiedTime: {0}", image.LastModifiedTime);
                 Console.WriteLine();
             }
+
             // ExEnd:GetInformationOfImages
         }
     }

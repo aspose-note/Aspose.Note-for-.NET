@@ -9,7 +9,12 @@ namespace Aspose.Note.Examples.CSharp.Images
     {
         public static void Run()
         {
-            //ExStart: ImageWithHyperlink
+            // ExStart: ImageWithHyperlink
+            // ExFor:Document
+            // ExFor:Image
+            // ExFor:Image.HyperlinkUrl
+            // ExSummary:Shows how to bind a hyperlink to an image.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Images(); 
             
@@ -17,16 +22,15 @@ namespace Aspose.Note.Examples.CSharp.Images
 
             var page = new Page(document);
 
-            var image = new Image(document, dataDir + "image.jpg");
-            
-            image.HyperlinkUrl = "http://image.com";
-            
+            var image = new Image(document, dataDir + "image.jpg") { HyperlinkUrl = "http://image.com" };
+
             page.AppendChildLast(image);
             
             document.AppendChildLast(page);
             
             document.Save(dataDir + "Image with Hyperlink_out.one");
-            //ExEnd: ImageWithHyperlink
+            
+            // ExEnd: ImageWithHyperlink
         }
     }
 }

@@ -13,6 +13,12 @@ namespace Aspose.Note.Examples.CSharp.Images
             try
             {
                 // ExStart:ExtractImages
+                // ExFor:Document
+                // ExFor:CompositeNode`1.GetChildNodes
+                // ExFor:Image
+                // ExFor:Image.Bytes
+                // ExSummary:Shows how to get an image from a document.
+
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_Images();
 
@@ -33,6 +39,7 @@ namespace Aspose.Note.Examples.CSharp.Images
                         }
                     }
                 }
+
                 // ExEnd:ExtractImages 
             }
             catch (Exception ex)
