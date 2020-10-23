@@ -55,6 +55,7 @@
     <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
     <Compile Include="Attachments\AttachFileByPath.cs" />
     <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
+    <Compile Include="Text\HighlightAllRecentChanges.cs" />
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
     <Compile Include="Images\ImageAlternativeText.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Tags\AddTableNodeWithTag.cs" />
     <Compile Include="Tags\AddTextNodeWithTag.cs" />
     <Compile Include="Tags\GetTagDetails.cs" />
+    <Compile Include="Text\ChangePageTitleStyle.cs" />
     <Compile Include="Text\ChangeStyle.cs" />
     <Compile Include="Text\InsertChineseNumberList.cs" />
     <Compile Include="Text\ApplyBulletsOnText.cs" />
