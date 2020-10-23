@@ -9,7 +9,13 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
     {
         public static void Run()
         {
-            
+            // ExStart:PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm
+            // ExFor:Document
+            // ExFor:PdfSaveOptions
+            // ExFor:PdfSaveOptions.PageSplittingAlgorithm
+            // ExFor:KeepPartAndCloneSolidObjectToNextPageAlgorithm
+            // ExSummary:When long OneNote pages are saved in pdf format they are split across pages. The sample shows how to configure the splitting logic of objects located on page's breaks.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
@@ -18,17 +24,16 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
            
             var pdfSaveOptions = new PdfSaveOptions();
 
-            // ExStart:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-1
             pdfSaveOptions.PageSplittingAlgorithm = new KeepPartAndCloneSolidObjectToNextPageAlgorithm(100);
-            // ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-1
-            // Or
-            // ExStart:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
+            // or
             pdfSaveOptions.PageSplittingAlgorithm = new KeepPartAndCloneSolidObjectToNextPageAlgorithm(400);
-            // ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
 
             dataDir = dataDir + "PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm_out.pdf";
             doc.Save(dataDir);
-            Console.WriteLine("\nPage splitt successfully using keep part and clone solid object to next page algorithm.");
+
+            // ExEnd:PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm
+
+            Console.WriteLine("\nPage split successfully using keep part and clone solid object to next page algorithm.");
         }
     }
 }

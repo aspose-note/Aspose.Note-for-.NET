@@ -10,6 +10,9 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:ConvertToPDF
+            // ExFor:Notebook
+            // ExSummary:Shows how to save notebook in pdf format.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 

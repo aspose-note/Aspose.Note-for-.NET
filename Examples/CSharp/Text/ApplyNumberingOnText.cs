@@ -12,6 +12,20 @@ namespace Aspose.Note.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:ApplyNumberingOnText
+            // ExFor:NumberList
+            // ExFor:ParagraphStyle
+            // ExFor:ParagraphStyle.FontColor
+            // ExFor:ParagraphStyle.FontName
+            // ExFor:ParagraphStyle.FontSize
+            // ExFor:Page
+            // ExFor:Outline
+            // ExFor:OutlineElement
+            // ExFor:OutlineElement.NumberList
+            // ExFor:RichText
+            // ExFor:RichText.ParagraphStyle
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to insert new list with numbering.
+
             string dataDir = RunExamples.GetDataDir_Text();
             
             // Create an object of the Document class
@@ -47,13 +61,16 @@ namespace Aspose.Note.Examples.CSharp.Text
 
             // Add Outline node
             page.AppendChildLast(outline);
+
             // Add Page node
             doc.AppendChildLast(page);
 
-            dataDir = dataDir + "ApplyNumberingOnText_out.one"; 
             // Save OneNote document
+            dataDir = dataDir + "ApplyNumberingOnText_out.one"; 
             doc.Save(dataDir);
+
             // ExEnd:ApplyNumberingOnText
+
             Console.WriteLine("\nNumbering applied successfully on a text.\nFile saved at " + dataDir);
         }
     }

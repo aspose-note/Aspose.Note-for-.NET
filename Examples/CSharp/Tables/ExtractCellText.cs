@@ -11,6 +11,13 @@ namespace Aspose.Note.Examples.CSharp.Tables
         public static void Run()
         {
             // ExStart:ExtractCellText
+            // ExFor:Table
+            // ExFor:TableRow
+            // ExFor:TableCell
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to get text from a table's cells.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
@@ -26,17 +33,18 @@ namespace Aspose.Note.Examples.CSharp.Tables
                 foreach (TableRow row in table)
                 {
                     // Get list of TableCell nodes
-                    IList<TableCell> cellNodes = row.GetChildNodes<TableCell>();
                     // Iterate through table cells
-                    foreach (TableCell cell in cellNodes)
+                    foreach (TableCell cell in row)
                     {
                         // Retrieve text
                         string text = string.Join(Environment.NewLine, cell.GetChildNodes<RichText>().Select(e => e.Text)) + Environment.NewLine;
+               
                         // Print text on the output screen
                         Console.WriteLine(text);
                     }
                 }
             }
+
             // ExEnd:ExtractCellText
         }
     }

@@ -8,8 +8,12 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
     public class ExtractContent
     {
         // ExStart:ExtractContent
+        // ExFor:Document
+        // ExFor:Document.Accept
+        // ExFor:DocumentVisitor
+        // ExSummary:Shows how to access content of a document using visitor.
         public static void Run()
-        {            
+        {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
@@ -59,7 +63,9 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             private void AppendText(string text)
             {
                 if (!mIsSkipText)
-                    mBuilder.Append(text);
+                {
+                    mBuilder.AppendLine(text);
+                }
             }
 
             /// <summary>
@@ -85,6 +91,15 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             public override void VisitPageStart(Page page)
             {
                 ++nodecount;
+                this.AppendText($"*** Page '{page.Title?.TitleText?.Text ?? "(no title)"}' ***");
+            }
+
+            /// <summary>
+            /// Called when processing of a Page node is finished.
+            /// </summary>
+            public override void VisitPageEnd(Page page)
+            {
+                this.AppendText(string.Empty);
             }
 
             /// <summary>
@@ -139,6 +154,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             private bool mIsSkipText;
             private Int32 nodecount;
         }
+
         // ExEnd:ExtractContent          
     }
 }

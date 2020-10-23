@@ -10,11 +10,23 @@ namespace Aspose.Note.Examples.CSharp.Pages
         public static void Run()
         {
             // ExStart:GetPageRevisions
+            // ExFor:Document
+            // ExFor:LoadOptions
+            // ExFor:LoadOptions.LoadHistory
+            // ExFor:Page
+            // ExFor:Page.LastModifiedTime
+            // ExFor:Page.CreationTime
+            // ExFor:Page.Title
+            // ExFor:Page.Level
+            // ExFor:Page.Author
+            // ExSummary:Shows how to get page's history.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Pages();
 
             // Load OneNote document
             Document document = new Document(dataDir + "Aspose.one", new LoadOptions { LoadHistory = true });
+
             // Get first page
             Page firstPage = document.FirstChild;
             foreach (Page pageRevision in document.GetPageHistory(firstPage))
@@ -27,6 +39,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
                 Console.WriteLine("Author: {0}", pageRevision.Author);
                 Console.WriteLine();
             }
+
             // ExEnd:GetPageRevisions
         }
     }

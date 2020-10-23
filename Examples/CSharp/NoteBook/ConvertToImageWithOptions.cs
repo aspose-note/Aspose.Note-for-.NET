@@ -11,6 +11,12 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:ConvertToImageWithOptions
+            // ExFor:Notebook
+            // ExFor:NotebookImageSaveOptions
+            // ExFor:ImageSaveOptions
+            // ExFor:ImageSaveOptions.Resolution
+            // ExSummary:Shows how to save notebook as image with specified options.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 

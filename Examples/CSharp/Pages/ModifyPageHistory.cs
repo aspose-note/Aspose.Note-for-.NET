@@ -10,6 +10,13 @@ namespace Aspose.Note.Examples.CSharp.Pages
         public static void Run()
         {
             // ExStart:ModifyPageHistory
+            // ExFor:Document
+            // ExFor:Document.GetPageHistory
+            // ExFor:Page.Title
+            // ExFor:Title
+            // ExFor:Title.TitleText
+            // ExSummary:Shows how to edit page's history.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Pages();
 
@@ -32,6 +39,7 @@ namespace Aspose.Note.Examples.CSharp.Pages
 
                 document.Save(dataDir + "ModifyPageHistory_out.one");
             }
+
             // ExEnd:ModifyPageHistory
         }
     }

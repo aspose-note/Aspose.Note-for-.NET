@@ -11,11 +11,16 @@ namespace Aspose.Note.Examples.CSharp.Attachments
         public static void Run()
         {
             // ExStart:RetrieveAttachedFiles
+            // ExFor:Document
+            // ExFor:AttachedFile
+            // ExFor:AttachedFile.Bytes
+            // ExSummary:Shows how to get content of an attached file.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Attachments();
 
             // Load the document into Aspose.Note.
-            Document oneFile = new Document( dataDir + "Sample1.one");
+            Document oneFile = new Document(dataDir + "Sample1.one");
 
             // Get a list of attached file nodes
             IList<AttachedFile> nodes = oneFile.GetChildNodes<AttachedFile>();
@@ -37,7 +42,7 @@ namespace Aspose.Note.Examples.CSharp.Attachments
 
             // ExEnd:RetrieveAttachedFiles            
         }
-        // ExStart:CopyStream  
+
         private static void CopyStream(Stream input, Stream output)
         {
             try
@@ -54,6 +59,5 @@ namespace Aspose.Note.Examples.CSharp.Attachments
                 throw new Exception(ex.Message);
             }
         }
-        // ExEnd:CopyStream  
     }
 }

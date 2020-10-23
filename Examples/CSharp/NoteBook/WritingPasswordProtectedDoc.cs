@@ -7,19 +7,24 @@ using System.Globalization;
 
 namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 {
+    using System.Linq;
+
     public class WritingPasswordProtectedDoc
     {
         public static void Run()
         {
             // ExStart:WritingPasswordProtectedDoc
+            // ExFor:Notebook.RemoveChild
+            // ExSummary:Shows how to save a notebook.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
-            var notebook = new Notebook(dataDir + "notebook2.onetoc2", new NotebookLoadOptions() { DeferredLoading = false });
+            var notebook = new Notebook(dataDir + "test.onetoc2", new NotebookLoadOptions() { DeferredLoading = false });
 
-            notebook.Save(dataDir + "notebook_out.onetoc2", new NotebookOneSaveOptions() { DeferredSaving = true });
+            notebook.Save(dataDir + "notebook_out.onetoc2", new NotebookOneSaveOptions() { DeferredSaving = true});
 
-            if (notebook.Count > 0)
+            if (notebook.Any())
             {
                 var childDocument0 = notebook[0] as Document;
 
@@ -33,6 +38,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
 
                 childDocument2.Save(dataDir + "Locked Pass2_out.one", new OneSaveOptions() { DocumentPassword = "pass2" });
             }
+
             // ExEnd:WritingPasswordProtectedDoc       
         }
     }

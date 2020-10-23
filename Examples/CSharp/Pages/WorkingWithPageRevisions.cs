@@ -10,6 +10,13 @@ namespace Aspose.Note.Examples.CSharp.Pages
         public static void Run()
         {
             // ExStart:WorkingWithPageRevisions
+            // ExFor:Page
+            // ExFor:Page.PageContentRevisionSummary
+            // ExFor:RevisionSummary
+            // ExFor:RevisionSummary.AuthorMostRecent
+            // ExFor:RevisionSummary.LastModifiedTime
+            // ExSummary:Shows how to edit page's meta information.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Pages();
 
@@ -28,7 +35,9 @@ namespace Aspose.Note.Examples.CSharp.Pages
             // Update Page Revision Summary for this page
             pageRevisionInfo.AuthorMostRecent = "New Author";
             pageRevisionInfo.LastModifiedTime = DateTime.Now;
+
             document.Save(dataDir + "WorkingWithPageRevisions_out.one");
+
             // ExEnd:WorkingWithPageRevisions
         }
     }

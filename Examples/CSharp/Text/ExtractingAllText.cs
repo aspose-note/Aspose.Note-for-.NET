@@ -11,6 +11,11 @@ namespace Aspose.Note.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:ExtractingAllText
+            // ExFor:Page.GetChildNodes
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to get all text from the document.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -22,6 +27,7 @@ namespace Aspose.Note.Examples.CSharp.Text
 
             // Print text on the output screen
             Console.WriteLine(text);
+
             // ExEnd:ExtractingAllText
         }
     }

@@ -11,14 +11,21 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
         public static void Run()
         {
             // ExStart:ConvertToPDFAsFlattened
+            // ExFor:Notebook
+            // ExFor:NotebookSaveOptions
+            // ExFor:NotebookSaveOptions.Flatten
+            // ExFor:NotebookImageSaveOptions
+
+            // ExSummary:Shows how to save flattened notebook in pdf format.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
             // Load a OneNote Notebook
             var notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
 
-            dataDir = dataDir + "ConvertToPDFAsFlattened_out.pdf";
             // Save the Notebook
+            dataDir = dataDir + "ConvertToPDFAsFlattened_out.pdf";
             notebook.Save(
                 dataDir,
                 new NotebookPdfSaveOptions
@@ -27,6 +34,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
                 });         
 
             // ExEnd:ConvertToPDFAsFlattened
+
             Console.WriteLine("\nNoteBook document converted to pdf as flattened successfully.\nFile saved at " + dataDir);
         }
     }

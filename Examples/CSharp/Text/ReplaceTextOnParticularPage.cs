@@ -10,6 +10,12 @@ namespace Aspose.Note.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:ReplaceTextOnParticularPage
+            // ExFor:Page
+            // ExFor:Page.GetChildNodes
+            // ExFor:RichText
+            // ExFor:RichText.Text
+            // ExSummary:Shows how to pass through page's text and make a replacement.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Text();
 
@@ -29,17 +35,20 @@ namespace Aspose.Note.Examples.CSharp.Text
             {
                 foreach (KeyValuePair<string, string> kvp in replacements)
                 {
-                    if (richText != null && richText.Text.Contains(kvp.Key))
+                    if (richText != null)
                     {
                         // Replace text of a shape
                         richText.Text = richText.Text.Replace(kvp.Key, kvp.Value);
                     }
                 }
             }
-            dataDir = dataDir + "ReplaceTextOnParticularPage_out.pdf";
+
             // Save to any supported file format
+            dataDir = dataDir + "ReplaceTextOnParticularPage_out.pdf";
             oneFile.Save(dataDir, SaveFormat.Pdf);
+            
             // ExEnd:ReplaceTextOnParticularPage
+
             Console.WriteLine("\nText replaced successfully on a particular page.\nFile saved at " + dataDir);
         }
     }

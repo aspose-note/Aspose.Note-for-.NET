@@ -11,16 +11,27 @@ namespace Aspose.Note.Examples.CSharp.Tables
         public static void Run()
         {
             // ExStart:InsertTable
+            // ExFor:Table
+            // ExFor:Table.Columns
+            // ExFor:Table.IsBordersVisible
+            // ExFor:TableColumn
+            // ExFor:TableColumn.Width
+            // ExFor:TableRow
+            // ExFor:TableCell
+            // ExSummary:Shows how to create a new table.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Tables();
 
             // Create an object of the Document class
             Document doc = new Document();
+
             // Initialize Page class object
             Aspose.Note.Page page = new Aspose.Note.Page(doc);
 
             // Initialize TableRow class object
             TableRow row1 = new TableRow(doc);
+            
             // Initialize TableCell class objects
             TableCell cell11 = new TableCell(doc);
             TableCell cell12 = new TableCell(doc);
@@ -30,6 +41,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
             cell11.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.1"));
             cell12.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.2"));
             cell13.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.3"));
+            
             // Table cells to rows
             row1.AppendChildLast(cell11);
             row1.AppendChildLast(cell12);
@@ -37,6 +49,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
 
             // Initialize TableRow class object
             TableRow row2 = new TableRow(doc);
+            
             // initialize TableCell class objects
             TableCell cell21 = new TableCell(doc);
             TableCell cell22 = new TableCell(doc);
@@ -54,33 +67,40 @@ namespace Aspose.Note.Examples.CSharp.Tables
 
             // Initialize Table class object and set column widths
             Table table = new Table(doc)
-            {
-                IsBordersVisible = true,
-                Columns = { new TableColumn { Width = 200 }, new TableColumn { Width = 200 }, new TableColumn { Width = 200 } }
-            };
+                          {
+                              IsBordersVisible = true,
+                              Columns = { new TableColumn { Width = 200 }, new TableColumn { Width = 200 }, new TableColumn { Width = 200 } }
+                          };
+            
             // Append table rows to table
             table.AppendChildLast(row1);
             table.AppendChildLast(row2);
 
             // Initialize Outline object
             Outline outline = new Outline(doc);
+            
             // Initialize OutlineElement object
             OutlineElement outlineElem = new OutlineElement(doc);
+            
             // Add table to outline element node
             outlineElem.AppendChildLast(table);
+            
             // Add outline element to outline
             outline.AppendChildLast(outlineElem);
+            
             // Add outline to page node
             page.AppendChildLast(outline);
+            
             // Add page to document node
             doc.AppendChildLast(page);
             dataDir = dataDir + "InsertTable_out.one";
             doc.Save(dataDir);
+            
             // ExEnd:InsertTable
 
             Console.WriteLine("\nTable inserted successfully.\nFile saved at " + dataDir);
         }
-        // ExStart:GetOutlineElementWithText
+
         public static OutlineElement GetOutlineElementWithText(Document doc, string text)
         {
             OutlineElement outlineElem = new OutlineElement(doc);
@@ -88,6 +108,5 @@ namespace Aspose.Note.Examples.CSharp.Tables
             outlineElem.AppendChildLast(new RichText(doc) { Text = text, ParagraphStyle = textStyle });
             return outlineElem;
         }
-        // ExEnd:GetOutlineElementWithText
     }
 }

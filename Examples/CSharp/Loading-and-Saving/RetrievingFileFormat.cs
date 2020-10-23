@@ -5,11 +5,15 @@ using System;
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
-    public class RetreivingFileFormat
+    public class RetrievingFileFormat
     {
         public static void Run()
         {
-            // ExStart:RetreivingFileFormat
+            // ExStart:RetrievingFileFormat
+            // ExFor:Document
+            // ExFor:Document.FileFormat
+            // ExSummary:Shows how to get file format of a document.
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
@@ -23,7 +27,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                     // Process OneNote Online
                     break;
             }
-            // ExEnd:RetreivingFileFormat           
+
+            // ExEnd:RetrievingFileFormat           
         }
     }
 }
