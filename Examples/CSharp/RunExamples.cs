@@ -19,6 +19,8 @@ using Aspose.Note.Examples.CSharp.NoteBook;
 
 namespace Aspose.Note.Examples.CSharp
 {
+    using Aspose.Note.Examples.CSharp.Loading_and_Saving;
+
     class RunExamples
     {
         [STAThread]
@@ -60,8 +62,13 @@ namespace Aspose.Note.Examples.CSharp
             //SaveDocToOneNoteFormat.Run();
             //SaveDocToOneNoteFormatUsingOnesaveoptions.Run();
             //SaveDocToOneNoteFormatUsingSaveFormat.Run();
-            SaveRangeOfPagesAsPDF.Run();
+            //SaveRangeOfPagesAsPDF.Run();
             //SaveToImageDefaultOptions.Run();   
+            //SaveToGrayscaleImage.Run();
+            //SaveToBinaryImageUsingFixedThreshold.Run();
+            //SaveToBinaryImageUsingOtsuMethod.Run();
+            //SaveToBmpImageUsingImageSaveOptions.Run();
+            //SaveToJpegImageUsingSaveFormat.Run();
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();
