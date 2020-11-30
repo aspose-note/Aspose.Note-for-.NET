@@ -64,7 +64,9 @@ namespace Aspose.Note.Examples.CSharp
             //SaveDocToOneNoteFormatUsingSaveFormat.Run();
             //SaveRangeOfPagesAsPDF.Run();
             //SaveToImageDefaultOptions.Run();   
-            SaveToGrayscaleImage.Run();
+            //SaveToGrayscaleImage.Run();
+            //SaveToBinaryImageUsingFixedThreshold.Run();
+            //SaveToBinaryImageUsingOtsuMethod.Run();
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();
