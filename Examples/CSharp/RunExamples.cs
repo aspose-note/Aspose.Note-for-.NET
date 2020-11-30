@@ -67,6 +67,8 @@ namespace Aspose.Note.Examples.CSharp
             //SaveToGrayscaleImage.Run();
             //SaveToBinaryImageUsingFixedThreshold.Run();
             //SaveToBinaryImageUsingOtsuMethod.Run();
+            //SaveToBmpImageUsingImageSaveOptions.Run();
+            //SaveToJpegImageUsingSaveFormat.Run();
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();

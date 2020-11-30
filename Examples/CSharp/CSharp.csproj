@@ -57,7 +57,9 @@
     <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingFixedThreshold.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingOtsuMethod.cs" />
+    <Compile Include="Loading-and-Saving\SaveToBmpImageUsingImageSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveToGrayscaleImage.cs" />
+    <Compile Include="Loading-and-Saving\SaveToJpegImageUsingSaveFormat.cs" />
     <Compile Include="Text\HighlightAllRecentChanges.cs" />
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
