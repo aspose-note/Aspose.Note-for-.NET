@@ -72,6 +72,7 @@ namespace Aspose.Note.Examples.CSharp
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();
+            SaveUsingSpecifiedFontsSubsystem.Run();
             //// =====================================================
             #endregion
 
