@@ -31,16 +31,16 @@ namespace Aspose.Note.Examples.CSharp.Text
             // Get RichText nodes modified last week.
             var richTextNodes = document.GetChildNodes<RichText>().Where(e => e.LastModifiedTime >= DateTime.Today.Subtract(TimeSpan.FromDays(7)));
 
-            //foreach (var node in richTextNodes)
-            //{
-            //    // Set highlight color
-            //    node.ParagraphStyle.Highlight = Color.DarkGreen;
-            //    foreach (TextStyle style in node.Styles)
-            //    {
-            //        // Set highlight color
-            //        style.Highlight = Color.DarkSeaGreen;
-            //    }
-            //}
+            foreach (var node in richTextNodes)
+            {
+                // Set highlight color
+                node.ParagraphStyle.Highlight = Color.DarkGreen;
+                foreach (TextStyle style in node.Styles)
+                {
+                    // Set highlight color
+                    style.Highlight = Color.DarkSeaGreen;
+                }
+            }
 
             document.Save(Path.Combine(dataDir, "HighlightAllRecentChanges.pdf"));
 
