@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Note) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Note) ![GitHub](https://img.shields.io/github/license/aspose-note/Aspose.Note-for-.NET)
+
 # .NET API for OneNote Document Processing
 
 [Aspose.Note for .NET](https://products.aspose.com/note/net) is OneNote API to read, write and modify Microsoft Office OneNote files. It allows developers to work with .one files in C#, VB.NET, ASP.NET web applications, web services and Windows applications. It makes it possible to open files and manipulate the elements of OneNote books, from text, images and properties to more complex elements, and then export to ONE, PNG, GIF, JPEG, BMP, HTML or PDF formats.
