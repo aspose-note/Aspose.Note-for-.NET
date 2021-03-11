@@ -69,10 +69,11 @@ namespace Aspose.Note.Examples.CSharp
             //SaveToBinaryImageUsingOtsuMethod.Run();
             //SaveToBmpImageUsingImageSaveOptions.Run();
             //SaveToJpegImageUsingSaveFormat.Run();
+            SaveToTiffImageUsingImageSaveOptions.Run();
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();
-            SaveUsingSpecifiedFontsSubsystem.Run();
+            //SaveUsingSpecifiedFontsSubsystem.Run();
             //// =====================================================
             #endregion
 
