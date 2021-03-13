@@ -122,8 +122,6 @@ namespace Aspose.Note.Examples.CSharp
             //CreateTitleMsStyle.Run();
             //ChangeStyle.Run();
             //ChangePageTitleStyle.Run();
-            SetDefaultParagraphStyle.Run();
-            SetProofingLanguageForText.Run();
 
             //// =====================================================
             #endregion
