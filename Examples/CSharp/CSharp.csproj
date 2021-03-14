@@ -145,6 +145,8 @@
     <Compile Include="Text\ReplaceTextOnAllPages.cs" />
     <Compile Include="Text\ReplaceTextOnParticularPage.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="Text\SetDefaultParagraphStyle.cs" />
+    <Compile Include="Text\SetProofingLanguageForText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
