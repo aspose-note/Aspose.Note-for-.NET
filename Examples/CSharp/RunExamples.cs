@@ -122,8 +122,8 @@ namespace Aspose.Note.Examples.CSharp
             //CreateTitleMsStyle.Run();
             //ChangeStyle.Run();
             //ChangePageTitleStyle.Run();
-            SetDefaultParagraphStyle.Run();
-            SetProofingLanguageForText.Run();
+            //SetDefaultParagraphStyle.Run();
+            //SetProofingLanguageForText.Run();
 
             //// =====================================================
             #endregion
@@ -159,6 +159,7 @@ namespace Aspose.Note.Examples.CSharp
             //InsertTable.Run();
             //CreateTableWithLockedColumns.Run();
             //SettingCellBackGroundColor.Run();
+            ChangeTableStyle.Run();
 
             //// =====================================================
             #endregion
