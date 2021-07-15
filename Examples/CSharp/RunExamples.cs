@@ -53,7 +53,7 @@ namespace Aspose.Note.Examples.CSharp
             //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToFileWithResourcesInSeparateFiles();
             //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources();
             //ExtractContent.Run();
-            //LoadOneNoteDoc.Run();
+            LoadOneNoteDoc.Run();
             //NodeTypeEnumeration.Run();
             //PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.Run();
             //PageSplittUsingKeepSOlidObjectsAlgoirthm.Run();
@@ -69,7 +69,7 @@ namespace Aspose.Note.Examples.CSharp
             //SaveToBinaryImageUsingOtsuMethod.Run();
             //SaveToBmpImageUsingImageSaveOptions.Run();
             //SaveToJpegImageUsingSaveFormat.Run();
-            SaveToTiffImageUsingImageSaveOptions.Run();
+            //SaveToTiffImageUsingImageSaveOptions.Run();
             //SaveToStream.Run();
             //SaveWithDefaultSettings.Run();
             //SpecifySaveOptions.Run();
@@ -159,7 +159,7 @@ namespace Aspose.Note.Examples.CSharp
             //InsertTable.Run();
             //CreateTableWithLockedColumns.Run();
             //SettingCellBackGroundColor.Run();
-            ChangeTableStyle.Run();
+            //ChangeTableStyle.Run();
 
             //// =====================================================
             #endregion

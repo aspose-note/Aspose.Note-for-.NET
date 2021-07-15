@@ -1,10 +1,8 @@
-using System;
-using System.IO;
-using Aspose.Note;
-using Aspose.Note.Saving;
-
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
+    using System;
+    using System.IO;
+
     public class LoadOneNoteDoc
     {
         public static void Run()
@@ -12,6 +10,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             SimpleLoadNotebook();
             Document_CheckIfEncryptedAndLoad();
             Document_CheckIfEncryptedByPasswordAndLoad();
+            Document_OneNote2007_Is_NotSupported();
         }
 
         public static void SimpleLoadNotebook()
@@ -111,6 +110,36 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             }
 
             // ExEnd:Document_CheckIfEncryptedByPasswordAndLoad
+        }
+
+        public static void Document_OneNote2007_Is_NotSupported()
+        {
+            // ExStart:Document_OneNote2007_Is_NotSupported
+            // ExFor:Document
+            // ExFor:UnsupportedFileFormatException
+            // ExFor:UnsupportedFileFormatException.FileFormat
+            // ExFor:FileFormat
+            // ExSummary:Shows how to check if a document load is failed because OneNote 2007 format is not supported.
+
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
+            string fileName = Path.Combine(dataDir, "OneNote2007.one");
+
+            try
+            {
+                new Document(fileName);
+            }
+            catch (UnsupportedFileFormatException e)
+            {
+                if (e.FileFormat == FileFormat.OneNote2007)
+                {
+                    Console.WriteLine("It looks like the provided file is in OneNote 2007 format that is not supported.");
+                }
+                else
+                    throw;
+            }
+
+            // ExEnd:Document_OneNote2007_Is_NotSupported
         }
     }
 }
