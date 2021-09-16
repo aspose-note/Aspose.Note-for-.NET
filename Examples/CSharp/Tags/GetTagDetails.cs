@@ -13,8 +13,15 @@ namespace Aspose.Note.Examples.CSharp.Tags
         public static void Run()
         {
             // ExStart:GetTagDetails
-            // ExFor:NoteTagCore
-            // ExFor:NoteTagCore.Icon
+            // ExFor:ITag
+            // ExFor:ITag.CompletedTime
+            // ExFor:ITag.CreationTime
+            // ExFor:ITag.Icon
+            // ExFor:ITag.Label
+            // ExFor:ITag.Status
+            // ExFor:INoteTag
+            // ExFor:INoteTag.FontColor
+            // ExFor:INoteTag.Highlight
             // ExFor:NoteTag
             // ExFor:RichText
             // ExFor:RichText.Text

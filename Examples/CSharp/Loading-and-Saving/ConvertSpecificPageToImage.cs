@@ -18,7 +18,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExStart:ConvertSpecificPageToImage
             // ExFor:Document
             // ExFor:ImageSaveOptions
-            // ExFor:ImageSaveOptions.PageIndex
+            // ExFor:SaveOptions.PageIndex
             // ExSummary:Shows how to save a document in png format.
 
             // The path to the documents directory.

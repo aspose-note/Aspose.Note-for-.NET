@@ -14,14 +14,13 @@ namespace Aspose.Note.Examples.CSharp.Tasks
         {
             // ExStart:GetOutlookTaskDetails
             // ExFor:RichText.Tags
-            // ExFor:NoteTagCore
-            // ExFor:NoteTagCore.CompletedTime
-            // ExFor:NoteTagCore.CreationTime
-            // ExFor:NoteTagCore.Icon
-            // ExFor:NoteTagCore.Status
+            // ExFor:ITag
+            // ExFor:ITag.CompletedTime
+            // ExFor:ITag.CreationTime
+            // ExFor:ITag.Icon
+            // ExFor:ITag.Status
             // ExFor:NoteTask
             // ExFor:NoteTask.DueDate
-            // ExFor:NoteTask.TaskType
             // ExSummary:Shows how to access details of outlook's tasks.
 
             // The path to the documents directory.
@@ -47,7 +46,6 @@ namespace Aspose.Note.Examples.CSharp.Tasks
                         Console.WriteLine($"    Create Time: {noteTask.CreationTime}");
                         Console.WriteLine($"    Due Date: {noteTask.DueDate}");
                         Console.WriteLine($"    Status: {noteTask.Status}");
-                        Console.WriteLine($"    Task Type: {noteTask.TaskType}");
                         Console.WriteLine($"    Icon: {noteTask.Icon}");
                     }
                 }

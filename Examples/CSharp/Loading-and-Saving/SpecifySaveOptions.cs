@@ -13,8 +13,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:Document
             // ExFor:Document.Save(System.String, Aspose.Note.Saving.SaveOptions)
             // ExFor:PdfSaveOptions
-            // ExFor:PdfSaveOptions.PageIndex
-            // ExFor:PdfSaveOptions.PageCount
+            // ExFor:SaveOptions.PageIndex
+            // ExFor:SaveOptions.PageCount
             // ExFor:PdfSaveOptions.ImageCompression
             // ExFor:PdfSaveOptions.JpegQuality
             // ExSummary:Shows how to save a document in pdf format using specific settings.
@@ -28,16 +28,10 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Initialize PdfSaveOptions object
             PdfSaveOptions opts = new PdfSaveOptions
                                       {
-                                          // Set page index
-                                          PageIndex = 2,
-
-                                          // Set page count
-                                          PageCount = 3,
-
-                                          // Specify image's compression if required
+                                          // Use Jpeg compression
                                           ImageCompression = Saving.Pdf.PdfImageCompression.Jpeg,
                                           
-                                          // Specify compressions quality for JPEG compression
+                                          // Quality for JPEG compression
                                           JpegQuality = 90
                                       };
 

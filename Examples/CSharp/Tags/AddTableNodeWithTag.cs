@@ -19,8 +19,6 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // ExFor:TableColumn.Width
             // ExFor:TableRow
             // ExFor:TableCell
-            // ExFor:NoteTagCore
-            // ExFor:NoteTagCore.Icon
             // ExFor:NoteTag
             // ExSummary:Shows how to add new table with tag.
 
@@ -56,10 +54,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
             table.AppendChildLast(row);
 
             // Add tag to this table node
-            table.Tags.Add(new NoteTag
-                                {
-                                    Icon = TagIcon.QuestionMark
-                                });
+            table.Tags.Add(NoteTag.CreateQuestionMark());
 
             Outline outline = new Outline(doc);
             OutlineElement outlineElem = new OutlineElement(doc);
