@@ -53,7 +53,7 @@ namespace Aspose.Note.Examples.CSharp
             //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToFileWithResourcesInSeparateFiles();
             //CreateOneNoteDocAndSaveToHTML.SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources();
             //ExtractContent.Run();
-            LoadOneNoteDoc.Run();
+            //LoadOneNoteDoc.Run();
             //NodeTypeEnumeration.Run();
             //PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.Run();
             //PageSplittUsingKeepSOlidObjectsAlgoirthm.Run();
@@ -187,6 +187,9 @@ namespace Aspose.Note.Examples.CSharp
             //AddTextNodeWithTag.Run();
             //AddImageNodeWithTag.Run();
             //AddTableNodeWithTag.Run();
+            Reporting.Run();
+            GenerateTemplateForMeetingNotes.Run();
+            OpenCloseProjectC.Run();
 
             //// =====================================================
             #endregion

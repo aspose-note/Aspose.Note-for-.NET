@@ -63,6 +63,9 @@
     <Compile Include="Loading-and-Saving\SaveToJpegImageUsingSaveFormat.cs" />
     <Compile Include="Loading-and-Saving\SaveUsingSpecifiedFontsSubsystem.cs" />
     <Compile Include="Tables\ChangeTableStyle.cs" />
+    <Compile Include="Tags\GenerateTemplateForMeetingNotes.cs" />
+    <Compile Include="Tags\OpenCloseProjectC.cs" />
+    <Compile Include="Tags\Reporting.cs" />
     <Compile Include="Text\HighlightAllRecentChanges.cs" />
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
