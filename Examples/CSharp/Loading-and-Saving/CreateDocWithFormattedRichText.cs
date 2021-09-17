@@ -11,7 +11,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
         public static void Run()
         {
             // ExStart:CreateDocWithFormattedRichText
-            // ExFor:ImageSaveOptions.PageIndex
+            // ExFor:SaveOptions.PageIndex
             // ExSummary:Shows how to create a document with formatted rich text.
 
             // The path to the documents directory.

@@ -13,8 +13,6 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // ExStart:AddImageNodeWithTag
             // ExFor:Image
             // ExFor:Image.Tags
-            // ExFor:NoteTagCore
-            // ExFor:NoteTagCore.Icon
             // ExFor:NoteTag
             // ExFor:Page
             // ExFor:Outline
@@ -41,10 +39,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
 
             // Insert image in the document node
             outlineElem.AppendChildLast(image);
-            image.Tags.Add(new NoteTag
-                                {
-                                    Icon = TagIcon.YellowStar,
-                                });
+            image.Tags.Add(NoteTag.CreateYellowStar());
 
             // Add outline element node
             outline.AppendChildLast(outlineElem);

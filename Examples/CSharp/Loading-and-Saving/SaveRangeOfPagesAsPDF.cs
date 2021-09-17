@@ -13,8 +13,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:Document
             // ExFor:Document.Save(System.String, Aspose.Note.Saving.SaveOptions)
             // ExFor:PdfSaveOptions
-            // ExFor:PdfSaveOptions.PageIndex
-            // ExFor:PdfSaveOptions.PageCount
+            // ExFor:SaveOptions.PageIndex
+            // ExFor:SaveOptions.PageCount
             // ExSummary:Shows how to save a document in pdf format.
 
             // The path to the documents directory.
@@ -30,7 +30,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                                           PageIndex = 0,
 
                                           // Set page count
-                                          PageCount = 1
+                                          PageCount = 1,
                                       };
 
             // Save the document as PDF

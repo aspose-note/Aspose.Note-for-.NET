@@ -11,8 +11,6 @@ namespace Aspose.Note.Examples.CSharp.Tags
         public static void Run()
         {
             // ExStart:AddTextNodeWithTag
-            // ExFor:NoteTagCore
-            // ExFor:NoteTagCore.Icon
             // ExFor:NoteTag
             // ExFor:RichText
             // ExFor:RichText.Text
@@ -35,10 +33,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
             OutlineElement outlineElem = new OutlineElement(doc);
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             RichText text = new RichText(doc) { Text = "OneNote text.", ParagraphStyle = textStyle };
-            text.Tags.Add(new NoteTag
-                               {
-                                   Icon = TagIcon.YellowStar,
-                               });
+            text.Tags.Add(NoteTag.CreateYellowStar());
 
             // Add text node
             outlineElem.AppendChildLast(text);

@@ -63,8 +63,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:RichText
             // ExFor:RichText.Text
             // ExFor:HtmlSaveOptions
-            // ExFor:HtmlSaveOptions.PageCount
-            // ExFor:HtmlSaveOptions.PageIndex
+            // ExFor:SaveOptions.PageCount
+            // ExFor:SaveOptions.PageIndex
             // ExSummary:Shows how to create a document and save in html format specified range of pages.
 
             // The path to the documents directory.
