@@ -35,29 +35,29 @@ namespace Aspose.Note.Examples.CSharp.Tags
 
             var d = new Document();
             bool restartFlag = true;
-            var outline = d.AppendChildLast(new Page(null)
+            var outline = d.AppendChildLast(new Page()
                                                 {
-                                                    Title = new Title(null) { TitleText = new RichText(null) { Text = $"Weekly meeting {DateTime.Today:d}", ParagraphStyle = ParagraphStyle.Default } }
+                                                    Title = new Title() { TitleText = new RichText() { Text = $"Weekly meeting {DateTime.Today:d}", ParagraphStyle = ParagraphStyle.Default } }
                                                 })
-                           .AppendChildLast(new Outline(null) { VerticalOffset = 30, HorizontalOffset = 30 });
+                           .AppendChildLast(new Outline() { VerticalOffset = 30, HorizontalOffset = 30 });
 
-            outline.AppendChildLast(new OutlineElement(null))
-                   .AppendChildLast(new RichText(null) { Text = "Important", ParagraphStyle = headerStyle });
+            outline.AppendChildLast(new OutlineElement())
+                   .AppendChildLast(new RichText() { Text = "Important", ParagraphStyle = headerStyle });
             foreach (var e in new[] { "First", "Second", "Third" })
             {
-                outline.AppendChildLast(new OutlineElement(null) { NumberList = CreateListNumberingStyle(bodyStyle, restartFlag) })
-                       .AppendChildLast(new RichText(null) { Text = e, ParagraphStyle = bodyStyle });
+                outline.AppendChildLast(new OutlineElement() { NumberList = CreateListNumberingStyle(bodyStyle, restartFlag) })
+                       .AppendChildLast(new RichText() { Text = e, ParagraphStyle = bodyStyle });
                 restartFlag = false;
             }
 
 
-            outline.AppendChildLast(new OutlineElement(null))
-                   .AppendChildLast(new RichText(null) { Text = "TO DO", ParagraphStyle = headerStyle, SpaceBefore = 15 });
+            outline.AppendChildLast(new OutlineElement())
+                   .AppendChildLast(new RichText() { Text = "TO DO", ParagraphStyle = headerStyle, SpaceBefore = 15 });
             restartFlag = true;
             foreach (var e in new[] { "First", "Second", "Third" })
             {
-                outline.AppendChildLast(new OutlineElement(null) { NumberList = CreateListNumberingStyle(bodyStyle, restartFlag) })
-                       .AppendChildLast(new RichText(null) { Text = e, ParagraphStyle = bodyStyle, Tags = { NoteCheckBox.CreateBlueCheckBox() } });
+                outline.AppendChildLast(new OutlineElement() { NumberList = CreateListNumberingStyle(bodyStyle, restartFlag) })
+                       .AppendChildLast(new RichText() { Text = e, ParagraphStyle = bodyStyle, Tags = { NoteCheckBox.CreateBlueCheckBox() } });
                 restartFlag = false;
             }
 

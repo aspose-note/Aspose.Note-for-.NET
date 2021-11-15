@@ -1,18 +1,33 @@
-using System.IO;
-using Aspose.Note;
-using System;
-using System.Drawing;
-using System.Globalization;
-using Aspose.Note.Saving;
-using Aspose.Note.Saving.Html;
+// -----------------------------------------------------------------------
+//  <copyright file="CreateOneNoteDocAndSaveToHTML.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2021 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
+    using System;
+    using System.Drawing;
+    using System.Globalization;
+    using System.IO;
+
+    using Aspose.Note.Saving;
+    using Aspose.Note.Saving.Html;
+
     public class CreateOneNoteDocAndSaveToHTML
     {
         public static void Run()
         {
-            // ExStart:CreateOneNoteDocAndSaveToHTML
+            CreateAndSaveToHTMLUsingDefaultOptions();
+            CreateAndSavePageRange();
+            SaveAsHTMLToFileWithResourcesInSeparateFiles();
+            SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources();
+            SaveAsHTMLToMemoryStreamWithEmbeddedResources();
+        }
+
+        public static void CreateAndSaveToHTMLUsingDefaultOptions()
+        {
+            // ExStart:CreateAndSaveToHTMLUsingDefaultOptions
             // ExFor:Document
             // ExFor:Page
             // ExFor:Page.Title
@@ -22,31 +37,30 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:Title.TitleTime
             // ExFor:RichText
             // ExFor:RichText.Text
-            // ExSummary:Shows how to create a document and save it in html format.
+            // ExSummary:Shows how to create a document and save it in html format using default options.
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
             // Initialize OneNote document
             Document doc = new Document();
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = doc.AppendChildLast(new Page());
 
             // Default style for all text in the document.
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            page.Title = new Title(doc)
-                         {
-                             TitleText = new RichText(doc) { Text = "Title text.", ParagraphStyle = textStyle },
-                             TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
-                             TitleTime = new RichText(doc) { Text = "12:34", ParagraphStyle = textStyle }
-                         };
-            doc.AppendChildLast(page);
+            page.Title = new Title()
+                             {
+                                 TitleText = new RichText() { Text = "Title text.", ParagraphStyle = textStyle },
+                                 TitleDate = new RichText() { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
+                                 TitleTime = new RichText() { Text = "12:34", ParagraphStyle = textStyle }
+                             };
 
-            // Save as HTML format
+            // Save into HTML format
             dataDir = dataDir + "CreateOneNoteDocAndSaveToHTML_out.html";
             doc.Save(dataDir);
-            
-            // ExEnd:CreateOneNoteDocAndSaveToHTML
-            
+
+            // ExEnd:CreateAndSaveToHTMLUsingDefaultOptions
+
             Console.WriteLine("\nOneNote document created successfully.\nFile saved at " + dataDir);
         }
 
@@ -73,19 +87,18 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // Initialize OneNote document
             Document doc = new Document();
 
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = doc.AppendChildLast(new Page());
      
             // Default style for all text in the document.
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            page.Title = new Title(doc)
+            page.Title = new Title()
                          {
-                             TitleText = new RichText(doc) { Text = "Title text.", ParagraphStyle = textStyle },
-                             TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
-                             TitleTime = new RichText(doc) { Text = "12:34", ParagraphStyle = textStyle }
+                             TitleText = new RichText() { Text = "Title text.", ParagraphStyle = textStyle },
+                             TitleDate = new RichText() { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
+                             TitleTime = new RichText() { Text = "12:34", ParagraphStyle = textStyle }
                          };
-            doc.AppendChildLast(page);
 
-            // Save as HTML format
+            // Save into HTML format
             dataDir = dataDir + "CreateAndSavePageRange_out.html";
             doc.Save(dataDir, new HtmlSaveOptions
                               {
@@ -94,7 +107,6 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
                               });
 
             // ExEnd:CreateAndSavePageRange
-
             Console.WriteLine("\nOneNote document created successfully and saved as page range.\nFile saved at " + dataDir);
         }
 
@@ -108,9 +120,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:HtmlSaveOptions.ExportImages
             // ExFor:HtmlSaveOptions.FontFaceTypes
             // ExSummary:Shows how to save a document to a stream in html format with embedding of all resources(css/fonts/images).
-
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
-            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+            var document = new Document(Path.Combine(dataDir, "Aspose.one"));
 
             var options = new HtmlSaveOptions()
                          {
@@ -137,7 +148,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:HtmlSaveOptions.FontFaceTypes
             // ExSummary:Shows how to save a document in html format with storing all resources(css/fonts/images) to a separate files.
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
-            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+            var document = new Document(Path.Combine(dataDir, "Aspose.one"));
 
             var options = new HtmlSaveOptions()
                          {
@@ -151,7 +162,6 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExEnd: SaveAsHTMLWithResourcesInSeparateFiles
         }
 
-
         public static void SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources()
         {
             // ExStart: SaveAsHTMLToMemoryStreamWithCallBacksToSaveResources
@@ -161,18 +171,18 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             // ExFor:HtmlSaveOptions.FontSavingCallback
             // ExFor:HtmlSaveOptions.ImageSavingCallback
             // ExFor:HtmlSaveOptions.FontFaceTypes
-            // ExSummary:Shows how to save a document in html format with storing all resources(css/fonts/images) by using user defined callbacks.
+            // ExSummary:Shows how to save a document in html format with storing all resources(css/fonts/images) by using user-defined callbacks.
 
-            // This code creates documentFolder containing document.html, css folder with style.css file, images folder with images and fonts folder with fonts.
-            // style.css file will contains at the end the following string "/* This line is appended to stream manually by user */"
+            // The code below creates 'documentFolder' folder containing document.html, 'css' folder with 'style.css' file, 'images' folder with images and 'fonts' folder with fonts.
+            // 'style.css' file will contain at the end the following string "/* This line is appended to stream manually by user */"
             var savingCallbacks = new UserSavingCallbacks()
-                                  {
-                                      RootFolder = "documentFolder",
-                                      CssFolder = "css",
-                                      KeepCssStreamOpened = true,
-                                      ImagesFolder = "images",
-                                      FontsFolder = "fonts"
-                                  };
+                                      {
+                                          RootFolder = "documentFolder",
+                                          CssFolder = "css",
+                                          KeepCssStreamOpened = true,
+                                          ImagesFolder = "images",
+                                          FontsFolder = "fonts"
+                                      };
             var options = new HtmlSaveOptions
                           {
                               FontFaceTypes = FontFaceType.Ttf,
@@ -187,7 +197,7 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             }
 
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
-            var document = new Aspose.Note.Document(dataDir + "Aspose.one");
+            var document = new Document(Path.Combine(dataDir, "Aspose.one"));
 
             using (var stream = File.Create(Path.Combine(savingCallbacks.RootFolder, "document.html")))
             {
