@@ -17,9 +17,9 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             // ExFor:RichText.Styles
             // ExFor:RichText.Text
             // ExFor:TextStyle
-            // ExFor:Style.FontColor
-            // ExFor:Style.FontName
-            // ExFor:Style.FontSize
+            // ExFor:TextStyle.FontColor
+            // ExFor:TextStyle.FontName
+            // ExFor:TextStyle.FontSize
             // ExFor:TextStyle.RunIndex
             // ExFor:TextStyle.IsHyperlink
             // ExFor:TextStyle.HyperlinkAddress

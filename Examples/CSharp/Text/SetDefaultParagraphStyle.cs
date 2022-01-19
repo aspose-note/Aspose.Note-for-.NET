@@ -15,12 +15,14 @@ namespace Aspose.Note.Examples.CSharp.Text
         {
             // ExStart:SetDefaultParagraphStyle
             // ExFor:ParagraphStyle
+            // ExFor:ParagraphStyle.FontName 
+            // ExFor:ParagraphStyle.FontSize
             // ExFor:RichText
             // ExFor:RichText.ParagraphStyle
             // ExFor:RichText.Text
             // ExFor:TextStyle
-            // ExFor:Style.FontName
-            // ExFor:Style.FontSize
+            // ExFor:TextStyle.FontName
+            // ExFor:TextStyle.FontSize
             // ExSummary:Manipulate by text format using paragraph style.
 
             var document = new Document();

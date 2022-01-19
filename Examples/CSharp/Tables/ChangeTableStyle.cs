@@ -32,12 +32,14 @@
         {
             // ExStart:ChangeTableStyle
             // ExFor:TextStyle
-            // ExFor:Style.IsBold
-            // ExFor:Style.IsItalic
+            // ExFor:TextStyle.IsBold
+            // ExFor:TextStyle.IsItalic
             // ExFor:RichText
             // ExFor:RichText.Styles
             // ExFor:RichText.ParagraphStyle
             // ExFor:ParagraphStyle
+            // ExFor:ParagraphStyle.IsBold
+            // ExFor:ParagraphStyle.IsItalic
             // ExFor:TableCell
             // ExFor:TableCell.BackgroundColor
             // ExSummary:Let's format table for better perception. Make header row bold and italic, highlight every even row using LightGray color.

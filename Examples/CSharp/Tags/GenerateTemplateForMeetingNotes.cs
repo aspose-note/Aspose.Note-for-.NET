@@ -13,7 +13,7 @@ namespace Aspose.Note.Examples.CSharp.Tags
     {
         private static NumberList CreateListNumberingStyle(ParagraphStyle bodyStyle, bool restart)
         {
-            return new NumberList("{0}.", NumberFormat.DecimalNumbers, bodyStyle.FontName, bodyStyle.FontSize.GetValueOrDefault()) { Restart = restart ? 1 : 0 };
+            return new NumberList("{0}.", NumberFormat.DecimalNumbers, bodyStyle.FontName, bodyStyle.FontSize) { Restart = restart ? 1 : 0 };
         }
 
         public static void Run()
