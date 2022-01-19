@@ -14,9 +14,9 @@ namespace Aspose.Note.Examples.CSharp.Text
             // ExStart:InsertChineseNumberList
             // ExFor:NumberList
             // ExFor:ParagraphStyle
-            // ExFor:ParagraphStyle.FontColor
-            // ExFor:ParagraphStyle.FontName
-            // ExFor:ParagraphStyle.FontSize
+            // ExFor:Style.FontColor
+            // ExFor:Style.FontName
+            // ExFor:Style.FontSize
             // ExFor:Page
             // ExFor:Outline
             // ExFor:OutlineElement
