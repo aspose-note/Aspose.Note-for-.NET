@@ -143,6 +143,7 @@ namespace Aspose.Note.Examples.CSharp
             //PushCurrentPageVersion.Run();
             //ModifyPageHistory.Run();
             //PageClone.Run();
+            SetPageBackgroundColor.Run();
 
             //// =====================================================
             #endregion
