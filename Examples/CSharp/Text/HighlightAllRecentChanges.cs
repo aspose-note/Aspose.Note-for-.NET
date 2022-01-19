@@ -12,15 +12,13 @@ namespace Aspose.Note.Examples.CSharp.Text
         {
             //ExStart
             //ExFor:TextStyle
-            //ExFor:TextStyle.FontSize
-            //ExFor:TextStyle.IsBold
+            //ExFor:Style.FontSize
+            //ExFor:Style.IsBold
             //ExFor:RichText
             //ExFor:RichText.LastModifiedTime
             //ExFor:RichText.ParagraphStyle
             //ExFor:RichText.Styles
             //ExFor:ParagraphStyle
-            //ExFor:ParagraphStyle.FontSize
-            //ExFor:ParagraphStyle.IsBold
             //ExSummary:Let's emphasize latest text's changes by highlighting.
 
             string dataDir = RunExamples.GetDataDir_Text();

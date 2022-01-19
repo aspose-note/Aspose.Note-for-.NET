@@ -13,14 +13,12 @@ namespace Aspose.Note.Examples.CSharp.Text
         {
             //ExStart
             //ExFor:TextStyle
-            //ExFor:TextStyle.FontSize
-            //ExFor:TextStyle.IsBold
+            //ExFor:Style.FontSize
+            //ExFor:Style.IsBold
             //ExFor:RichText
             //ExFor:RichText.Styles
             //ExFor:RichText.ParagraphStyle
             //ExFor:ParagraphStyle
-            //ExFor:ParagraphStyle.FontSize
-            //ExFor:ParagraphStyle.IsBold
             //ExSummary:Let's emphasize page's titles among other headers by increasing font's size.
 
             string dataDir = RunExamples.GetDataDir_Text();
