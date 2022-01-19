@@ -15,9 +15,9 @@ namespace Aspose.Note.Examples.CSharp.Text
         {
             // ExStart:ChangeStyle
             // ExFor:RichText.Styles
-            // ExFor:TextStyle.FontColor
-            // ExFor:TextStyle.Highlight
-            // ExFor:TextStyle.FontSize
+            // ExFor:Style.FontColor
+            // ExFor:Style.Highlight
+            // ExFor:Style.FontSize
             // ExSummary:Shows how to change style for a text.
 
             string dataDir = RunExamples.GetDataDir_Text();
