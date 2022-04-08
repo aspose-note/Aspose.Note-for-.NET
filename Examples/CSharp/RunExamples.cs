@@ -19,6 +19,7 @@ using Aspose.Note.Examples.CSharp.NoteBook;
 
 namespace Aspose.Note.Examples.CSharp
 {
+    using Aspose.Note.Examples.CSharp.ApplyLicense;
     using Aspose.Note.Examples.CSharp.Loading_and_Saving;
 
     class RunExamples
@@ -31,11 +32,13 @@ namespace Aspose.Note.Examples.CSharp
             //Get a temporary license from http://www.aspose.com/corporate/purchase/temporary-license.aspx and apply before executing the code samples.
             
             License lic = new License();
-            lic.SetLicense(@"Aspose.Total.Product.Family.Lic");     //Comment this line if you would like to try the API with Evaluation limitations
+            // lic.SetLicense(@"Aspose.Total.Product.Family.Lic");     //Comment this line if you would like to try the API with Evaluation limitations
 
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
             // Uncomment the one you want to try out
+
+            MeteredLicense.Run();
 
             #region Loading and Saving Section
             //// =====================================================
