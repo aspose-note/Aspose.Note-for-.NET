@@ -52,6 +52,7 @@
     <Compile Include="ApplyLicense\ApplyLicenseByEmbeddedResource.cs" />
     <Compile Include="ApplyLicense\ApplyLicenseByPath.cs" />
     <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
+    <Compile Include="ApplyLicense\MeteredLicense.cs" />
     <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
     <Compile Include="Attachments\AttachFileByPath.cs" />
     <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
