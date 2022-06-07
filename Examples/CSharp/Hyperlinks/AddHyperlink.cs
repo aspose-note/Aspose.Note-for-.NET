@@ -1,11 +1,14 @@
-using System.IO;
-using Aspose.Note;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
+// -----------------------------------------------------------------------
+//  <copyright file="AddHyperlink.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Hyperlinks
 {
+    using System;
+    using System.Drawing;
+
     public class AddHyperlink
     {
         public static void Run()
@@ -14,13 +17,13 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             // ExFor:Document
             // ExFor:RichText
             // ExFor:RichText.ParagraphStyle
-            // ExFor:RichText.Styles
             // ExFor:RichText.Text
+            // ExFor:RichText.Append(System.String)
+            // ExFor:RichText.Append(System.String,TextStyle)
             // ExFor:TextStyle
             // ExFor:Style.FontColor
             // ExFor:Style.FontName
             // ExFor:Style.FontSize
-            // ExFor:TextStyle.RunIndex
             // ExFor:TextStyle.IsHyperlink
             // ExFor:TextStyle.HyperlinkAddress
             // ExSummary:Shows how to bind a hyperlink to a text.
@@ -32,56 +35,45 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             Document doc = new Document();
 
 
-            RichText titleText = new RichText(doc)
-                                 {
-                                     Text = "Title!",
-                                     ParagraphStyle = ParagraphStyle.Default
-                                 };
+            RichText titleText = new RichText() { ParagraphStyle = ParagraphStyle.Default }.Append("Title!");
 
-            Outline outline = new Outline(doc)
-                              {
-                                  MaxWidth = 200,
-                                  MaxHeight = 200,
-                                  VerticalOffset = 100,
-                                  HorizontalOffset = 100
-                              };
+            Outline outline = new Outline()
+                                  {
+                                      MaxWidth = 200,
+                                      MaxHeight = 200,
+                                      VerticalOffset = 100,
+                                      HorizontalOffset = 100
+                                  };
 
             TextStyle textStyleRed = new TextStyle
-                                     {
-                                         FontColor = Color.Red,
-                                         FontName = "Arial",
-                                         FontSize = 10,
-
-                                         // This style will be applied to 0-7 characters.
-                                         RunIndex = 8 
-                                     };
+                                         {
+                                             FontColor = Color.Red,
+                                             FontName = "Arial",
+                                             FontSize = 10,
+                                         };
 
             TextStyle textStyleHyperlink = new TextStyle
-                                          {
-                                              // This style will be applied to 8-16 characters.
-                                              RunIndex = 17,
-                                              IsHyperlink = true,
-                                              HyperlinkAddress = "www.google.com"
-                                          };
+                                               {
+                                                   IsHyperlink = true,
+                                                   HyperlinkAddress = "www.google.com"
+                                               };
 
-            RichText text = new RichText(doc)
-                            {
-                                Text = "This is hyperlink. This text is not a hyperlink.",
-                                ParagraphStyle = ParagraphStyle.Default,
-                                Styles = { textStyleRed, textStyleHyperlink }
-                            };
+            RichText text = new RichText() { ParagraphStyle = ParagraphStyle.Default }
+                                .Append("This is ", textStyleRed)
+                                .Append("hyperlink", textStyleHyperlink)
+                                .Append(". This text is not a hyperlink.", TextStyle.Default);
 
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
             outlineElem.AppendChildLast(text);
             
             // Add outline elements
             outline.AppendChildLast(outlineElem);
 
             // Initialize Title class object
-            Title title = new Title(doc) { TitleText = titleText };
+            Title title = new Title() { TitleText = titleText };
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc) { Title = title };
+            Page page = new Note.Page() { Title = title };
 
             // Add Outline node
             page.AppendChildLast(outline);

@@ -1,10 +1,14 @@
-using System.IO;
-using Aspose.Note;
-using System.Collections.Generic;
-using System;
+// -----------------------------------------------------------------------
+//  <copyright file="ReplaceTextOnParticularPage.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Text
 {
+    using System;
+    using System.Collections.Generic;
+
     public class ReplaceTextOnParticularPage
     {
         public static void Run()
@@ -13,7 +17,7 @@ namespace Aspose.Note.Examples.CSharp.Text
             // ExFor:Page
             // ExFor:Page.GetChildNodes
             // ExFor:RichText
-            // ExFor:RichText.Text
+            // ExFor:RichText.Replace(System.String,System.String)
             // ExSummary:Shows how to pass through page's text and make a replacement.
 
             // The path to the documents directory.
@@ -35,11 +39,8 @@ namespace Aspose.Note.Examples.CSharp.Text
             {
                 foreach (KeyValuePair<string, string> kvp in replacements)
                 {
-                    if (richText != null)
-                    {
-                        // Replace text of a shape
-                        richText.Text = richText.Text.Replace(kvp.Key, kvp.Value);
-                    }
+                    // Replace text of a shape
+                    richText.Replace(kvp.Key, kvp.Value);
                 }
             }
 
@@ -48,7 +49,6 @@ namespace Aspose.Note.Examples.CSharp.Text
             oneFile.Save(dataDir, SaveFormat.Pdf);
             
             // ExEnd:ReplaceTextOnParticularPage
-
             Console.WriteLine("\nText replaced successfully on a particular page.\nFile saved at " + dataDir);
         }
     }

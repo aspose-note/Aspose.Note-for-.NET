@@ -1,10 +1,14 @@
-using System.IO;
-using Aspose.Note;
-using System.Collections.Generic;
-using System;
+// -----------------------------------------------------------------------
+//  <copyright file="ReplaceTextOnAllPages.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Text
 {
+    using System;
+    using System.Collections.Generic;
+
     public class ReplaceTextOnAllPages
     {
         public static void Run()
@@ -32,11 +36,8 @@ namespace Aspose.Note.Examples.CSharp.Text
             {
                 foreach (KeyValuePair<string, string> kvp in replacements)
                 {
-                    if (richText != null)
-                    {
-                        // Replace text of a shape
-                        richText.Text = richText.Text.Replace(kvp.Key, kvp.Value);
-                    }
+                    // Replace text of a shape
+                    richText.Replace(kvp.Key, kvp.Value);
                 }
             }
 
@@ -46,7 +47,6 @@ namespace Aspose.Note.Examples.CSharp.Text
             oneFile.Save(dataDir, SaveFormat.Pdf);
 
             // ExEnd:ReplaceTextOnAllPages
-
             Console.WriteLine("\nText replaced successfully on all pages.\nFile saved at " + dataDir); 
         }
     }

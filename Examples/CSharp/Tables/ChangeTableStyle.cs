@@ -1,4 +1,10 @@
-﻿namespace Aspose.Note.Examples.CSharp.Tables
+﻿// -----------------------------------------------------------------------
+//  <copyright file="ChangeTableStyle.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
+
+namespace Aspose.Note.Examples.CSharp.Tables
 {
     using System;
     using System.Collections.Generic;
@@ -19,10 +25,10 @@
                     node.ParagraphStyle.IsBold = bold;
                     node.ParagraphStyle.IsItalic = italic;
 
-                    foreach (var style in node.Styles)
+                    foreach (var run in node.TextRuns)
                     {
-                        style.IsBold = bold;
-                        style.IsItalic = italic;
+                        run.Style.IsBold = bold;
+                        run.Style.IsItalic = italic;
                     }
                 }
             }
@@ -35,7 +41,6 @@
             // ExFor:Style.IsBold
             // ExFor:Style.IsItalic
             // ExFor:RichText
-            // ExFor:RichText.Styles
             // ExFor:RichText.ParagraphStyle
             // ExFor:ParagraphStyle
             // ExFor:TableCell
