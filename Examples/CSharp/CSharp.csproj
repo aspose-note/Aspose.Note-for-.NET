@@ -56,6 +56,7 @@
     <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
     <Compile Include="Attachments\AttachFileByPath.cs" />
     <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
+    <Compile Include="Import\ImportFromPdf.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingFixedThreshold.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingOtsuMethod.cs" />
     <Compile Include="Loading-and-Saving\SaveToTiffImageUsingImageSaveOptions.cs" />
@@ -68,6 +69,8 @@
     <Compile Include="Tags\GenerateTemplateForMeetingNotes.cs" />
     <Compile Include="Tags\OpenCloseProjectC.cs" />
     <Compile Include="Tags\Reporting.cs" />
+    <Compile Include="Tables\ComposeTable.cs" />
+    <Compile Include="Text\GenerateDocumentFromTemplate.cs" />
     <Compile Include="Text\HighlightAllRecentChanges.cs" />
     <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
     <Compile Include="Images\BuildDocAndInsertImage.cs" />
