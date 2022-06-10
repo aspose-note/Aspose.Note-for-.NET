@@ -36,16 +36,6 @@ namespace Aspose.Note.Examples.CSharp.Tables
 
         public static void Run()
         {
-            // ExStart:ChangeTableStyle
-            // ExFor:TextStyle
-            // ExFor:Style.IsBold
-            // ExFor:Style.IsItalic
-            // ExFor:RichText
-            // ExFor:RichText.ParagraphStyle
-            // ExFor:ParagraphStyle
-            // ExFor:TableCell
-            // ExFor:TableCell.BackgroundColor
-            // ExSummary:Let's format table for better perception. Make header row bold and italic, highlight every even row using LightGray color.
             string dataDir = RunExamples.GetDataDir_Tables();
 
             // Load the document into Aspose.Note.
@@ -70,7 +60,6 @@ namespace Aspose.Note.Examples.CSharp.Tables
 
             document.Save(Path.Combine(dataDir, "ChangeTableStyleOut.one"));
 
-            // ExEnd:ChangeTableStyle
             Console.WriteLine("\nTable's style is updated successfully.\nFile saved at " + dataDir);
         }
     }
