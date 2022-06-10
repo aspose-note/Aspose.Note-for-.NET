@@ -1,12 +1,13 @@
-﻿using System;
-using System.Globalization;
-using System.IO;
-using Aspose.Note;
-using System.Drawing;
-using System.Collections.Generic;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="ChangeStyle.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Text
 {
+    using System;
+    using System.Drawing;
     using System.Linq;
 
     public class ChangeStyle
@@ -14,12 +15,10 @@ namespace Aspose.Note.Examples.CSharp.Text
         public static void Run()
         {
             // ExStart:ChangeStyle
-            // ExFor:RichText.Styles
             // ExFor:Style.FontColor
             // ExFor:Style.Highlight
             // ExFor:Style.FontSize
             // ExSummary:Shows how to change style for a text.
-
             string dataDir = RunExamples.GetDataDir_Text();
 
             // Load the document into Aspose.Note.
@@ -28,20 +27,19 @@ namespace Aspose.Note.Examples.CSharp.Text
             // Get a particular RichText node
             RichText richText = document.GetChildNodes<RichText>().First();
 
-            foreach (TextStyle style in richText.Styles)
+            foreach (var run in richText.TextRuns)
             {
                 // Set font color
-                style.FontColor = Color.Yellow;
+                run.Style.FontColor = Color.Yellow;
 
                 // Set highlight color
-                style.Highlight = Color.Blue;
+                run.Style.Highlight = Color.Blue;
 
                 // Set font size
-                style.FontSize = 20;
+                run.Style.FontSize = 20;
             }  
             
             // ExEnd:ChangeStyle
-
             Console.WriteLine("\nStyle changed successfully.");
         }
     }

@@ -1,17 +1,21 @@
-﻿using System.IO;
-using Aspose.Note;
-using Aspose.Note.Saving;
-using System;
-using System.Drawing;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="CreateDocWithFormattedRichText.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
 {
+    using System;
+    using System.Drawing;
+
     public class CreateDocWithFormattedRichText
     {
         public static void Run()
         {
             // ExStart:CreateDocWithFormattedRichText
             // ExFor:SaveOptions.PageIndex
+            // ExFor:RichText.Append(System.String,TextStyle)
             // ExSummary:Shows how to create a document with formatted rich text.
 
             // The path to the documents directory.
@@ -21,68 +25,56 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
             // Initialize Title class object
-            Title title = new Title(doc);
+            Title title = new Title();
 
             // Initialize TextStyle class object and set formatting properties
             ParagraphStyle defaultTextStyle = new ParagraphStyle
-                                              {
-                                                  FontColor = Color.Black,
-                                                  FontName = "Arial",
-                                                  FontSize = 10
-                                              };
+                                                  {
+                                                      FontColor = Color.Black,
+                                                      FontName = "Arial",
+                                                      FontSize = 10
+                                                  };
 
-            RichText titleText = new RichText(doc)
-                                 {
-                                     Text = "Title!",
-                                     ParagraphStyle = defaultTextStyle
-                                 };
-            Outline outline = new Outline(doc)
-                              {
-                                  VerticalOffset = 100,
-                                  HorizontalOffset = 100
-                              };
-            OutlineElement outlineElem = new OutlineElement(doc);
+            RichText titleText = new RichText() { ParagraphStyle = defaultTextStyle }.Append("Title!");
+            Outline outline = new Outline()
+                                  {
+                                      VerticalOffset = 100,
+                                      HorizontalOffset = 100
+                                  };
+            OutlineElement outlineElem = new OutlineElement();
         
-            // RunIndex = 5 means the style will be applied only to 0-4 characters. ("Hello")
             TextStyle textStyleForHelloWord = new TextStyle
-                                              {
-                                                  FontColor = Color.Red,
-                                                  FontName = "Arial",
-                                                  FontSize = 10,
-                                                  RunIndex = 5,
-                                              };
+                                                  {
+                                                      FontColor = Color.Red,
+                                                      FontName = "Arial",
+                                                      FontSize = 10,
+                                                  };
             
-            // RunIndex = 13 means the style will be applied only to 5-12 characters. (" OneNote")
             TextStyle textStyleForOneNoteWord = new TextStyle
-                                                {
-                                                    FontColor = Color.Green,
-                                                    FontName = "Calibri",
-                                                    FontSize = 10,
-                                                    IsItalic = true,
-                                                    RunIndex = 13,
-                                                };
+                                                    {
+                                                        FontColor = Color.Green,
+                                                        FontName = "Calibri",
+                                                        FontSize = 10,
+                                                        IsItalic = true,
+                                                    };
 
-            // RunIndex = 18 means the style will be applied only to 13-17 characters. (" text").
-            // Other characters ("!") will have the default style.
             TextStyle textStyleForTextWord = new TextStyle
-                                             {
-                                                 FontColor = Color.Blue,
-                                                 FontName = "Arial",
-                                                 FontSize = 15,
-                                                 IsBold = true,
-                                                 IsItalic = true,
-                                                 RunIndex = 18,
-                                             };
+                                                 {
+                                                     FontColor = Color.Blue,
+                                                     FontName = "Arial",
+                                                     FontSize = 15,
+                                                     IsBold = true,
+                                                     IsItalic = true,
+                                                 };
         
-            RichText text = new RichText(doc)
-                            {
-                                Text = "Hello OneNote text!",
-                                ParagraphStyle = defaultTextStyle,
-                                Styles = { textStyleForHelloWord, textStyleForOneNoteWord, textStyleForTextWord }
-                            };
+            RichText text = new RichText() { ParagraphStyle = defaultTextStyle }
+                                .Append("Hello", textStyleForHelloWord)
+                                .Append(" OneNote", textStyleForOneNoteWord)
+                                .Append(" text", textStyleForTextWord)
+                                .Append("!", TextStyle.Default);
 
             title.TitleText = titleText;
 

@@ -1,4 +1,10 @@
-﻿namespace Aspose.Note.Examples.CSharp.Tables
+﻿// -----------------------------------------------------------------------
+//  <copyright file="ChangeTableStyle.cs" company="Aspose Pty Ltd">
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//  </copyright>
+// -----------------------------------------------------------------------
+
+namespace Aspose.Note.Examples.CSharp.Tables
 {
     using System;
     using System.Collections.Generic;
@@ -19,10 +25,10 @@
                     node.ParagraphStyle.IsBold = bold;
                     node.ParagraphStyle.IsItalic = italic;
 
-                    foreach (var style in node.Styles)
+                    foreach (var run in node.TextRuns)
                     {
-                        style.IsBold = bold;
-                        style.IsItalic = italic;
+                        run.Style.IsBold = bold;
+                        run.Style.IsItalic = italic;
                     }
                 }
             }
@@ -30,17 +36,6 @@
 
         public static void Run()
         {
-            // ExStart:ChangeTableStyle
-            // ExFor:TextStyle
-            // ExFor:Style.IsBold
-            // ExFor:Style.IsItalic
-            // ExFor:RichText
-            // ExFor:RichText.Styles
-            // ExFor:RichText.ParagraphStyle
-            // ExFor:ParagraphStyle
-            // ExFor:TableCell
-            // ExFor:TableCell.BackgroundColor
-            // ExSummary:Let's format table for better perception. Make header row bold and italic, highlight every even row using LightGray color.
             string dataDir = RunExamples.GetDataDir_Tables();
 
             // Load the document into Aspose.Note.
@@ -65,7 +60,6 @@
 
             document.Save(Path.Combine(dataDir, "ChangeTableStyleOut.one"));
 
-            // ExEnd:ChangeTableStyle
             Console.WriteLine("\nTable's style is updated successfully.\nFile saved at " + dataDir);
         }
     }

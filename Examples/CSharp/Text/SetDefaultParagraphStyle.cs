@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="SetDefaultParagraphStyle.cs" company="Aspose Pty Ltd">
-//    Copyright (c) 2002-2021 Aspose Pty Ltd. All Rights Reserved.
+//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
 //  </copyright>
 // -----------------------------------------------------------------------
 
@@ -17,47 +17,21 @@ namespace Aspose.Note.Examples.CSharp.Text
             // ExFor:ParagraphStyle
             // ExFor:RichText
             // ExFor:RichText.ParagraphStyle
-            // ExFor:RichText.Text
+            // ExFor:RichText.Append(System.String)
+            // ExFor:RichText.Append(System.String,TextStyle)
             // ExFor:TextStyle
             // ExFor:Style.FontName
             // ExFor:Style.FontSize
             // ExSummary:Manipulate by text format using paragraph style.
-
             var document = new Document();
-            var page = new Page(document);
-            var outline = new Outline(document);
-            var outlineElem = new OutlineElement(document);
+            var page = new Page();
+            var outline = new Outline();
+            var outlineElem = new OutlineElement();
 
-            var text = new RichText(document)
-                        {
-                            Text = $"DefaultParagraphFontAndSize{Environment.NewLine}OnlyDefaultParagraphFont{Environment.NewLine}OnlyDefaultParagraphFontSize",
-                            ParagraphStyle = new ParagraphStyle()
-                                                {
-                                                    FontName = "Courier New",
-                                                    FontSize = 20
-                                                }
-                        };
-
-            // Font and font size are from text.ParagraphStyle
-            text.Styles.Add(new TextStyle()
-                                    {
-                                        RunIndex = 27
-                                    });
-
-            // Only font is from text.ParagraphStyle
-            text.Styles.Add(new TextStyle()
-                                    {
-                                        FontSize = 14,
-                                        RunIndex = 53
-                                    });
-
-            // Only font size is from text.ParagraphStyle
-            text.Styles.Add(new TextStyle()
-                                    {
-                                        FontName = "Verdana",
-                                        RunIndex = text.Text.Length
-                                    });
-
+            var text = new RichText() { ParagraphStyle = new ParagraphStyle() { FontName = "Courier New", FontSize = 20 } }
+                            .Append($"DefaultParagraphFontAndSize{Environment.NewLine}")
+                            .Append($"OnlyDefaultParagraphFont{Environment.NewLine}", new TextStyle() { FontSize = 14 })
+                            .Append("OnlyDefaultParagraphFontSize", new TextStyle() { FontName = "Verdana" });
 
             outlineElem.AppendChildLast(text);
             outline.AppendChildLast(outlineElem);
