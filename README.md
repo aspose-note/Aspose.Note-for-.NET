@@ -24,10 +24,19 @@ Directory | Description
 - Parse and export various numbered list formats.
 - Extract text from any part of an OneNote document.
 - Export OneNote documents as other popular formats.
+- Import content from popular formats to OneNote documents.
 
 ## Read & Write OneNote Format
 
 **Microsoft OneNote:** ONE
+
+## Read Formats
+
+ONETOC2
+
+## Import Formats
+
+PDF
 
 ## Save OneNote Files As
 
@@ -35,9 +44,6 @@ Directory | Description
 **Web:** HTML\
 **Images:** GIF, JPEG, PNG, BMP, TIFF
 
-## Read Formats
-
-ONETOC2
 
 ## Platform Independence
 
