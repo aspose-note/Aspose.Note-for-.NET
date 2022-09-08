@@ -59,7 +59,6 @@
     <Compile Include="Import\ImportFromPdf.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingFixedThreshold.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingOtsuMethod.cs" />
-    <Compile Include="Loading-and-Saving\SaveToPdfUsingDarkTheme.cs" />
     <Compile Include="Loading-and-Saving\SaveToTiffImageUsingImageSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveToBmpImageUsingImageSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveToGrayscaleImage.cs" />
@@ -142,6 +141,7 @@
     <Compile Include="Tags\AddImageNodeWithTag.cs" />
     <Compile Include="Tags\AddTableNodeWithTag.cs" />
     <Compile Include="Tags\AddTextNodeWithTag.cs" />
+    <Compile Include="Text\ApplyDarkTheme.cs" />
     <Compile Include="Tags\GetTagDetails.cs" />
     <Compile Include="Text\ChangePageTitleStyle.cs" />
     <Compile Include="Text\ChangeStyle.cs" />

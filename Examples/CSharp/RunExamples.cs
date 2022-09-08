@@ -13,6 +13,7 @@ namespace Aspose.Note.Examples.CSharp
 
     using Aspose.Note.Examples.CSharp.Hyperlinks;
     using Aspose.Note.Examples.CSharp.Import;
+    using Aspose.Note.Examples.CSharp.Loading_and_Saving;
     using Aspose.Note.Examples.CSharp.Pages;
     using Aspose.Note.Examples.CSharp.Tables;
     using Aspose.Note.Examples.CSharp.Tags;
@@ -122,7 +123,8 @@ namespace Aspose.Note.Examples.CSharp
             // ChangePageTitleStyle.Run();
             // SetDefaultParagraphStyle.Run();
             // SetProofingLanguageForText.Run();
-            GenerateDocumentFromTemplate.Run();
+            // GenerateDocumentFromTemplate.Run();
+            ApplyDarkTheme.Run();
 
             //// =====================================================
             #endregion
