@@ -73,6 +73,7 @@ namespace Aspose.Note.Examples.CSharp
             // SaveWithDefaultSettings.Run();
             // SpecifySaveOptions.Run();
             // SaveUsingSpecifiedFontsSubsystem.Run();
+            SaveToPdfUsingPageSettings.Run();
             //// =====================================================
             #region Printing Documents
 
@@ -124,7 +125,7 @@ namespace Aspose.Note.Examples.CSharp
             // SetDefaultParagraphStyle.Run();
             // SetProofingLanguageForText.Run();
             // GenerateDocumentFromTemplate.Run();
-            ApplyDarkTheme.Run();
+            // ApplyDarkTheme.Run();
 
             //// =====================================================
             #endregion

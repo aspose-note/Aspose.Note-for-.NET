@@ -59,6 +59,7 @@
     <Compile Include="Import\ImportFromPdf.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingFixedThreshold.cs" />
     <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingOtsuMethod.cs" />
+    <Compile Include="Loading-and-Saving\SaveToPdfUsingPageSettings.cs" />
     <Compile Include="Loading-and-Saving\SaveToTiffImageUsingImageSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveToBmpImageUsingImageSaveOptions.cs" />
     <Compile Include="Loading-and-Saving\SaveToGrayscaleImage.cs" />
