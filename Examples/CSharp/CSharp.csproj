@@ -1,175 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FB1C1812-C3A1-4FB7-AFCD-112B422C60BC}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Aspose.Note.Examples.CSharp</RootNamespace>
     <AssemblyName>Aspose.Note.Examples.CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <PropertyGroup>
-    <StartupObject>Aspose.Note.Examples.CSharp.RunExamples</StartupObject>
+    <AssemblyTitle>Aspose.Note.Examples.CSharp</AssemblyTitle>
+    <AssemblyCompany>Aspose.Note.Examples.CSharp</AssemblyCompany>
+    <AssemblyProduct>Aspose.Note.Examples.CSharp</AssemblyProduct>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Aspose.Note, Version=22.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Note.22.9.0\lib\net4.0\Aspose.Note.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="Aspose.HTML" Version="24.10.0" />
+    <PackageReference Include="Aspose.Note" Version="24.11.0" />
+    <PackageReference Include="Notion.Net" Version="4.2.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ApplyLicense\ApplyLicenseByEmbeddedResource.cs" />
-    <Compile Include="ApplyLicense\ApplyLicenseByPath.cs" />
-    <Compile Include="ApplyLicense\ApplyLicenseUsingFileStream.cs" />
-    <Compile Include="ApplyLicense\MeteredLicense.cs" />
-    <Compile Include="Attachments\AttachFileAndSetIcon.cs" />
-    <Compile Include="Attachments\AttachFileByPath.cs" />
-    <Compile Include="Attachments\RetrieveAttachedFiles.cs" />
-    <Compile Include="Import\ImportFromPdf.cs" />
-    <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingFixedThreshold.cs" />
-    <Compile Include="Loading-and-Saving\SaveToBinaryImageUsingOtsuMethod.cs" />
-    <Compile Include="Loading-and-Saving\SaveToPdfUsingPageSettings.cs" />
-    <Compile Include="Loading-and-Saving\SaveToTiffImageUsingImageSaveOptions.cs" />
-    <Compile Include="Loading-and-Saving\SaveToBmpImageUsingImageSaveOptions.cs" />
-    <Compile Include="Loading-and-Saving\SaveToGrayscaleImage.cs" />
-    <Compile Include="Loading-and-Saving\SaveToJpegImageUsingSaveFormat.cs" />
-    <Compile Include="Loading-and-Saving\SaveUsingSpecifiedFontsSubsystem.cs" />
-    <Compile Include="Pages\SetPageBackgroundColor.cs" />
-    <Compile Include="Tables\ChangeTableStyle.cs" />
-    <Compile Include="Tags\GenerateTemplateForMeetingNotes.cs" />
-    <Compile Include="Tags\OpenCloseProjectC.cs" />
-    <Compile Include="Tags\Reporting.cs" />
-    <Compile Include="Tables\ComposeTable.cs" />
-    <Compile Include="Text\GenerateDocumentFromTemplate.cs" />
-    <Compile Include="Text\HighlightAllRecentChanges.cs" />
-    <Compile Include="Images\BuildDocAndInsertImageUsingImageStream.cs" />
-    <Compile Include="Images\BuildDocAndInsertImage.cs" />
-    <Compile Include="Images\ImageAlternativeText.cs" />
-    <Compile Include="Images\ImageWithHyperlink.cs" />
-    <Compile Include="Images\InsertImage.cs" />
-    <Compile Include="Images\ExtractImages.cs" />
-    <Compile Include="Images\GetInformationOfImages.cs" />
-    <Compile Include="Loading-and-Saving\CreateDocWithFormattedRichText.cs" />
-    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormat.cs" />
-    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingOneSaveOptions.cs" />
-    <Compile Include="Loading-and-Saving\SaveDocToOneNoteFormatUsingSaveFormat.cs" />
-    <Compile Include="Loading-and-Saving\UserSavingCallbacks.cs" />
-    <Compile Include="NoteBook\ConvertToImageAsFlattenedNotebook.cs" />
-    <Compile Include="NoteBook\LoadingNotebookFileWithLoadOptions.cs" />
-    <Compile Include="NoteBook\LoadingNotebookInstantly.cs" />
-    <Compile Include="NoteBook\ReadRichText.cs" />
-    <Compile Include="NoteBook\RetrieveDocumentsFromOneNoteNotebook.cs" />
-    <Compile Include="NoteBook\LoadFromStream.cs" />
-    <Compile Include="NoteBook\WritingPasswordProtectedDoc.cs" />
-    <Compile Include="NoteBook\LoadingPasswordProtectedDoc.cs" />
-    <Compile Include="NoteBook\CreatingPasswordProtectedDoc.cs" />
-    <Compile Include="Loading-and-Saving\CreateDocWithPageTitle.cs" />
-    <Compile Include="Loading-and-Saving\CreateDocWithSimpleRichText.cs" />
-    <Compile Include="Loading-and-Saving\LoadOneNoteDoc.cs" />
-    <Compile Include="Loading-and-Saving\ConvertSpecificPageToImage.cs" />
-    <Compile Include="Loading-and-Saving\CreateOneNoteDocAndSaveToHTML.cs" />
-    <Compile Include="Loading-and-Saving\ConsequentExportOperations.cs" />
-    <Compile Include="Loading-and-Saving\PageSplitUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.cs" />
-    <Compile Include="Loading-and-Saving\PasswordProtectedDoc.cs" />
-    <Compile Include="Loading-and-Saving\PageSplitUsingKeepSolidObjectsAlgorithm.cs" />
-    <Compile Include="Loading-and-Saving\ExtractContent.cs" />
-    <Compile Include="Loading-and-Saving\RetrievingFileFormat.cs" />
-    <Compile Include="Loading-and-Saving\SpecifySaveOptions.cs" />
-    <Compile Include="Loading-and-Saving\SaveRangeOfPagesAsPDF.cs" />
-    <Compile Include="Loading-and-Saving\SaveToStream.cs" />
-    <Compile Include="Loading-and-Saving\SaveToImageDefaultOptions.cs" />
-    <Compile Include="Loading-and-Saving\SaveWithDefaultSettings.cs" />
-    <Compile Include="NoteBook\ConvertToImageWithOptions.cs" />
-    <Compile Include="NoteBook\ConvertToPDFAsFlattened.cs" />
-    <Compile Include="NoteBook\ConvertToPDFWithOptions.cs" />
-    <Compile Include="NoteBook\RemoveChildNode.cs" />
-    <Compile Include="NoteBook\CreateNoteBook.cs" />
-    <Compile Include="NoteBook\ConvertToPDF.cs" />
-    <Compile Include="NoteBook\ConvertToImage.cs" />
-    <Compile Include="NoteBook\AddChildNode.cs" />
-    <Compile Include="Pages\ConflictPageManipulation.cs" />
-    <Compile Include="Pages\CreateDocWithRootAndSubPages.cs" />
-    <Compile Include="Pages\PageClone.cs" />
-    <Compile Include="Pages\PushCurrentPageVersion.cs" />
-    <Compile Include="Pages\ModifyPageHistory.cs" />
-    <Compile Include="Pages\RollBackRevisions.cs" />
-    <Compile Include="Pages\WorkingWithPageRevisions.cs" />
-    <Compile Include="Pages\GetPageRevisions.cs" />
-    <Compile Include="Pages\GetPageInformation.cs" />
-    <Compile Include="Pages\GetNumberOfPages.cs" />
-    <Compile Include="PrintingDocument\PrintDocument.cs" />
-    <Compile Include="PrintingDocument\PrintDocumentWithPrintOptions.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tables\CreateTableWithLockedColumns.cs" />
-    <Compile Include="Tables\SettingCellBackGroundColor.cs" />
-    <Compile Include="Tables\InsertTable.cs" />
-    <Compile Include="Tables\ExtractCellText.cs" />
-    <Compile Include="Tables\ExtractRowText.cs" />
-    <Compile Include="Tables\ExtractTableText.cs" />
-    <Compile Include="Hyperlinks\AddHyperlink.cs" />
-    <Compile Include="Tasks\GetOutlookTaskDetails.cs" />
-    <Compile Include="Tags\AddImageNodeWithTag.cs" />
-    <Compile Include="Tags\AddTableNodeWithTag.cs" />
-    <Compile Include="Tags\AddTextNodeWithTag.cs" />
-    <Compile Include="Text\ApplyDarkTheme.cs" />
-    <Compile Include="Tags\GetTagDetails.cs" />
-    <Compile Include="Text\ChangePageTitleStyle.cs" />
-    <Compile Include="Text\ChangeStyle.cs" />
-    <Compile Include="Text\InsertChineseNumberList.cs" />
-    <Compile Include="Text\ApplyBulletsOnText.cs" />
-    <Compile Include="Text\ApplyNumberingOnText.cs" />
-    <Compile Include="Text\RetrieveBulletOrNumberList.cs" />
-    <Compile Include="Text\CreateTitleMsStyle.cs" />
-    <Compile Include="Text\ExtractingAllText.cs" />
-    <Compile Include="Text\ExtractingTextFromAPage.cs" />
-    <Compile Include="Text\ReplaceTextOnAllPages.cs" />
-    <Compile Include="Text\ReplaceTextOnParticularPage.cs" />
-    <Compile Include="RunExamples.cs" />
-    <Compile Include="Text\SetDefaultParagraphStyle.cs" />
-    <Compile Include="Text\SetProofingLanguageForText.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

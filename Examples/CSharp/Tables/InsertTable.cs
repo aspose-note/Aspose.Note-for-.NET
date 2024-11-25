@@ -1,7 +1,4 @@
-using System.IO;
-using Aspose.Note;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 
 namespace Aspose.Note.Examples.CSharp.Tables
@@ -27,20 +24,20 @@ namespace Aspose.Note.Examples.CSharp.Tables
             Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
             // Initialize TableRow class object
-            TableRow row1 = new TableRow(doc);
+            TableRow row1 = new TableRow();
             
             // Initialize TableCell class objects
-            TableCell cell11 = new TableCell(doc);
-            TableCell cell12 = new TableCell(doc);
-            TableCell cell13 = new TableCell(doc);
+            TableCell cell11 = new TableCell();
+            TableCell cell12 = new TableCell();
+            TableCell cell13 = new TableCell();
 
             // Append outline elements in the table cell
-            cell11.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.1"));
-            cell12.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.2"));
-            cell13.AppendChildLast(GetOutlineElementWithText(doc, "cell_1.3"));
+            cell11.AppendChildLast(GetOutlineElementWithText("cell_1.1"));
+            cell12.AppendChildLast(GetOutlineElementWithText("cell_1.2"));
+            cell13.AppendChildLast(GetOutlineElementWithText("cell_1.3"));
             
             // Table cells to rows
             row1.AppendChildLast(cell11);
@@ -48,17 +45,17 @@ namespace Aspose.Note.Examples.CSharp.Tables
             row1.AppendChildLast(cell13);
 
             // Initialize TableRow class object
-            TableRow row2 = new TableRow(doc);
+            TableRow row2 = new TableRow();
             
             // initialize TableCell class objects
-            TableCell cell21 = new TableCell(doc);
-            TableCell cell22 = new TableCell(doc);
-            TableCell cell23 = new TableCell(doc);
+            TableCell cell21 = new TableCell();
+            TableCell cell22 = new TableCell();
+            TableCell cell23 = new TableCell();
 
             // Append outline elements in the table cell
-            cell21.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.1"));
-            cell22.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.2"));
-            cell23.AppendChildLast(GetOutlineElementWithText(doc, "cell_2.3"));
+            cell21.AppendChildLast(GetOutlineElementWithText("cell_2.1"));
+            cell22.AppendChildLast(GetOutlineElementWithText("cell_2.2"));
+            cell23.AppendChildLast(GetOutlineElementWithText("cell_2.3"));
 
             // Append table cells to rows
             row2.AppendChildLast(cell21);
@@ -66,7 +63,7 @@ namespace Aspose.Note.Examples.CSharp.Tables
             row2.AppendChildLast(cell23);
 
             // Initialize Table class object and set column widths
-            Table table = new Table(doc)
+            Table table = new Table()
                           {
                               IsBordersVisible = true,
                               Columns = { new TableColumn { Width = 200 }, new TableColumn { Width = 200 }, new TableColumn { Width = 200 } }
@@ -77,10 +74,10 @@ namespace Aspose.Note.Examples.CSharp.Tables
             table.AppendChildLast(row2);
 
             // Initialize Outline object
-            Outline outline = new Outline(doc);
+            Outline outline = new Outline();
             
             // Initialize OutlineElement object
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
             
             // Add table to outline element node
             outlineElem.AppendChildLast(table);
@@ -101,11 +98,11 @@ namespace Aspose.Note.Examples.CSharp.Tables
             Console.WriteLine("\nTable inserted successfully.\nFile saved at " + dataDir);
         }
 
-        public static OutlineElement GetOutlineElementWithText(Document doc, string text)
+        public static OutlineElement GetOutlineElementWithText(string text)
         {
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            outlineElem.AppendChildLast(new RichText(doc) { Text = text, ParagraphStyle = textStyle });
+            outlineElem.AppendChildLast(new RichText() { Text = text, ParagraphStyle = textStyle });
             return outlineElem;
         }
     }
