@@ -1,7 +1,4 @@
-﻿using System.IO;
-using Aspose.Note;
-using Aspose.Note.Saving;
-using System;
+﻿using System;
 using System.Drawing;
 
 namespace Aspose.Note.Examples.CSharp.Loading_Saving
@@ -23,19 +20,19 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             Document doc = new Document();
 
             // Initialize Page class object
-            Page page = new Page(doc);
+            Page page = new Page();
             
             // Initialize Outline class object
-            Outline outline = new Outline(doc);
+            Outline outline = new Outline();
             
             // Initialize OutlineElement class object
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
 
             // Initialize TextStyle class object and set formatting properties
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
             
             // Initialize RichText class object and apply text style
-            RichText text = new RichText(doc) { Text = "Hello OneNote text!", ParagraphStyle = textStyle };
+            RichText text = new RichText() { Text = "Hello OneNote text!", ParagraphStyle = textStyle };
 
             // Add RichText node
             outlineElem.AppendChildLast(text);

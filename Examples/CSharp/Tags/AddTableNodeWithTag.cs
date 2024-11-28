@@ -1,8 +1,4 @@
-using System.Drawing;
-using System.IO;
-using Aspose.Note;
 using System;
-using System.Collections.Generic;
 using Aspose.Note.Examples.CSharp.Tables;
 
 namespace Aspose.Note.Examples.CSharp.Tags
@@ -29,22 +25,22 @@ namespace Aspose.Note.Examples.CSharp.Tags
             Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
             // Initialize TableRow class object
-            TableRow row = new TableRow(doc);
+            TableRow row = new TableRow();
 
             // Initialize TableCell class object
-            TableCell cell = new TableCell(doc);
+            TableCell cell = new TableCell();
 
             // Insert cell content
-            cell.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Single cell."));
+            cell.AppendChildLast(InsertTable.GetOutlineElementWithText("Single cell."));
 
             // Add cell to row node
             row.AppendChildLast(cell);
             
             // Initialize table node
-            Table table = new Table(doc)
+            Table table = new Table()
                           {
                               IsBordersVisible = true,
                               Columns = { new TableColumn { Width = 70 } }
@@ -56,8 +52,8 @@ namespace Aspose.Note.Examples.CSharp.Tags
             // Add tag to this table node
             table.Tags.Add(NoteTag.CreateQuestionMark());
 
-            Outline outline = new Outline(doc);
-            OutlineElement outlineElem = new OutlineElement(doc);
+            Outline outline = new Outline();
+            OutlineElement outlineElem = new OutlineElement();
             
             // Add table node
             outlineElem.AppendChildLast(table);

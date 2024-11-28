@@ -1,7 +1,4 @@
-using System.IO;
-using Aspose.Note;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 
 namespace Aspose.Note.Examples.CSharp.Pages
@@ -22,37 +19,37 @@ namespace Aspose.Note.Examples.CSharp.Pages
             Document doc = new Document();
 
             // Initialize Page class object and set its level
-            Aspose.Note.Page page1 = new Aspose.Note.Page(doc) { Level = 1 };
+            Page page1 = new Page() { Level = 1 };
 
             // Initialize Page class object and set its level
-            Aspose.Note.Page page2 = new Aspose.Note.Page(doc) { Level = 2 };
+            Page page2 = new Page() { Level = 2 };
 
             // Initialize Page class object and set its level
-            Aspose.Note.Page page3 = new Aspose.Note.Page(doc) { Level = 1 };
+            Page page3 = new Page() { Level = 1 };
 
             /*---------- Adding nodes to first Page ----------*/
-            Outline outline = new Outline(doc);
-            OutlineElement outlineElem = new OutlineElement(doc);
+            Outline outline = new Outline();
+            OutlineElement outlineElem = new OutlineElement();
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            RichText text = new RichText(doc) { Text = "First page.", ParagraphStyle = textStyle };
+            RichText text = new RichText() { Text = "First page.", ParagraphStyle = textStyle };
             outlineElem.AppendChildLast(text);
             outline.AppendChildLast(outlineElem);
             page1.AppendChildLast(outline);
 
             /*---------- Adding nodes to second Page ----------*/
-            var outline2 = new Outline(doc);
-            var outlineElem2 = new OutlineElement(doc);
+            var outline2 = new Outline();
+            var outlineElem2 = new OutlineElement();
             var textStyle2 = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            var text2 = new RichText(doc) { Text = "Second page.", ParagraphStyle = textStyle2 };
+            var text2 = new RichText() { Text = "Second page.", ParagraphStyle = textStyle2 };
             outlineElem2.AppendChildLast(text2);
             outline2.AppendChildLast(outlineElem2);
             page2.AppendChildLast(outline2);
 
             /*---------- Adding nodes to third Page ----------*/
-            var outline3 = new Outline(doc);
-            var outlineElem3 = new OutlineElement(doc);
+            var outline3 = new Outline();
+            var outlineElem3 = new OutlineElement();
             var textStyle3 = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            var text3 = new RichText(doc) { Text = "Third page.", ParagraphStyle = textStyle3 };
+            var text3 = new RichText() { Text = "Third page.", ParagraphStyle = textStyle3 };
             outlineElem3.AppendChildLast(text3);
             outline3.AppendChildLast(outlineElem3);
             page3.AppendChildLast(outline3);

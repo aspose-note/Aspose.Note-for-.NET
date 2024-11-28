@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="SaveToBinaryImageUsingOtsuMethod.cs" company="Aspose Pty Ltd">
-//    Copyright (c) 2002-2020 Aspose Pty Ltd. All Rights Reserved.
+//    Copyright (c) 2002-2024 Aspose Pty Ltd. All Rights Reserved.
 //  </copyright>
 // -----------------------------------------------------------------------
 

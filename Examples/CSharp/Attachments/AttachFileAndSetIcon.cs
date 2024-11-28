@@ -1,7 +1,5 @@
 using System.IO;
-using Aspose.Note;
 using System;
-using System.Collections.Generic;
 using System.Drawing.Imaging;
 
 namespace Aspose.Note.Examples.CSharp.Attachments
@@ -22,18 +20,18 @@ namespace Aspose.Note.Examples.CSharp.Attachments
             Document doc = new Document();
             
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
             
             // Initialize Outline class object
-            Outline outline = new Outline(doc);
+            Outline outline = new Outline();
             
             // Initialize OutlineElement class object
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
 
             using (var stream = File.OpenRead(dataDir + "icon.jpg"))
             {
                 // Initialize AttachedFile class object and also pass its icon path
-                AttachedFile attachedFile = new AttachedFile(doc, dataDir + "attachment.txt", stream, ImageFormat.Jpeg);
+                AttachedFile attachedFile = new AttachedFile(dataDir + "attachment.txt", stream, ImageFormat.Jpeg);
 
                 // Add attached file
                 outlineElem.AppendChildLast(attachedFile);

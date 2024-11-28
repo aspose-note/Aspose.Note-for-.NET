@@ -1,7 +1,4 @@
-﻿using System.IO;
-using Aspose.Note;
-using Aspose.Note.Saving;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Globalization;
 
@@ -25,20 +22,20 @@ namespace Aspose.Note.Examples.CSharp.Loading_Saving
             string dataDir = RunExamples.GetDataDir_LoadingAndSaving();
 
             // Create an object of the Document class
-            Document doc = new Aspose.Note.Document();
+            Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
             // Default style for all text in the document.
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
 
             // Set page title properties
-            page.Title = new Title(doc)
+            page.Title = new Title()
                          {
-                             TitleText = new RichText(doc) { Text = "Title text.", ParagraphStyle = textStyle },
-                             TitleDate = new RichText(doc) { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
-                             TitleTime = new RichText(doc) { Text = "12:34", ParagraphStyle = textStyle }
+                             TitleText = new RichText() { Text = "Title text.", ParagraphStyle = textStyle },
+                             TitleDate = new RichText() { Text = new DateTime(2011, 11, 11).ToString("D", CultureInfo.InvariantCulture), ParagraphStyle = textStyle },
+                             TitleTime = new RichText() { Text = "12:34", ParagraphStyle = textStyle }
                          };
 
             // Append Page node in the document

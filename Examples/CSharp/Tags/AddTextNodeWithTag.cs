@@ -1,8 +1,5 @@
 using System.Drawing;
-using System.IO;
-using Aspose.Note;
 using System;
-using System.Collections.Generic;
 
 namespace Aspose.Note.Examples.CSharp.Tags
 {
@@ -24,15 +21,15 @@ namespace Aspose.Note.Examples.CSharp.Tags
             Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
             // Initialize Outline class object
-            Outline outline = new Outline(doc);
+            Outline outline = new Outline();
 
             // Initialize OutlineElement class object
-            OutlineElement outlineElem = new OutlineElement(doc);
+            OutlineElement outlineElem = new OutlineElement();
             ParagraphStyle textStyle = new ParagraphStyle { FontColor = Color.Black, FontName = "Arial", FontSize = 10 };
-            RichText text = new RichText(doc) { Text = "OneNote text.", ParagraphStyle = textStyle };
+            RichText text = new RichText() { Text = "OneNote text.", ParagraphStyle = textStyle };
             text.Tags.Add(NoteTag.CreateYellowStar());
 
             // Add text node

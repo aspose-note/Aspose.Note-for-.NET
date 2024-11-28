@@ -1,8 +1,5 @@
-using System.IO;
-using Aspose.Note;
-using System.Collections.Generic;
-using System.Drawing;
 using System;
+
 namespace Aspose.Note.Examples.CSharp.Images
 {
     public class InsertImage
@@ -26,10 +23,10 @@ namespace Aspose.Note.Examples.CSharp.Images
             Document doc = new Document(dataDir + "Aspose.one");
             
             // Get the first page of the document.
-            Aspose.Note.Page page = doc.FirstChild;
+            Page page = doc.FirstChild;
 
             // Load an image from the file.
-            Aspose.Note.Image image = new Aspose.Note.Image(doc, dataDir + "image.jpg")
+            Image image = new Image(dataDir + "image.jpg")
                                       {
                                           // Change the image's size according to your needs (optional).
                                           Width = 100,

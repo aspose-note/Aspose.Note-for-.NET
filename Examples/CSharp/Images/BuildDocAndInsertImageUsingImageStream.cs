@@ -1,7 +1,4 @@
 using System.IO;
-using Aspose.Note;
-using System.Collections.Generic;
-using System.Drawing;
 using System;
 
 namespace Aspose.Note.Examples.CSharp.Images
@@ -23,16 +20,16 @@ namespace Aspose.Note.Examples.CSharp.Images
             Document doc = new Document();
 
             // Initialize Page class object
-            Aspose.Note.Page page = new Aspose.Note.Page(doc);
+            Page page = new Page();
 
-            Outline outline1 = new Outline(doc);
-            OutlineElement outlineElem1 = new OutlineElement(doc);
+            Outline outline1 = new Outline();
+            OutlineElement outlineElem1 = new OutlineElement();
 
             using (FileStream fs = File.OpenRead(dataDir + "image.jpg"))
             {
 
                 // Load the second image using the image name, extension and stream.
-                Aspose.Note.Image image1 = new Aspose.Note.Image(doc, "Penguins.jpg", fs)
+                Image image1 = new Image("Penguins.jpg", fs)
                                                {
                                                    // Set image alignment
                                                    Alignment = HorizontalAlignment.Right

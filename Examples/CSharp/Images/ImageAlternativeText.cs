@@ -1,7 +1,3 @@
-using System.IO;
-using Aspose.Note;
-using System.Collections.Generic;
-using System.Drawing;
 using System;
 
 namespace Aspose.Note.Examples.CSharp.Images
@@ -21,8 +17,8 @@ namespace Aspose.Note.Examples.CSharp.Images
             string dataDir = RunExamples.GetDataDir_Images();
 
             var document = new Document();
-            var page = new Page(document);
-            var image = new Image(document, dataDir + "image.jpg")
+            var page = new Page();
+            var image = new Image(dataDir + "image.jpg")
                         {
                             AlternativeTextTitle = "This is an image's title!",
                             AlternativeTextDescription = "And this is an image's description!"

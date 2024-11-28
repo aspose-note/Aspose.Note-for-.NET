@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="RunExamples.cs" company="Aspose Pty Ltd">
-//    Copyright (c) 2002-2022 Aspose Pty Ltd. All Rights Reserved.
+//    Copyright (c) 2002-2024 Aspose Pty Ltd. All Rights Reserved.
 //  </copyright>
 // -----------------------------------------------------------------------
 
@@ -312,6 +312,26 @@ namespace Aspose.Note.Examples.CSharp
         public static string GetDataDir_Import()
         {
             return Path.GetFullPath(GetDataDir_Data() + "Import/");
+        }
+
+        public static string GetDataDir_Conversion()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "Conversion/");
+        }
+
+        public static string GetDataDir_Conversion_Markdown()
+        {
+            return Path.Combine(GetDataDir_Conversion(), "Markdown");
+        }
+
+        public static string GetDataDir_Conversion_Html()
+        {
+            return Path.Combine(GetDataDir_Conversion(), "HTML");
+        }
+
+        public static string GetDataDir_Conversion_Pdf()
+        {
+            return Path.Combine(GetDataDir_Conversion(), "PDF");
         }
 
         public static string GetDataDir_Data()

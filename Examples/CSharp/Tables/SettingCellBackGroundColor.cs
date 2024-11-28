@@ -1,7 +1,4 @@
 using System.IO;
-using Aspose.Note;
-using System;
-using System.Collections.Generic;
 using System.Drawing;
 
 namespace Aspose.Note.Examples.CSharp.Tables
@@ -25,29 +22,29 @@ namespace Aspose.Note.Examples.CSharp.Tables
             Document doc = new Document();
 
             // Initialize TableCell class object and set text content
-            TableCell cell11 = new TableCell(doc);
-            cell11.AppendChildLast(InsertTable.GetOutlineElementWithText(doc, "Small text"));
+            TableCell cell11 = new TableCell();
+            cell11.AppendChildLast(InsertTable.GetOutlineElementWithText("Small text"));
             cell11.BackgroundColor = Color.Coral;
 
             // Initialize TableRow class object
-            TableRow row = new TableRow(doc);
+            TableRow row = new TableRow();
             row.AppendChildLast(cell11);
 
-            Table table = new Table(doc)
+            Table table = new Table()
                           {
                               IsBordersVisible = true,
                               Columns = { new TableColumn() { Width = 200 } }
                           };
             table.AppendChildLast(row);
 
-            OutlineElement oe = new OutlineElement(doc);
+            OutlineElement oe = new OutlineElement();
             oe.AppendChildLast(table);
 
-            Outline o = new Outline(doc);
+            Outline o = new Outline();
             o.AppendChildLast(oe);
 
             // Initialize Page class object
-            Page page = new Page(doc);
+            Page page = new Page();
             page.AppendChildLast(o);
 
             doc.AppendChildLast(page);
