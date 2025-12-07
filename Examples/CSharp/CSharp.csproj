@@ -5,6 +5,7 @@
     <RootNamespace>Aspose.Note.Examples.CSharp</RootNamespace>
     <AssemblyName>Aspose.Note.Examples.CSharp</AssemblyName>
     <OutputType>Exe</OutputType>
+    <NoWarn>$(NoWarn);NU1605</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -13,13 +14,18 @@
     <AssemblyProduct>Aspose.Note.Examples.CSharp</AssemblyProduct>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Aspose.HTML" Version="24.10.0" />
-    <PackageReference Include="Aspose.Note" Version="24.11.0" />
     <PackageReference Include="Notion.Net" Version="4.2.0" />
-    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.3" />
+    <PackageReference Update="System.Drawing.Common" Version="5.0.3" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\Aspose.Note\Aspose.Note.Core.csproj">
+    </ProjectReference>
+  </ItemGroup>
 </Project>

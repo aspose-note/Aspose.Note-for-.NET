@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{FB1C1812-C3A1-4FB7-AFCD-112B422C60BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Note.Core", "..\..\..\src\Aspose.Note\Aspose.Note.Core.csproj", "{71E14403-32EA-4A45-82DD-A6271CBC2E7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FB1C1812-C3A1-4FB7-AFCD-112B422C60BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1C1812-C3A1-4FB7-AFCD-112B422C60BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1C1812-C3A1-4FB7-AFCD-112B422C60BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E14403-32EA-4A45-82DD-A6271CBC2E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E14403-32EA-4A45-82DD-A6271CBC2E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E14403-32EA-4A45-82DD-A6271CBC2E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E14403-32EA-4A45-82DD-A6271CBC2E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

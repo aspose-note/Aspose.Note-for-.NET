@@ -13,7 +13,7 @@ namespace Aspose.Note.Examples.CSharp.Conversion
         public static void ConvertPdfToOne()
         {
             // ExStart:ConvertPdfToOne
-            // ExFor:Document.Import(System.String)
+            // ExFor:Document.Import(System.String, PdfImportOptions, MergeOptions)
             // ExSummary:Shows how to import a PDF file into a OneNote document.
             var dataDir = RunExamples.GetDataDir_Conversion_Pdf();
 

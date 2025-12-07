@@ -34,7 +34,7 @@ namespace Aspose.Note.Examples.CSharp.Conversion
         public static void ConvertHtmlToOne()
         {
             // ExStart:ConvertHtmlToOne
-            // ExFor:Document.Import(System.String, HtmlImportOptions)
+            // ExFor:Document.Import(System.String, HtmlImportOptions, MergeOptions)
             // ExSummary:Shows how to import an HTML file into a OneNote document.
             var dataDir = RunExamples.GetDataDir_Conversion_Html();
 

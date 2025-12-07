@@ -16,7 +16,7 @@ namespace Aspose.Note.Examples.CSharp.Conversion
         public static async Task ConvertOneToNotionHtml()
         {
             // ExStart:ConvertOneToNotionHtml
-            // ExFor:Document.Load
+            // ExFor:Document.#ctor(System.String)
             // ExSummary:Shows how to convert a OneNote document to Notion-compatible HTML.
             var dataDir = RunExamples.GetDataDir_Import();
             var documentPath = Path.Combine(dataDir, "Sample.one");

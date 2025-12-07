@@ -39,7 +39,7 @@ namespace Aspose.Note.Examples.CSharp.Conversion
         public static void ConvertMarkdownToOne()
         {
             // ExStart:ConvertMarkdownToOne
-            // ExFor:Document.Import(System.String, HtmlImportOptions)
+            // ExFor:Document.Import(System.String, HtmlImportOptions, MergeOptions)
             // ExSummary:Shows how to import a Markdown file into a OneNote document.
             var dataDir = RunExamples.GetDataDir_Conversion_Markdown();
 
