@@ -17,7 +17,7 @@
 
             var page = new Page();
 
-            var image = new Image(dataDir + "image.jpg") { HyperlinkUrl = "http://image.com" };
+            var image = new Image(dataDir + "image.jpg") { HyperlinkUrl = "https://image.com" };
 
             page.AppendChildLast(image);
             

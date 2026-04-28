@@ -47,7 +47,7 @@ PDF
 
 ## Platform Independence
 
-Aspose.Note for .NET can be used to build both the 32-bit and the 64-bit .NET applications, including ASP.NET, Web Services & WinForms. Its deployment is very easy and consists of a single assembly with no dependencies (except for the .NET framework). Aspose.Note.dll is CLS compliant, written entirely in C# and contains only safe managed code for .NET Framework, .NET Core & Sliverlight 3.
+Aspose.Note for .NET can be used to build both 32-bit and 64-bit .NET applications, including ASP.NET, web services and Windows applications. The NuGet package includes assemblies for .NET Framework 4.0, .NET Framework 4.0 Client Profile and .NET Standard 2.0 compatible runtimes.
 
 ## Get Started with Aspose.Note for .NET
 
@@ -86,4 +86,4 @@ foreach (Aspose.Note.Image image in nodes)
 - [Viewer](https://products.aspose.app/note/viewer)
 - [Unlock](https://products.aspose.app/note/unlock)
 ------------
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/net) | [Docs](https://docs.aspose.com/note/net/) | [API Reference](https://apireference.aspose.com/note/net) | [Examples](https://github.com/aspose-note/Aspose.Note-for-.NET) | [Blog](https://blog.aspose.com/category/note/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/note) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/net) | [Docs](https://docs.aspose.com/note/net/) | [API Reference](https://reference.aspose.com/note/net) | [Examples](https://github.com/aspose-note/Aspose.Note-for-.NET) | [Blog](https://blog.aspose.com/category/note/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/note) |  [Temporary License](https://purchase.aspose.com/temporary-license)
