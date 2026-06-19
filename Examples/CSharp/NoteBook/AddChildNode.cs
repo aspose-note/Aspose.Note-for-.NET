@@ -18,7 +18,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
             // Load a OneNote Notebook
-            var notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+            var notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
             // Append a new child to the Notebook
             notebook.AppendChild(new Document(dataDir + "Neuer Abschnitt 1.one"));

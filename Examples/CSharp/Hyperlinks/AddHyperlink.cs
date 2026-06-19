@@ -24,7 +24,6 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
             // ExFor:Style.FontColor
             // ExFor:Style.FontName
             // ExFor:Style.FontSize
-            // ExFor:TextStyle.IsHyperlink
             // ExFor:TextStyle.HyperlinkAddress
             // ExSummary:Shows how to bind a hyperlink to a text.
 
@@ -54,8 +53,7 @@ namespace Aspose.Note.Examples.CSharp.Hyperlinks
 
             TextStyle textStyleHyperlink = new TextStyle
                                                {
-                                                   IsHyperlink = true,
-                                                   HyperlinkAddress = "www.google.com"
+                                                   HyperlinkAddress = "https://www.google.com"
                                                };
 
             RichText text = new RichText() { ParagraphStyle = ParagraphStyle.Default }

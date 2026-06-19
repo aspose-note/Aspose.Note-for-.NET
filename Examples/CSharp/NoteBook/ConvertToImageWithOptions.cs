@@ -21,7 +21,7 @@ namespace Aspose.Note.Examples.CSharp.WorkingWithNoteBook
             string dataDir = RunExamples.GetDataDir_NoteBook();
 
             // Load a OneNote Notebook
-            var notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+            var notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
             var notebookSaveOptions = new NotebookImageSaveOptions(SaveFormat.Png);
 
