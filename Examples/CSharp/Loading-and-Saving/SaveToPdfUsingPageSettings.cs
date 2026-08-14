@@ -25,8 +25,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_and_Saving
             // ExFor:Document.Save(System.String, Aspose.Note.Saving.SaveOptions)
             // ExFor:PdfSaveOptions
             // ExFor:PdfSaveOptions.PageSettings
-            // ExFor:PageSettings
-            // ExFor:PageSettings.Letter
+            // ExFor:Aspose.Note.Saving.PageSettings
+            // ExFor:Aspose.Note.Saving.PageSettings.Letter
             // ExSummary:Shows how to save a document in Pdf format with Letter page layout.
 
             // The path to the documents directory.
@@ -51,8 +51,8 @@ namespace Aspose.Note.Examples.CSharp.Loading_and_Saving
             // ExFor:Document.Save(System.String, Aspose.Note.Saving.SaveOptions)
             // ExFor:PdfSaveOptions
             // ExFor:PdfSaveOptions.PageSettings
-            // ExFor:PageSettings
-            // ExFor:PageSettings.A4NoHeightLimit
+            // ExFor:Aspose.Note.Saving.PageSettings
+            // ExFor:Aspose.Note.Saving.PageSettings.A4NoHeightLimit
             // ExSummary:Shows how to save a document in Pdf format with A4 page layout without height limit.
 
             // The path to the documents directory.
